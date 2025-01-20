@@ -1,0 +1,80 @@
+.button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  perspective: 1000px;
+  background: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.3125rem;
+  align-items: center;
+
+  &.fullWidth {
+    width: 100%;
+  }
+}
+
+.buttonContent {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.buttonText,
+.buttonTextFlipped {
+  display: block;
+  width: 100%;
+}
+
+.buttonTextFlipped {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.buttonText {
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  .buttonText {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .buttonTextFlipped {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.primary {
+  font-family: "ALT Riviera";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.288px;
+
+  .buttonText {
+    color: #efefef;
+  }
+
+  .buttonTextFlipped {
+    color: #fea372;
+  }
+}
+
+.bordered {
+  border-radius: 80px;
+  background: #fea372;
+  padding: 9px 18px;
+
+  &:hover {
+    background: #efefef;
+  }
+}

@@ -1,0 +1,39 @@
+import React from "react";
+import styles from "./styles.module.scss";
+import { Button, Title, Video } from "shared/ui";
+import heroVideo from "shared/assets/video/hero.mp4";
+import Lottie from "lottie-react";
+import heroLottie from "shared/assets/lottie/hero.json";
+import ArrowIcon from "shared/assets/icons/arrow";
+
+export const Hero: React.FC = () => {
+  return (
+    <div className={styles.container}>
+      <Video src={heroVideo} className={styles.bg} autoPlay muted loop />
+      <div className={styles.hero}>
+        <Lottie animationData={heroLottie} className={styles.lottie} />
+        <div className={styles.info}>
+          <Title>The highway road to web3 finance</Title>
+          <Title variant="h2" className={styles.subtitle}>
+            <span>Ridm for </span>
+            <Button
+              className={styles.button}
+              variant="secondary"
+              icon={<ArrowIcon />}
+            >
+              individuals
+            </Button>
+            <span>and</span>
+            <Button
+              className={styles.button}
+              variant="secondary"
+              icon={<ArrowIcon />}
+            >
+              business
+            </Button>
+          </Title>
+        </div>
+      </div>
+    </div>
+  );
+};

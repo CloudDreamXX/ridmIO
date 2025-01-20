@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  width: 100%;
+  height: 102px;
+  padding: 10px;
+  max-width: 1392px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.125rem;
+
+    .button {
+      padding: 0px 10px;
+      font-size: 24px;
+    }
+
+    .bordered {
+      font-size: 24px;
+    }
+  }
+}
