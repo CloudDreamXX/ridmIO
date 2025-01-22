@@ -21,6 +21,20 @@
     .button {
       padding: 0px 10px;
       font-size: 24px;
+
+      svg,
+      path {
+        color: transparent;
+        stroke: white;
+      }
+
+      &:hover {
+        svg,
+        path {
+          color: white;
+          stroke: transparent;
+        }
+      }
     }
 
     .bordered {

@@ -10,6 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "bordered";
   icon?: React.ReactNode;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  horizontal?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -20,11 +21,12 @@ export const Button: React.FC<ButtonProps> = ({
   icon,
   onClick,
   iconClassName,
+  horizontal = false,
   ...props
 }) => {
   return (
     <button
-      className={classNames(styles.button, className, styles[variant])}
+      className={classNames(styles.button, className, styles[variant], { [styles.horizontal]: horizontal })}
       onClick={onClick}
       {...props}
     >

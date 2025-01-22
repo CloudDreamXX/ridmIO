@@ -44,7 +44,7 @@ export const Intro: React.FC = () => {
           })}
         </Title>
 
-        <Button className={styles.button} icon={<ArrowRight />}>
+        <Button className={styles.button} icon={<ArrowRight />} horizontal={true}>
           About Ridm
         </Button>
       </div>

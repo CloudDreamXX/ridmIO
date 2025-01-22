@@ -7,6 +7,9 @@ import { ImageSections } from "widgets/home/image-sections";
 import { Web3 } from "widgets/home/web3";
 import { ImageSectionsWhite } from "widgets/home/image-sections-white";
 import { Plan } from "widgets/home/plan";
+import { Change } from "widgets/home/faq";
+import { Form } from "widgets/home/form";
+import { Footer } from "widgets/footer";
 
 export const Home: React.FC = () => {
   return (
@@ -27,8 +30,10 @@ export const Home: React.FC = () => {
         <Web3 />
         <ImageSectionsWhite />
       </div>
-      {/* <Change /> */}
       <Plan />
+      <Change /> 
+      <Form />
+      <Footer />
     </div>
   );
 };
