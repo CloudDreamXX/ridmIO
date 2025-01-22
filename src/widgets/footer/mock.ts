@@ -1,6 +1,6 @@
-import supp from "../../shared/assets/img/icon-support.svg";
-import visa from "../../shared/assets/img/Visa.svg";
-import master from "../../shared/assets/img/MasterCard.svg";
+import supp from "shared/assets/img/icon-support.svg";
+import visa from "shared/assets/img/Visa.svg";
+import master from "shared/assets/img/MasterCard.svg";
 
 interface NavItem {
   name: string;
