@@ -9,11 +9,11 @@
     align-items: center;
     padding: 14px 1.25rem;
     cursor: pointer;
-    border-bottom: 1px solid #3B3B3B;
+    border-bottom: 1px solid #3b3b3b;
     margin-top: 5px;
     font-size: 3rem;
     line-height: 115%;
-  
+
     &.active {
       border: 0;
     }
@@ -23,13 +23,13 @@
       height: 20px;
     }
   }
-  
+
   .answer {
     overflow: hidden;
 
     .answerContent {
       padding: 14px 1.25rem;
-      border-bottom: 1px solid #3B3B3B;
+      border-bottom: 1px solid #3b3b3b;
       opacity: 0;
       transition: all 0.3s ease;
       font-size: 1.3125rem;

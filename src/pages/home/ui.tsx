@@ -31,7 +31,7 @@ export const Home: React.FC = () => {
         <ImageSectionsWhite />
       </div>
       <Plan />
-      <Change /> 
+      <Change />
       <Form />
       <Footer />
     </div>

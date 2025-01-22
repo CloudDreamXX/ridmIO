@@ -26,7 +26,9 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={classNames(styles.button, className, styles[variant], { [styles.horizontal]: horizontal })}
+      className={classNames(styles.button, className, styles[variant], {
+        [styles.horizontal]: horizontal,
+      })}
       onClick={onClick}
       {...props}
     >

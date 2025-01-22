@@ -11,24 +11,37 @@ export const Footer: React.FC = () => {
           <div key={section} className={styles.section}>
             <h3 className={styles.sectionTitle}>{section}</h3>
             <ul className={styles.sectionList}>
-              {items.map((item, index) => (
+              {items.map((item, index) =>
                 item.name === "Visa" || item.name === "MasterCard" ? null : (
                   <li key={index} className={styles.sectionItem}>
                     {item.icon ? (
                       <>
                         <a href={item.link}>{item.name}</a>
-                        <img src={item.icon} alt={item.name} className={styles.icon} />
+                        <img
+                          src={item.icon}
+                          alt={item.name}
+                          className={styles.icon}
+                        />
                       </>
                     ) : (
                       <a href={item.link}>{item.name}</a>
                     )}
                   </li>
                 )
-              ))}
+              )}
               <li className={styles.cards}>
-                {items.filter(item => item.name === "Visa" || item.name === "MasterCard").map((item, index) => (
-                  <img key={index} src={item.icon} alt={item.name} className={styles.icon} />
-                ))}
+                {items
+                  .filter(
+                    (item) => item.name === "Visa" || item.name === "MasterCard"
+                  )
+                  .map((item, index) => (
+                    <img
+                      key={index}
+                      src={item.icon}
+                      alt={item.name}
+                      className={styles.icon}
+                    />
+                  ))}
               </li>
             </ul>
           </div>
@@ -36,7 +49,9 @@ export const Footer: React.FC = () => {
       </div>
       <img src={footerImg} alt="Ridm" className={styles.company} />
       <div className={styles.additional}>
-        <p><span>©Ridm 2025</span> Part of Climar Ltd.</p>
+        <p>
+          <span>©Ridm 2025</span> Part of Climar Ltd.
+        </p>
       </div>
     </div>
   );

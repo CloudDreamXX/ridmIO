@@ -29,10 +29,7 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
               xmlns="http://www.w3.org/2000/svg"
             >
               {openIndex === index ? (
-                <path
-                  d="M18 12.998H6v-2h12v2z"
-                  fill="currentColor"
-                />
+                <path d="M18 12.998H6v-2h12v2z" fill="currentColor" />
               ) : (
                 <path
                   d="M12 18.998c-.552 0-1-.448-1-1v-5H6c-.552 0-1-.448-1-1s.448-1 1-1h5v-5c0-.552.448-1 1-1s1 .448 1 1v5h5c.552 0 1 .448 1 1s-.448 1-1 1h-5v5c0 .552-.448 1-1 1z"
@@ -50,7 +47,9 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
                 transition={{ duration: 0.3 }}
                 className={styles.answer}
               >
-                <div className={`${styles.answerContent} ${openIndex === index ? styles.active : ""}`}>
+                <div
+                  className={`${styles.answerContent} ${openIndex === index ? styles.active : ""}`}
+                >
                   {item.answer}
                 </div>
               </motion.div>
