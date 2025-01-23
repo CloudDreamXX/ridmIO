@@ -41,5 +41,9 @@
   text-transform: uppercase;
   padding: 60px 109px 94px 20px;
   width: fit-content;
-  left: -40px;
+
+  @media screen and (max-width: 90rem) {
+    padding: 60px 16px 94px 20px;
+    transform: translate(-40px, 80px) rotate(-90deg);
+  }
 }

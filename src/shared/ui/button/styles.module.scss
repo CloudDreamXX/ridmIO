@@ -43,6 +43,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.icon {
+  color: transparent;
+}
+
 .button:hover {
   .buttonText {
     transform: translateY(-100%);

@@ -3,10 +3,22 @@ import styles from "./styles.module.scss";
 import { Button } from "shared/ui";
 import ArrowSmall from "shared/assets/icons/arrow-small";
 import logo from "shared/assets/img/logo.png";
+import { useEffect, useRef, useState } from "react";
+import classNames from "classnames";
+import { useScrollDirection, useSectionTheme } from "shared/lib/hooks";
 
 export const Header: React.FC = () => {
+  const scrollDirection = useScrollDirection();
+  const theme = useSectionTheme();
+
   return (
-    <header className={styles.header}>
+    <header
+      className={classNames(
+        styles.header,
+        styles[scrollDirection],
+        styles[theme]
+      )}
+    >
       <Link to="/">
         <img src={logo} alt="Logo" />
       </Link>

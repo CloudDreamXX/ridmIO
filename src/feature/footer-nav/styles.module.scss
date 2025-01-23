@@ -1,0 +1,46 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.3125rem;
+  line-height: 130%;
+  min-width: 215px;
+
+  &.dark {
+    .sectionTitle {
+      color: white;
+    }
+
+    .sectionList .cards svg {
+      filter: none;
+    }
+  }
+
+  .sectionTitle {
+    color: #1b1b1b;
+  }
+
+  .sectionList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #7a7a7a;
+
+    .sectionItem {
+      max-width: 19rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .cards {
+      display: flex;
+      gap: 1.25rem;
+
+      svg {
+        max-width: 72px;
+        filter: brightness(0) saturate(100%) invert(10%) sepia(9%) saturate(0%)
+          hue-rotate(238deg) brightness(94%) contrast(97%);
+      }
+    }
+  }
+}

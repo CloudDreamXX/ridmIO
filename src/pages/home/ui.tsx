@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { Hero } from "widgets/home/hero/ui";
-import { Intro } from "widgets/home/intro";
-import { Payment } from "widgets/home/payment";
-import { ImageSections } from "widgets/home/image-sections";
-import { Web3 } from "widgets/home/web3";
-import { ImageSectionsWhite } from "widgets/home/image-sections-white";
-import { Plan } from "widgets/home/plan";
-import { Change } from "widgets/home/faq";
-import { Form } from "widgets/home/form";
-import { Footer } from "widgets/footer";
+import {
+  Faq,
+  Form,
+  Hero,
+  ImageSections,
+  ImageSectionsWhite,
+  Intro,
+  Payment,
+  Plan,
+  Web3,
+} from "widgets/home";
 
 export const Home: React.FC = () => {
   return (
@@ -31,9 +32,8 @@ export const Home: React.FC = () => {
         <ImageSectionsWhite />
       </div>
       <Plan />
-      <Change />
+      <Faq />
       <Form />
-      <Footer />
     </div>
   );
 };

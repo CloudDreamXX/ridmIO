@@ -1,8 +1,4 @@
-interface NavItem {
-  name: string;
-  link?: string;
-  icon?: string;
-}
+import { NavItem } from "shared/ui";
 
 interface Nav {
   [key: string]: NavItem[];

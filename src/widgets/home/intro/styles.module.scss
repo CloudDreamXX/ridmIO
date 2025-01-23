@@ -9,6 +9,10 @@
   justify-content: center;
   position: relative;
 
+  @media screen and (max-width: 90rem) {
+    padding: 36px;
+  }
+
   .info {
     max-width: 57.625rem;
     display: flex;
@@ -42,7 +46,11 @@
     text-transform: uppercase;
     padding: 60px 109px 94px 98px;
     width: fit-content;
-    left: -40px;
+
+    @media screen and (max-width: 90rem) {
+      padding: 60px 16px 94px 20px;
+      transform: translate(0px, 80px) rotate(-90deg);
+    }
   }
 
   .title {

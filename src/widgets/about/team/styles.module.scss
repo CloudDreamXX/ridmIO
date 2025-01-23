@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 33.0625rem;
+  max-width: 94.5rem;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5.625rem;
+  padding: 7.5rem 0 7.5rem 3.75rem;
+
+  .title {
+    font-size: 70px;
+    color: #0d0d0d;
+    max-width: 16.375rem;
+    width: 100%;
+  }
+
+  .teamSwiper {
+    width: fit-content;
+
+    .wrapper {
+      padding-bottom: 5rem;
+      height: fit-content;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .slide {
+    max-width: 28.875rem;
+    height: fit-content;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .name {
+    color: #0d0d0d;
+    font-size: 28px;
+    letter-spacing: -0.336px;
+    margin-bottom: 2.5rem;
+  }
+
+  .description {
+    color: #0d0d0d;
+    font-size: 21px;
+    letter-spacing: -0.084px;
+    max-width: 25.375rem;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 3.75rem;
+    gap: 0.875rem;
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      padding: 0.875rem;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f5f5f5;
+      }
+
+      &.prev {
+        transform: rotate(180deg);
+      }
+
+      &:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      svg,
+      path {
+        color: transparent;
+        stroke: #1b1b1b;
+      }
+    }
+  }
+}

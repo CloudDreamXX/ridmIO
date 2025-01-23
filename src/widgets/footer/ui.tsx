@@ -1,125 +1,28 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import footerImg from "shared/assets/img/Ridm.png";
-import supp from "shared/assets/img/icon-support.svg";
-import { nav } from "./mock";
+import { nav } from "./utils";
+import { FooterNav } from "feature/footer-nav";
+import { useLocation } from "react-router";
+import classNames from "classnames";
+import { useDarkBg } from "shared/lib/hooks";
 
 export const Footer: React.FC = () => {
+  const isDarkBg = useDarkBg();
+
   return (
-    <div className={styles.container}>
+    <div
+      data-section={isDarkBg ? "dark" : "light"}
+      className={classNames(styles.container, isDarkBg && styles["dark"])}
+    >
       <div className={styles.footer__nav}>
         {Object.entries(nav).map(([section, items]) => (
-          <div key={section} className={styles.section}>
-            <h3 className={styles.sectionTitle}>{section}</h3>
-            <ul className={styles.sectionList}>
-              {items.map((item, index) =>
-                item.name === "Visa" || item.name === "MasterCard" ? null : (
-                  <li key={index} className={styles.sectionItem}>
-                    {item.name === "Support" ? (
-                      <>
-                        <a href={item.link}>{item.name}</a>
-                        <img src={supp} alt="Support" className={styles.icon} />
-                      </>
-                    ) : item.icon ? (
-                      <>
-                        <a href={item.link}>{item.name}</a>
-                        <img
-                          src={item.icon}
-                          alt={item.name}
-                          className={styles.icon}
-                        />
-                      </>
-                    ) : (
-                      <a href={item.link}>{item.name}</a>
-                    )}
-                  </li>
-                )
-              )}
-              <li className={styles.cards}>
-                {items
-                  .filter(({ name }) => ["Visa", "MasterCard"].includes(name))
-                  .map((item, index) =>
-                    item.name === "Visa" ? (
-                      <svg
-                        key={index}
-                        width="73"
-                        height="58"
-                        viewBox="0 0 73 58"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clipPath="url(#clip0_434_690)">
-                          <path
-                            d="M31.7705 40.0447H25.9922L29.6064 17.6973H35.3844L31.7705 40.0447Z"
-                            fill="#EFEFEF"
-                          />
-                          <path
-                            d="M52.7175 18.2434C51.5777 17.7912 49.77 17.292 47.5348 17.292C41.8285 17.292 37.8101 20.3349 37.7855 24.6853C37.7381 27.895 40.6625 29.6778 42.8497 30.748C45.0853 31.8416 45.8452 32.5554 45.8452 33.5302C45.8225 35.0274 44.0387 35.7175 42.3751 35.7175C40.0681 35.7175 38.832 35.3617 36.9535 34.5287L36.1926 34.1717L35.384 39.1882C36.7393 39.8056 39.2362 40.3535 41.8285 40.3775C47.8915 40.3775 51.8387 37.3817 51.8855 32.7457C51.9086 30.2017 50.3644 28.2524 47.0352 26.6596C45.0142 25.637 43.7765 24.9476 43.7765 23.9014C43.8002 22.9503 44.8233 21.9761 47.1047 21.9761C48.9832 21.9284 50.3634 22.3799 51.409 22.8318L51.9316 23.0691L52.7175 18.2434Z"
-                            fill="#EFEFEF"
-                          />
-                          <path
-                            d="M60.3973 32.1278C60.8732 30.844 62.7043 25.8752 62.7043 25.8752C62.6803 25.9229 63.1792 24.5676 63.4645 23.7357L63.8684 25.6612C63.8684 25.6612 64.9626 31.0105 65.2002 32.1278C64.2971 32.1278 61.5386 32.1278 60.3973 32.1278ZM67.5299 17.6973H63.0604C61.6821 17.6973 60.6349 18.1011 60.0403 19.5514L51.4573 40.0444H57.5203C57.5203 40.0444 58.5185 37.2862 58.733 36.6921C59.3982 36.6921 65.2963 36.6921 66.1519 36.6921C66.3178 37.4767 66.8414 40.0444 66.8414 40.0444H72.1916L67.5299 17.6973Z"
-                            fill="#EFEFEF"
-                          />
-                          <path
-                            d="M21.1659 17.6973L15.507 32.9361L14.8886 29.8455C13.8424 26.2793 10.5612 22.4047 6.89966 20.4782L12.083 40.021H18.1934L27.276 17.6973H21.1659Z"
-                            fill="#EFEFEF"
-                          />
-                          <path
-                            d="M10.2521 17.6973H0.955339L0.860229 18.1488C8.1123 20.0033 12.9152 24.4735 14.8885 29.8464L12.8675 19.5758C12.5348 18.1485 11.5122 17.7443 10.2521 17.6973Z"
-                            fill="#EFEFEF"
-                            fillOpacity="0.5"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_434_690">
-                            <rect
-                              width="72.0518"
-                              height="57.6415"
-                              fill="white"
-                              transform="translate(0.5)"
-                            />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    ) : (
-                      <svg
-                        key={index}
-                        width="73"
-                        height="58"
-                        viewBox="0 0 73 58"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M36.3525 15.2256H36.3524C34.2924 16.8423 32.6273 18.9065 31.4831 21.2618C30.3388 23.6172 29.7454 26.2021 29.7478 28.8208C29.7454 31.4394 30.3388 34.0243 31.4831 36.3797C32.6274 38.7351 34.2925 40.7993 36.3524 42.416C38.4105 40.7976 40.0744 38.7331 41.2185 36.3781C42.3625 34.0231 42.957 31.439 42.957 28.8208C42.957 26.2025 42.3625 23.6185 41.2185 21.2634C40.0744 18.9084 38.4106 16.8439 36.3525 15.2256Z"
-                          fill="#EFEFEF"
-                        />
-                        <path
-                          d="M29.7474 28.8207C29.745 26.2021 30.3384 23.6172 31.4826 21.2618C32.6269 18.9064 34.2921 16.8422 36.352 15.2254C33.8011 13.2203 30.7374 11.9733 27.5112 11.6271C24.2851 11.2808 21.0266 11.8492 18.1081 13.2673C15.1897 14.6854 12.7292 16.896 11.0077 19.6464C9.2863 22.3968 8.37341 25.576 8.37341 28.8207C8.37341 32.0654 9.2863 35.2447 11.0077 37.9951C12.7292 40.7455 15.1897 42.9561 18.1081 44.3742C21.0266 45.7923 24.2851 46.3607 27.5112 46.0144C30.7374 45.6681 33.8011 44.4212 36.352 42.416C34.2921 40.7993 32.6269 38.7351 31.4827 36.3797C30.3384 34.0242 29.745 31.4394 29.7474 28.8207Z"
-                          fill="#EFEFEF"
-                          fillOpacity="0.7"
-                        />
-                        <path
-                          d="M64.3298 28.8207C64.3299 32.0654 63.4172 35.2446 61.6958 37.995C59.9744 40.7454 57.514 42.956 54.5956 44.3741C51.6773 45.7922 48.4188 46.3606 45.1927 46.0144C41.9666 45.6681 38.903 44.4212 36.3521 42.416C38.4102 40.7976 40.0741 38.7331 41.2182 36.3781C42.3622 34.023 42.9567 31.439 42.9567 28.8207C42.9567 26.2025 42.3622 23.6184 41.2182 21.2634C40.0741 18.9084 38.4102 16.8438 36.3521 15.2254C38.903 13.2203 41.9666 11.9733 45.1927 11.6271C48.4188 11.2808 51.6773 11.8492 54.5956 13.2673C57.514 14.6855 59.9744 16.896 61.6958 19.6465C63.4172 22.3969 64.3299 25.5761 64.3298 28.8207Z"
-                          fill="#EFEFEF"
-                          fillOpacity="0.6"
-                        />
-                        <path
-                          d="M62.6802 39.5364V38.9798H62.9047V38.8663H62.333V38.9798H62.5576V39.5364H62.6802ZM63.79 39.5364V38.8652H63.6148L63.4133 39.3269L63.2117 38.8652H63.0363V39.5364H63.1601V39.0301L63.3491 39.4666H63.4774L63.6664 39.029V39.5364H63.79Z"
-                          fill="#EFEFEF"
-                        />
-                      </svg>
-                    )
-                  )}
-              </li>
-            </ul>
-          </div>
+          <FooterNav key={section} section={section} items={items} />
         ))}
       </div>
+
       <img src={footerImg} alt="Ridm" className={styles.company} />
+
       <div className={styles.additional}>
         <p>
           <span>©Ridm 2025</span> Part of Climar Ltd.

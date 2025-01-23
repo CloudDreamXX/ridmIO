@@ -14,44 +14,27 @@
   gap: 6.25rem;
   position: relative;
 
-  .footer__nav {
-    display: flex;
-    gap: 65px;
-
-    .section {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      font-size: 1.3125rem;
-      line-height: 130%;
-      min-width: 215px;
-
-      .sectionTitle {
-        color: white;
-      }
-
-      .sectionList {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+  &.dark {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      #1b1b1b;
+    .additional {
+      p {
         color: #7a7a7a;
 
-        .sectionItem {
-          max-width: 19rem;
-          display: flex;
-          align-items: center;
-        }
-
-        .cards {
-          display: flex;
-          gap: 1.25rem;
-
-          svg {
-            max-width: 72px;
-          }
+        span {
+          color: white;
         }
       }
     }
+  }
+
+  .footer__nav {
+    display: flex;
+    gap: 65px;
   }
 
   .company {
@@ -70,7 +53,7 @@
       line-height: 130%;
 
       span {
-        color: white;
+        color: #1b1b1b;
       }
     }
   }

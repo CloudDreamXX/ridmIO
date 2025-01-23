@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 33.0625rem;
+  flex-direction: row;
+  padding: 5.1875rem 3.75rem;
+  justify-content: space-between;
+
+  .title {
+    font-size: 70px;
+    color: #0d0d0d;
+  }
+
+  .text {
+    color: #0d0d0d;
+    max-width: 50rem;
+    font-size: 28px;
+  }
+}

@@ -3,15 +3,18 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "./styles.module.scss";
 import { Title } from "shared/ui";
 import paymentsVideo from "shared/assets/video/payments.mp4";
+import { usePageWidth } from "shared/lib/hooks";
 
 export const Payment: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const width = usePageWidth();
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start center", "end end"],
   });
 
-  const scaleVideo = useTransform(scrollYProgress, [0, 1], [0.8, 1.18]);
+  const responsiveScale = width <= 1600 ? [1, 2] : [0.8, 1.18];
+  const scaleVideo = useTransform(scrollYProgress, [0, 1], responsiveScale);
 
   return (
     <div ref={containerRef} className={styles.container}>

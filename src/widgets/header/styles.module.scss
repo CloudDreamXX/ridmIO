@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 102px;
   padding: 10px;
@@ -10,7 +10,46 @@
   justify-content: space-between;
   z-index: 100;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0);
+  transition: transform 0.3s ease;
+
+  &.down {
+    transform: translateX(-50%) translateY(-100%);
+  }
+
+  &.up {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  &.light {
+    color: #fff;
+    .button {
+      color: #fff;
+    }
+  }
+
+  &.dark {
+    color: #000;
+    .button {
+      color: #000;
+
+      svg,
+      path {
+        stroke: #1b1b1b;
+      }
+
+      &:hover {
+        svg,
+        path {
+          stroke: #1b1b1b;
+        }
+      }
+
+      span {
+        color: #1b1b1b;
+      }
+    }
+  }
 
   nav {
     display: flex;
@@ -31,8 +70,7 @@
       &:hover {
         svg,
         path {
-          color: white;
-          stroke: transparent;
+          stroke: white;
         }
       }
     }

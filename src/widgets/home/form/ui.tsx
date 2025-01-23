@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Title } from "shared/ui";
 import styles from "./styles.module.scss";
 import classNames from "classnames";
-import formImg from "shared/assets/img/form.png";
 import Arrow from "shared/assets/icons/arrow-right";
 
 export const Form: React.FC = () => {

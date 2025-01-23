@@ -4,7 +4,7 @@ import { faqData } from "./mock";
 import { Accordion } from "shared/ui/accordion/ui";
 import styles from "./styles.module.scss";
 
-export const Change: React.FC = () => {
+export const Faq: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.faqContent}>
