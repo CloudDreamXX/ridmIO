@@ -1,7 +1,3 @@
-import supp from "shared/assets/img/icon-support.svg";
-import visa from "shared/assets/img/Visa.svg";
-import master from "shared/assets/img/MasterCard.svg";
-
 interface NavItem {
   name: string;
   link?: string;
@@ -25,7 +21,6 @@ export const nav: Nav = {
     {
       name: "Support",
       link: "/",
-      icon: supp,
     },
   ],
   About: [
@@ -63,11 +58,9 @@ export const nav: Nav = {
     },
     {
       name: "Visa",
-      icon: visa,
     },
     {
       name: "MasterCard",
-      icon: master,
     },
   ],
 };
