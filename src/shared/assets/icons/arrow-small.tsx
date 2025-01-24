@@ -11,7 +11,7 @@ export default () => (
         id="Vector 2"
         d="M18.5001 6.50005L10.5001 14.5L2.50012 6.50005"
         stroke="#EFEFEF"
-        stroke-width="2.3"
+        strokeWidth="2.3"
       />
     </g>
   </svg>
