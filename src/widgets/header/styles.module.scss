@@ -13,6 +13,11 @@
   transform: translateX(-50%) translateY(0);
   transition: transform 0.3s ease;
 
+  a {
+    position: relative;
+    z-index: 5;
+  }
+
   &.down {
     transform: translateX(-50%) translateY(-100%);
   }
@@ -26,6 +31,10 @@
     .button {
       color: #fff;
     }
+  }
+
+  @media (max-width: 768px) {
+    align-items: center;
   }
 
   &.dark {
@@ -51,32 +60,11 @@
     }
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.125rem;
+  .bordered {
+    font-size: 24px;
 
-    .button {
-      padding: 0px 10px;
-      font-size: 24px;
-
-      svg,
-      path {
-        color: transparent;
-        stroke: white;
-      }
-
-      &:hover {
-        svg,
-        path {
-          stroke: white;
-        }
-      }
-    }
-
-    .bordered {
-      font-size: 24px;
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 }

@@ -11,6 +11,11 @@
   gap: 5rem;
   font-family: "ALT Riviera";
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 0;
+  }
+
   .left__container {
     background: url("../../../shared/assets/img/form.png") center center
       no-repeat;
@@ -18,16 +23,42 @@
     width: 50%;
     padding: 61px 58px;
     color: white;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      min-height: 330px;
+      padding: 25px 1.5rem;
+    }
 
     .content {
-      max-width: 27rem;
+      max-width: 56.875rem;
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
       font-size: 1.3125rem;
 
+      @media (max-width: 1024px) {
+        gap: 1.25rem;
+      }
+
       h2 {
         font-size: 4.375rem;
+
+        @media (max-width: 1024px) {
+          font-size: 2.25rem;
+        }
+      }
+
+      p {
+        max-width: 27rem;
+        line-height: 130%;
+
+        @media (max-width: 1024px) {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -38,6 +69,12 @@
     justify-content: space-between;
     width: 50%;
     padding: 6.25rem 58px 2.625rem;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      padding: 27px 30px 46px;
+      gap: 5rem;
+    }
 
     form {
       display: flex;
@@ -60,6 +97,10 @@
         &:focus::placeholder {
           color: white;
         }
+
+        @media (max-width: 1024px) {
+          font-size: 2.5rem;
+        }
       }
     }
 
@@ -68,6 +109,10 @@
       color: #fea372;
       text-align: left;
       width: fit-content;
+
+      @media (max-width: 1024px) {
+        font-size: 1.125rem;
+      }
 
       svg,
       path {

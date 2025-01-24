@@ -1,13 +1,19 @@
 import { Link } from "react-router";
 import styles from "./styles.module.scss";
 import { Button } from "shared/ui";
-import ArrowSmall from "shared/assets/icons/arrow-small";
 import logo from "shared/assets/img/logo.png";
+import logoWhite from "shared/assets/img/logo-white.png";
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
 import { useScrollDirection, useSectionTheme } from "shared/lib/hooks";
+import { Menu } from "./menu";
+import { NavigationLinks } from "./nav";
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  maintenanceMode: boolean;
+}
+
+export const Header: React.FC<HeaderProps> = ({ maintenanceMode }) => {
   const scrollDirection = useScrollDirection();
   const theme = useSectionTheme();
 
@@ -20,30 +26,18 @@ export const Header: React.FC = () => {
       )}
     >
       <Link to="/">
-        <img src={logo} alt="Logo" />
+        <img src={maintenanceMode ? logoWhite : logo} alt="Logo" />
       </Link>
-      <nav>
-        <Link to="/onramp">
-          <Button className={styles.button}>Onramp</Button>
-        </Link>
-        <Link to="/checkout">
-          <Button className={styles.button}>Checkout</Button>
-        </Link>
-        <Link to="/about">
-          <Button className={styles.button}>About</Button>
-        </Link>
-      </nav>
-      <nav>
-        <div className={styles.lang}>
-          <Button className={styles.button} icon={<ArrowSmall />}>
-            En
+      {maintenanceMode ? (
+        <a href="#form">
+          <Button variant="bordered" className={styles.bordered}>
+            Contact us
           </Button>
-        </div>
-        <Button className={styles.button}>Log in</Button>
-        <Button variant="bordered" className={styles.bordered}>
-          Sign up
-        </Button>
-      </nav>
+        </a>
+      ) : (
+        <NavigationLinks />
+      )}
+      {!maintenanceMode && <Menu />}
     </header>
   );
 };
