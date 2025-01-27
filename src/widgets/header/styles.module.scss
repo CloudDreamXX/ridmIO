@@ -118,6 +118,12 @@
     padding: 10px 20px;
   }
 
+  .nav {
+    & > nav {
+      display: none;
+    }
+  }
+
   .mobile {
     display: flex;
     flex-direction: column;
