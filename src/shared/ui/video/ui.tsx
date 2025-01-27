@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 interface VideoProps {
   src: string;
@@ -19,6 +19,16 @@ export const Video: React.FC<VideoProps> = ({
   playsinline,
   muted,
 }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current && autoPlay) {
+      videoRef.current
+        .play()
+        .catch((e) => console.error("Error playing video:", e));
+    }
+  }, [src]);
+
   return (
     <video
       src={src}
