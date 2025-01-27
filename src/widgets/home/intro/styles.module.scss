@@ -11,6 +11,9 @@
 
   @media screen and (max-width: 90rem) {
     padding: 36px;
+    min-height: 32.625rem;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .info {
@@ -51,15 +54,27 @@
       padding: 60px 16px 94px 20px;
       transform: translate(0px, 80px) rotate(-90deg);
     }
+
+    @media screen and (max-width: 48rem) {
+      display: none;
+    }
   }
 
   .title {
     font-size: 3rem;
     color: #fea372;
+
+    @media screen and (max-width: 48rem) {
+      font-size: 1.75rem;
+    }
   }
 
   .button {
     font-size: 1.875rem;
+
+    @media screen and (max-width: 48rem) {
+      font-size: 1.0625rem;
+    }
 
     svg,
     path {

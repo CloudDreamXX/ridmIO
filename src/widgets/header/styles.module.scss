@@ -13,6 +13,32 @@
   transform: translateX(-50%) translateY(0);
   transition: transform 0.3s ease;
 
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.125rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logoContainer {
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+
+    .logo {
+      position: relative;
+      height: 4rem;
+      top: -12px;
+    }
+
+    .ridm {
+      position: relative;
+      left: -8px;
+    }
+  }
+
   &.down {
     transform: translateX(-50%) translateY(-100%);
   }
@@ -78,5 +104,120 @@
     .bordered {
       font-size: 24px;
     }
+  }
+}
+
+.mobile,
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 796px) {
+  .header {
+    height: 80px;
+    padding: 10px 20px;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.125rem;
+    position: absolute;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 100;
+    top: 0;
+    left: 100%;
+    background: #1b1b1b;
+    transition: 0.3s;
+    gap: 2.6875rem;
+    padding: 51px 30px;
+
+    &.open {
+      left: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .button {
+        font-size: 44px;
+      }
+
+      a {
+        text-align: left;
+      }
+
+      &:first-child {
+        margin-bottom: 43px;
+        gap: 20px;
+      }
+
+      .auth {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 32px;
+
+        .button {
+          font-size: 24px;
+        }
+      }
+
+      .lang .button {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .burger {
+    cursor: pointer;
+    display: block;
+    background: none;
+    outline: none;
+    border: none;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    z-index: 101;
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      background-color: #fff;
+      transition: 0.3s;
+      position: absolute;
+      right: 18px;
+    }
+
+    &::before {
+      width: 28px;
+      height: 3px;
+      top: 24px;
+    }
+
+    &::after {
+      width: 22px;
+      height: 3px;
+      top: 35px;
+    }
+
+    &.open::before {
+      transform: rotate(45deg);
+      top: 30px;
+    }
+
+    &.open::after {
+      transform: rotate(-45deg);
+      top: 30px;
+      width: 28px;
+    }
+  }
+
+  .header > nav {
+    display: none;
   }
 }

@@ -5,10 +5,11 @@ import { nav } from "./utils";
 import { FooterNav } from "feature/footer-nav";
 import { useLocation } from "react-router";
 import classNames from "classnames";
-import { useDarkBg } from "shared/lib/hooks";
+import { useDarkBg, usePageWidth } from "shared/lib/hooks";
 
 export const Footer: React.FC = () => {
   const isDarkBg = useDarkBg();
+  const width = usePageWidth();
 
   return (
     <div
@@ -25,7 +26,10 @@ export const Footer: React.FC = () => {
 
       <div className={styles.additional}>
         <p>
-          <span>©Ridm 2025</span> Part of Climar Ltd.
+          <span>©Ridm 2025</span>{" "}
+          {width > 768
+            ? "a trademark of Climar Limited"
+            : "Part of Climar Ltd."}
         </p>
       </div>
     </div>

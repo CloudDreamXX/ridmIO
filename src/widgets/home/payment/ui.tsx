@@ -5,6 +5,16 @@ import { Title } from "shared/ui";
 import paymentsVideo from "shared/assets/video/payments.mp4";
 import { usePageWidth } from "shared/lib/hooks";
 
+const getScale = (width: number) => {
+  if (width <= 768) {
+    return [1, 8];
+  }
+  if (width <= 1600) {
+    return [1, 2];
+  }
+  return [0.8, 1.18];
+};
+
 export const Payment: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const width = usePageWidth();
@@ -13,7 +23,7 @@ export const Payment: React.FC = () => {
     offset: ["start center", "end end"],
   });
 
-  const responsiveScale = width <= 1600 ? [1, 2] : [0.8, 1.18];
+  const responsiveScale = getScale(width);
   const scaleVideo = useTransform(scrollYProgress, [0, 1], responsiveScale);
 
   return (
@@ -29,8 +39,8 @@ export const Payment: React.FC = () => {
       <div className={styles.text}>
         <Title className={styles.title}>Payments at your pace</Title>
         <p>
-          Purchase and sell a variety of crypto currencies using card or open
-          banking. Safely send currency to other verified users.
+          Purchase and sell crypto and safely interact with other verified users
+          on our platform.
         </p>
       </div>
     </div>

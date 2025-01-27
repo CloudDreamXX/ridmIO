@@ -27,6 +27,11 @@
 
     .title {
       font-size: 4.375rem;
+
+      @media screen and (max-width: 48rem) {
+        color: #fea372;
+        font-size: 36px;
+      }
     }
 
     p {

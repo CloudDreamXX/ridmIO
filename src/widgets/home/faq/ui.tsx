@@ -8,12 +8,12 @@ export const Faq: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.faqContent}>
-        <Title variant="h2" style={{ fontSize: "70px" }}>
-          Plan the present. Build the future.
+        <Title variant="h2" className={styles.title}>
+          FAQ
         </Title>
         <p>
           Frequently asked questions, can’t find your answer here?{" "}
-          <a href="#">Get in touch</a>
+          <a href="#">See all</a>
         </p>
       </div>
       <Accordion items={faqData} />

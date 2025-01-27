@@ -9,9 +9,7 @@ export const Form: React.FC = () => {
     <div className={classNames(styles.container)}>
       <div className={styles.left__container}>
         <div className={styles.content}>
-          <Title variant="h2" style={{ fontSize: "70px" }}>
-            Get in touch!
-          </Title>
+          <Title variant="h2">Get in touch!</Title>
           <p>
             Reach out to our team and subscribe to our email list to gain access
             to the lastest updates about our work.

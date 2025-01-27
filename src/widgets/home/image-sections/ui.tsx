@@ -16,17 +16,15 @@ export const ImageSections: React.FC = () => {
         </div>
         <div className={styles.text__container}>
           <div className={styles.text}>
-            <Title className={styles.title}>
-              Onramp & <br /> Personal Finance
-            </Title>
+            <Title className={styles.title}>Onramp & personal finance</Title>
             <div className={styles.info}>
               <Title variant="h2" className={styles.subtitle}>
                 Digital assets, the convenient way
               </Title>
               <p>
-                Ridm's onramp joins intuitive tools and an elegant interface,
-                allowing a variety of usage and crontrol over your assets. Free
-                from clutter and focused on the users needs.
+                Ridm's onramp delivers a set of intuitive tools through a
+                refined interface, offering versatility and control over your
+                assets. Free from clutter and focused on your needs.
               </p>
             </div>
             <Button
@@ -46,14 +44,14 @@ export const ImageSections: React.FC = () => {
         </div>
         <div className={styles.text__container}>
           <div className={styles.text}>
-            <Title className={styles.title}>Control</Title>
+            <Title className={styles.title}>More than investments</Title>
             <div className={styles.info}>
               <Title variant="h2" className={styles.subtitle}>
-                Payments
+                Goods and services through verfied merchants
               </Title>
               <p>
-                With full control over your assets, you can choose how you use
-                your crypto, wether it is investments, or paying for goods and
+                With full control over your assets, you can decide how to use
+                your crypto. Whether for investments or paying for goods and
                 services to merchants within the platform.
               </p>
             </div>
@@ -80,8 +78,8 @@ export const ImageSections: React.FC = () => {
                 Verification and onboarding
               </Title>
               <p>
-                A thorough onboarding process and due diligence with
-                verification through electronic ID or document.
+                A swift and secure onboarding flow and due diligence including
+                verification through electronic ID, national ID or passport.
               </p>
             </div>
             <Button

@@ -22,10 +22,10 @@ export const ImageSectionsWhite: React.FC = () => {
                 User-centric
               </Title>
               <p>
-                Our onramp widget is designed with the end-user in might,
-                putting simplicity and security at the center. fully customize
-                and brand our onramp widget, integrating it directly into your
-                website for a tailored and user-friendly experience.
+                Our onramp widget is designed with the individual in mind,
+                putting simplicity and security at the center. Customize and
+                brand it to your liking, integrating directly into your website
+                for a tailor-made and user-friendly experience.
               </p>
             </div>
             <Button
@@ -47,13 +47,13 @@ export const ImageSectionsWhite: React.FC = () => {
             <Title className={styles.title}>Checkout widget</Title>
             <div className={styles.info}>
               <Title variant="h2" className={styles.subtitle}>
-                At Your Pace
+                At your pace
               </Title>
               <p>
-                Ridm’s Checkout widget is a swift plug-and-play solution for
+                Ridm’s checkout widget is a swift plug-and-play solution for
                 merchants. With the option to either customize the widget to
                 your brand, or utilize Ridm’s checkout as a payment solution.
-                With our merchant back-office, business’ can monitor user
+                With our merchant back-office, businesses can monitor user
                 activity and transactions and easily generate transaction
                 reports.
               </p>

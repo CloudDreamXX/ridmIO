@@ -16,8 +16,8 @@ import ArrowRight from "shared/assets/icons/arrow-right";
 type TeamMember = {
   id: number;
   name: string;
-  role: string;
-  description: string;
+  role?: string;
+  description?: string;
   photo: string;
 };
 
@@ -25,26 +25,22 @@ const teamData: TeamMember[] = [
   {
     id: 1,
     name: "Jeremy Viala",
-    role: "Compliance Officer",
-    description:
-      "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
+    description: "Legal",
     photo: slide1,
   },
   {
     id: 2,
     name: "Connor G",
-    role: "Product Manager",
-    description:
-      "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
+    description: "Legal",
     photo: slide2,
   },
   {
     id: 1,
-    name: "Jeremy Viala",
-    role: "Compliance Officer",
+    name: "Connor Clark",
+    role: "Sales Director",
     description:
       "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
-    photo: slide1,
+    photo: slide3,
   },
   {
     id: 2,
@@ -128,7 +124,7 @@ export const Team: React.FC = () => {
                 className={styles.photo}
               />
               <Title variant="h3" className={styles.name}>
-                {member.name} / {member.role}
+                {member.name} {member.role && "/"} {member.role}
               </Title>
               <p className={styles.description}>{member.description}</p>
             </div>

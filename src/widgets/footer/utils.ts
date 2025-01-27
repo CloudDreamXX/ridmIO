@@ -47,9 +47,9 @@ export const nav: Nav = {
       link: "/",
     },
   ],
-  Company: [
+  "Company info": [
     {
-      name: "Ridm is Part of Climar Ltd. Company number: 1234567890 Streetname 123 Ireland",
+      name: "Ridm is a trademark of Climar Limited Company No. 758159 Ireland",
       link: "/",
     },
     {

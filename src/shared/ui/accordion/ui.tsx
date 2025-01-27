@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./styles.module.scss";
+import classNames from "classnames";
 
 interface AccordionProps {
   items: { question: string; answer: string }[];
@@ -19,7 +20,10 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
         <div key={index}>
           <div
             onClick={() => toggleAccordion(index)}
-            className={`${styles.question} ${openIndex === index ? styles.active : ""}`}
+            className={classNames(
+              styles.question,
+              openIndex === index ? styles.active : ""
+            )}
           >
             {item.question}
             <svg

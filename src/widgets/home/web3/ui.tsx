@@ -5,6 +5,16 @@ import { Title } from "shared/ui";
 import web3Video from "shared/assets/video/web3.mp4";
 import { usePageWidth } from "shared/lib/hooks";
 
+const getScale = (width: number) => {
+  if (width <= 768) {
+    return [1, 8];
+  }
+  if (width <= 1600) {
+    return [1, 1.6];
+  }
+  return [0.8, 1.2];
+};
+
 export const Web3: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -13,7 +23,7 @@ export const Web3: React.FC = () => {
   });
   const width = usePageWidth();
 
-  const responsiveScale = width <= 1600 ? [1, 1.6] : [0.8, 1.2];
+  const responsiveScale = getScale(width);
   const scaleVideo = useTransform(scrollYProgress, [0, 1], responsiveScale);
 
   return (

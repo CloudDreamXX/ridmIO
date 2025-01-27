@@ -17,14 +17,14 @@ export const Home: React.FC = () => {
     <div className={styles.container}>
       <Hero />
       <Intro />
-      <div className={styles.individuals}>
+      <div id="individuals" className={styles.individuals}>
         <div className={styles.label__container}>
           <div className={styles.label}>for Individuals</div>
         </div>
         <Payment />
         <ImageSections />
       </div>
-      <div className={styles.individuals}>
+      <div id="business" className={styles.individuals}>
         <div className={styles.label__container}>
           <div className={styles.label}>For Businesses</div>
         </div>

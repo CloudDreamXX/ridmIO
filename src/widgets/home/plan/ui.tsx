@@ -13,9 +13,9 @@ export const Plan: React.FC = () => {
       <div className={styles.text}>
         <Title>Plan the present. Build the future.</Title>
         <p>
-          Ridm is a Stockholm-based fintech, focusing on web3 finance for
-          businesses and individuals. With a host of products and solutions we
-          aim to make the finances of future available for all.
+          Ridm is an innovative fintech, focusing on web3 finance for businesses
+          and individuals. With a host of products and solutions, we aim to make
+          the finances of the future available for all.
         </p>
         <Button variant="secondary" className={styles.button} icon={<Arrow />}>
           About us

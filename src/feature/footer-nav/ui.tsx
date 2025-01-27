@@ -22,8 +22,16 @@ export const FooterNav: React.FC<FooterNavProps> = ({ section, items }) => {
     (item) => item.name === "Visa" || item.name === "MasterCard"
   );
 
+  console.log("normalItems", section);
+
   return (
-    <div className={classNames(styles.section, isDarkBg && styles.dark)}>
+    <div
+      className={classNames(
+        styles.section,
+        isDarkBg && styles.dark,
+        section === "Company info" && styles.companySection
+      )}
+    >
       <h3 className={styles.sectionTitle}>{section}</h3>
       <ul className={styles.sectionList}>
         {normalItems.map((item, idx) => (

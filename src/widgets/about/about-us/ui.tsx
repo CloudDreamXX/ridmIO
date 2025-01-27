@@ -10,12 +10,14 @@ export const AboutUs: React.FC = () => {
         About Us
       </Title>
       <p className={styles.text}>
-        Ridm is a cutting-edge crypto platform that combines over 30 years of
-        expertise in payments, web3, and financial strategy. Our mission is to
-        empower businesses with distinctive and impactful design solutions,
-        tailored to stand out in competitive markets. From strategic brand
-        development to precision in visual execution, Ridm delivers clarity,
-        creativity, and differentiation.
+        With a combined expertise in payments, web3, and design, our mission is
+        to empower businesses with distinctive and impactful solutions, tailored
+        to stand out in competitive markets.
+        <br />
+        <br />
+        We are user-centric and believe in addressing human needs through our
+        products. In a rapidly evolving financial environment, we want to help
+        shape the economy of the future.
       </p>
     </div>
   );

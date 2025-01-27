@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
       <div className={styles.hero}>
         <Lottie animationData={heroLottie} className={styles.lottie} />
         <div className={styles.info}>
-          <Title>The highway road to web3 finance</Title>
+          <Title>The pulse of web3 payments</Title>
           <Title variant="h2" className={styles.subtitle}>
             <span>Ridm for </span>
             <Button
@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
               variant="secondary"
               icon={<ArrowIcon />}
             >
-              individuals
+              <a href="#individuals">individuals</a>
             </Button>
             <span>and</span>
             <Button
@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
               variant="secondary"
               icon={<ArrowIcon />}
             >
-              business
+              <a href="#business">business</a>
             </Button>
           </Title>
         </div>
