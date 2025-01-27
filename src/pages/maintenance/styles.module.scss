@@ -77,6 +77,11 @@
 
     @media screen and (max-width: 768px) {
       display: block;
+      color: #000;
+
+      span {
+        color: #000;
+      }
     }
   }
 }

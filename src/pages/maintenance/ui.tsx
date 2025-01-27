@@ -10,7 +10,14 @@ export const Maintenance: React.FC = () => {
   return (
     <>
       <div className={styles.container}>
-        <Video src={video} className={styles.bg} autoPlay muted loop />
+        <Video
+          src={video}
+          className={styles.bg}
+          autoPlay
+          playsinline
+          muted
+          loop
+        />
         <div className={styles.hero}>
           <Lottie animationData={heroLottie} className={styles.lottie} />
           <div className={styles.info}>
