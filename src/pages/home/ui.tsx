@@ -17,7 +17,11 @@ export const Home: React.FC = () => {
     <div className={styles.container}>
       <Hero />
       <Intro />
-      <div id="individuals" className={styles.individuals}>
+      <div
+        id="individuals"
+        data-section={"light"}
+        className={styles.individuals}
+      >
         <div className={styles.label__container}>
           <div className={styles.label}>for Individuals</div>
         </div>

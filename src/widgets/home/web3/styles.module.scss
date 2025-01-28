@@ -38,6 +38,7 @@
 
     .title {
       font-size: 4.375rem;
+      max-width: 50rem;
 
       @media screen and (max-width: 48rem) {
         font-size: 2.25rem;
@@ -50,7 +51,7 @@
       font-family: "ALT Riviera";
       font-size: 21px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 130%;
       letter-spacing: -0.084px;
       max-width: 600px;

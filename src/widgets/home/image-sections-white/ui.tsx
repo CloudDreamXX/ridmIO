@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import phone from "shared/assets/img/phone.png";
-import payWith from "shared/assets/img/pay-with.png";
-import lock from "shared/assets/img/lock.png";
+import checkout from "shared/assets/img/checkout.png";
+import widget from "shared/assets/img/widget.png";
 import { Button, Title } from "shared/ui";
 import Arrow from "shared/assets/icons/arrow-right";
 import classNames from "classnames";
@@ -10,9 +9,9 @@ import classNames from "classnames";
 export const ImageSectionsWhite: React.FC = () => {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} data-section={"dark"}>
         <div className={styles.image}>
-          <img src={phone} alt="phone" />
+          <img src={widget} alt="widget" />
         </div>
         <div className={styles.text__container}>
           <div className={styles.text}>
@@ -38,9 +37,12 @@ export const ImageSectionsWhite: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className={classNames(styles.container, styles.img__right)}>
+      <div
+        data-section={"dark"}
+        className={classNames(styles.container, styles.img__right)}
+      >
         <div className={styles.image}>
-          <img src={payWith} alt="payWith" />
+          <img src={checkout} alt="checkout" />
         </div>
         <div className={styles.text__container}>
           <div className={styles.text}>

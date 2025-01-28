@@ -52,12 +52,12 @@ export const Header: React.FC = () => {
           <Ridm className={styles.ridm} />
         </Link>
         <nav>
-          <Link to="/onramp">
-            <Button className={styles.button}>Onramp</Button>
-          </Link>
-          <Link to="/checkout">
-            <Button className={styles.button}>Checkout</Button>
-          </Link>
+          <a href="#individuals">
+            <Button className={styles.button}>Individuals</Button>
+          </a>
+          <a href="#business">
+            <Button className={styles.button}>Business</Button>
+          </a>
           <Link to="/about">
             <Button className={styles.button}>About</Button>
           </Link>

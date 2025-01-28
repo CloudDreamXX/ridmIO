@@ -4,11 +4,11 @@ import styles from "./styles.module.scss";
 import { Button, Title } from "shared/ui";
 import ArrowRight from "shared/assets/icons/arrow-right";
 
-const speedFactor = 6;
+const speedFactor = 10;
 
 const text =
   "Designed with simplicity in mind, Ridm allows users to manage their digital " +
-  "assets with ease and clarity. With a variety of products, we're here to help " +
+  "assets with comfort and clarity. With a variety of products, we're here to help " +
   "individuals and businesses leap into the future of finance.";
 
 const letters = text.split("");
@@ -17,7 +17,7 @@ export const Intro: React.FC = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-section={"light"}>
       <div className={styles.label__container}>
         <div className={styles.label}>INTRO</div>
       </div>

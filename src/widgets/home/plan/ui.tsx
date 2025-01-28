@@ -8,6 +8,7 @@ export const Plan: React.FC = () => {
   return (
     <div
       className={styles.container}
+      data-section={"dark"}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={styles.text}>

@@ -8,6 +8,12 @@
   align-items: center;
   justify-content: flex-end;
 
+  @media screen and (max-width: 768px) {
+    min-height: 50dvh;
+    align-items: flex-start;
+    padding: 2.5625rem 1.8125rem;
+  }
+
   .bg {
     position: absolute;
     top: 0;
@@ -29,5 +35,11 @@
     font-size: 70px;
     margin-left: 30%;
     padding-bottom: 4.75rem;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      margin-left: 0;
+      max-width: 20rem;
+      padding: 0;
+    }
   }
 }

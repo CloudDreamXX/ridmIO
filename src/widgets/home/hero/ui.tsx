@@ -8,7 +8,7 @@ import ArrowIcon from "shared/assets/icons/arrow";
 
 export const Hero: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-section={"light"}>
       <Video src={heroVideo} className={styles.bg} autoPlay muted loop />
       <div className={styles.hero}>
         <Lottie animationData={heroLottie} className={styles.lottie} />

@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 
 export const Faq: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-section={"light"}>
       <div className={styles.faqContent}>
         <Title variant="h2" className={styles.title}>
           FAQ

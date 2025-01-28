@@ -27,7 +27,7 @@ export const Web3: React.FC = () => {
   const scaleVideo = useTransform(scrollYProgress, [0, 1], responsiveScale);
 
   return (
-    <div ref={containerRef} className={styles.container}>
+    <div ref={containerRef} className={styles.container} data-section={"light"}>
       <motion.video
         src={web3Video}
         className={styles.bg}
@@ -37,11 +37,8 @@ export const Web3: React.FC = () => {
         style={{ scale: scaleVideo }}
       />
       <div className={styles.text}>
-        <Title className={styles.title}>Payments at your pace</Title>
-        <p>
-          Purchase and sell a variety of crypto currencies using card or open
-          banking. Safely send currency to other verified users.
-        </p>
+        <Title className={styles.title}>Web3 payments for businesses</Title>
+        <p>Onramp and checkout tailored for your platform.</p>
       </div>
     </div>
   );

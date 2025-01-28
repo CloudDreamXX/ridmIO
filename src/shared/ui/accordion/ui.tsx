@@ -25,22 +25,46 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
               openIndex === index ? styles.active : ""
             )}
           >
-            {item.question}
-            <svg
-              className={styles.icon}
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <>
+              {item.question}
+
               {openIndex === index ? (
-                <path d="M18 12.998H6v-2h12v2z" fill="currentColor" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  className={styles.icon}
+                >
+                  <path
+                    d="M-0.000244141 20L40.0002 20"
+                    stroke="#EFEFEF"
+                    stroke-width="3"
+                  />
+                </svg>
               ) : (
-                <path
-                  d="M12 18.998c-.552 0-1-.448-1-1v-5H6c-.552 0-1-.448-1-1s.448-1 1-1h5v-5c0-.552.448-1 1-1s1 .448 1 1v5h5c.552 0 1 .448 1 1s-.448 1-1 1h-5v5c0 .552-.448 1-1 1z"
-                  fill="currentColor"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  className={styles.icon}
+                >
+                  <path
+                    d="M20.0005 0V40.0005"
+                    stroke="#EFEFEF"
+                    stroke-width="3"
+                  />
+                  <path
+                    d="M-0.000244141 20L40.0002 20"
+                    stroke="#EFEFEF"
+                    stroke-width="3"
+                  />
+                </svg>
               )}
-            </svg>
+            </>
           </div>
           <AnimatePresence initial={false}>
             {openIndex === index && (

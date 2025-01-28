@@ -38,6 +38,9 @@ export const Hq: React.FC = () => {
       <div className={styles.image}>
         <img src={hqImage} alt="Ridm HQ" />
       </div>
+      <Title variant="h1" className={styles.mobile__title}>
+        Ridm HQ
+      </Title>
     </div>
   );
 };

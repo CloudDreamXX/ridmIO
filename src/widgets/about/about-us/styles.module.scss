@@ -10,11 +10,28 @@
   .title {
     font-size: 70px;
     color: #0d0d0d;
+    font-weight: 300;
   }
 
   .text {
     color: #0d0d0d;
     max-width: 50rem;
     font-size: 28px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 3.75rem 1.875rem;
+    min-height: 27rem;
+    gap: 3rem;
+    justify-content: flex-start;
+
+    .title {
+      font-size: 36px;
+    }
+
+    .text {
+      font-size: 17px;
+    }
   }
 }

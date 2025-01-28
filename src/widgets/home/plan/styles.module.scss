@@ -17,7 +17,6 @@
 }
 
 .text {
-  max-width: 33.875rem;
   width: 100%;
   z-index: 1;
   display: flex;
@@ -25,6 +24,8 @@
   gap: 2.5rem;
   align-items: flex-start;
   justify-content: flex-start;
+  font-size: 70px;
+  max-width: 452px;
 
   @media screen and (max-width: 768px) {
     gap: 1.25rem;
@@ -44,6 +45,7 @@
 
   .title {
     font-size: 4.375rem;
+    font-variant-numeric: slashed-zero;
   }
 
   p {
@@ -52,10 +54,10 @@
     font-family: "ALT Riviera";
     font-size: 21px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 130%;
     letter-spacing: -0.084px;
-    max-width: 600px;
+    max-width: 432px;
   }
 
   .button {

@@ -97,13 +97,22 @@ export const Team: React.FC = () => {
       <Swiper
         modules={[Navigation]}
         spaceBetween={32}
-        slidesPerView={1}
+        slidesPerView="auto"
         navigation
         className={classNames(styles.teamSwiper, "team-swiper")}
         breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 2.2 },
+          320: {
+            slidesPerView: 1.1,
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1024: {
+            slidesPerView: 2.2,
+            spaceBetween: 32,
+          },
         }}
         wrapperClass={styles.wrapper}
         onBeforeInit={(swiper) => {

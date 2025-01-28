@@ -43,6 +43,7 @@
   .footer__nav {
     display: flex;
     gap: 65px;
+    flex-wrap: wrap;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -57,7 +58,7 @@
   .additional {
     position: absolute;
     transform: rotate(-90deg);
-    right: 0;
+    right: -140px;
     top: 25%;
 
     p {
