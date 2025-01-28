@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "./styles.module.scss";
 import { Button, Title } from "shared/ui";
 import ArrowRight from "shared/assets/icons/arrow-right";
+import { Link } from "react-router";
 
 const speedFactor = 10;
 
@@ -44,13 +45,15 @@ export const Intro: React.FC = () => {
           })}
         </Title>
 
-        <Button
-          className={styles.button}
-          icon={<ArrowRight />}
-          horizontal={true}
-        >
-          About Ridm
-        </Button>
+        <Link to="/about">
+          <Button
+            className={styles.button}
+            icon={<ArrowRight />}
+            horizontal={true}
+          >
+            About Ridm
+          </Button>
+        </Link>
       </div>
     </div>
   );

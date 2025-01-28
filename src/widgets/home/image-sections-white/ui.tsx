@@ -27,13 +27,15 @@ export const ImageSectionsWhite: React.FC = () => {
                 for a tailor-made and user-friendly experience.
               </p>
             </div>
-            <Button
-              variant="secondary"
-              className={styles.button}
-              icon={<Arrow />}
-            >
-              Get in touch
-            </Button>
+            <a href="#form">
+              <Button
+                variant="secondary"
+                className={styles.button}
+                icon={<Arrow />}
+              >
+                Get in touch
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -60,13 +62,15 @@ export const ImageSectionsWhite: React.FC = () => {
                 reports.
               </p>
             </div>
-            <Button
-              variant="secondary"
-              className={styles.button}
-              icon={<Arrow />}
-            >
-              Get in touch
-            </Button>
+            <a href="#form">
+              <Button
+                variant="secondary"
+                className={styles.button}
+                icon={<Arrow />}
+              >
+                Get in touch
+              </Button>
+            </a>
           </div>
         </div>
       </div>

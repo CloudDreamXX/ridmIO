@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import bgImage from "shared/assets/img/plan.png";
 import { Button, Title } from "shared/ui";
 import Arrow from "shared/assets/icons/arrow-right";
+import { Link } from "react-router";
 
 export const Plan: React.FC = () => {
   return (
@@ -18,9 +19,15 @@ export const Plan: React.FC = () => {
           and individuals. With a host of products and solutions, we aim to make
           the finances of the future available for all.
         </p>
-        <Button variant="secondary" className={styles.button} icon={<Arrow />}>
-          About us
-        </Button>
+        <Link to="/about">
+          <Button
+            variant="secondary"
+            className={styles.button}
+            icon={<Arrow />}
+          >
+            About us
+          </Button>
+        </Link>
       </div>
     </div>
   );

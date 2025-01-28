@@ -27,14 +27,16 @@ export const ImageSections: React.FC = () => {
                 assets. Free from clutter and focused on your needs.
               </p>
             </div>
-            <Button
-              variant="secondary"
-              className={styles.button}
-              icon={<Arrow />}
-              horizontal={true}
-            >
-              Try Ridm
-            </Button>
+            <a href="#form">
+              <Button
+                variant="secondary"
+                className={styles.button}
+                icon={<Arrow />}
+                horizontal={true}
+              >
+                Try Ridm
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -55,14 +57,16 @@ export const ImageSections: React.FC = () => {
                 services to merchants within the platform.
               </p>
             </div>
-            <Button
-              variant="secondary"
-              className={styles.button}
-              icon={<Arrow />}
-              horizontal={true}
-            >
-              Try Ridm
-            </Button>
+            <a href="#form">
+              <Button
+                variant="secondary"
+                className={styles.button}
+                icon={<Arrow />}
+                horizontal={true}
+              >
+                Try Ridm
+              </Button>
+            </a>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
         <img src={AboutBg} alt="About" />
       </div>
       <Title variant="h1" className={styles.title}>
-        Somthing something here lorem
+        A nordic approach to payments
       </Title>
     </div>
   );

@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import styles from "./styles.module.scss";
 import { Button } from "shared/ui";
 import ArrowSmall from "shared/assets/icons/arrow-small";
@@ -15,6 +15,8 @@ export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const lottieRef = useRef<LottieRefCurrentProps>(null);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -25,6 +27,14 @@ export const Header: React.FC = () => {
     setIsHovered(false);
     lottieRef.current?.stop();
   };
+
+  const handleClick = (e: React.MouseEvent) => {
+    if (isHome) {
+      e.preventDefault();
+      window.location.reload();
+    }
+  };
+
   return (
     <header
       className={classNames(
@@ -36,6 +46,7 @@ export const Header: React.FC = () => {
       <div className={styles.nav}>
         <Link
           to="/"
+          onClick={handleClick}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           className={styles.logoContainer}

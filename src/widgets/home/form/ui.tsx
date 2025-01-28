@@ -6,7 +6,11 @@ import Arrow from "shared/assets/icons/arrow-right";
 
 export const Form: React.FC = () => {
   return (
-    <div className={classNames(styles.container)} data-section={"light"}>
+    <div
+      id="form"
+      className={classNames(styles.container)}
+      data-section={"light"}
+    >
       <div className={styles.left__container}>
         <div className={styles.content}>
           <Title variant="h2">Get in touch!</Title>

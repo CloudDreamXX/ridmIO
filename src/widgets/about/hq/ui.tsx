@@ -26,13 +26,6 @@ export const Hq: React.FC = () => {
           >
             Get in touch
           </Button>
-          <Button
-            icon={<ArrowRight />}
-            className={styles.button}
-            variant="primary"
-          >
-            Join the team
-          </Button>
         </div>
       </div>
       <div className={styles.image}>
