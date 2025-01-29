@@ -7,12 +7,12 @@ import { usePageWidth } from "shared/lib/hooks";
 
 const getScale = (width: number) => {
   if (width <= 768) {
-    return [1, 8];
+    return [5, 10];
   }
   if (width <= 1600) {
     return [1, 2];
   }
-  return [0.8, 1.18];
+  return [0.8, 1.2];
 };
 
 export const Payment: React.FC = () => {

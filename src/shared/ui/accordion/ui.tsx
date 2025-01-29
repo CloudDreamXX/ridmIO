@@ -27,43 +27,35 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
           >
             <>
               {item.question}
-
-              {openIndex === index ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  className={styles.icon}
-                >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                className={styles.icon}
+              >
+                {openIndex === index ? (
                   <path
                     d="M-0.000244141 20L40.0002 20"
                     stroke="#EFEFEF"
                     stroke-width="3"
                   />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  className={styles.icon}
-                >
-                  <path
-                    d="M20.0005 0V40.0005"
-                    stroke="#EFEFEF"
-                    stroke-width="3"
-                  />
-                  <path
-                    d="M-0.000244141 20L40.0002 20"
-                    stroke="#EFEFEF"
-                    stroke-width="3"
-                  />
-                </svg>
-              )}
+                ) : (
+                  <>
+                    <path
+                      d="M20.0005 0V40.0005"
+                      stroke="#EFEFEF"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M-0.000244141 20L40.0002 20"
+                      stroke="#EFEFEF"
+                      stroke-width="3"
+                    />
+                  </>
+                )}
+              </svg>
             </>
           </div>
           <AnimatePresence initial={false}>

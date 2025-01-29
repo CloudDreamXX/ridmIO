@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import { Button, Title, Video } from "shared/ui";
 import heroVideo from "shared/assets/video/hero.mp4";
 import Lottie from "lottie-react";
-import heroLottie from "shared/assets/lottie/hero.json";
+import heroLottie from "shared/assets/lottie/hero-lighweight.json";
 import ArrowIcon from "shared/assets/icons/arrow";
 
 export const Hero: React.FC = () => {

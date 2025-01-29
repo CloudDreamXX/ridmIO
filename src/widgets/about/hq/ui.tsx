@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import hqImage from "shared/assets/img/hq.png";
 import { Button, Title } from "shared/ui";
 import ArrowRight from "shared/assets/icons/arrow-right";
+import { Link } from "react-router";
 
 export const Hq: React.FC = () => {
   return (
@@ -19,13 +20,15 @@ export const Hq: React.FC = () => {
           Sweden
         </p>
         <div className={styles.buttons}>
-          <Button
-            icon={<ArrowRight />}
-            className={styles.button}
-            variant="primary"
-          >
-            Get in touch
-          </Button>
+          <Link to="/#form">
+            <Button
+              icon={<ArrowRight />}
+              className={styles.button}
+              variant="primary"
+            >
+              Get in touch
+            </Button>
+          </Link>
         </div>
       </div>
       <div className={styles.image}>

@@ -7,18 +7,19 @@ import { About } from "pages/about";
 
 import { Header } from "widgets/header";
 import { Footer } from "widgets/footer";
+import { useScrollToTop } from "shared/lib/hooks";
 
 export const App: React.FC = () => {
+  useScrollToTop();
+
   return (
-    <BrowserRouter>
-      <div className={styles.wrapper}>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className={styles.wrapper}>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 };

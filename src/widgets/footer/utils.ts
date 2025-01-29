@@ -22,7 +22,7 @@ export const nav: Nav = {
   About: [
     {
       name: "About us",
-      link: "/",
+      link: "/about",
     },
     {
       name: "Contact",

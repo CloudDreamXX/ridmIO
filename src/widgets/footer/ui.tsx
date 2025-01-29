@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
 
   return (
     <div
-      data-section={isDarkBg ? "dark" : "light"}
+      data-section={isDarkBg ? "light" : "dark"}
       className={classNames(styles.container, isDarkBg && styles["dark"])}
     >
       <div className={styles.footer__nav}>

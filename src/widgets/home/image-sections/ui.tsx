@@ -86,14 +86,16 @@ export const ImageSections: React.FC = () => {
                 verification through electronic ID, national ID or passport.
               </p>
             </div>
-            <Button
-              variant="secondary"
-              className={styles.button}
-              icon={<Arrow />}
-              horizontal={true}
-            >
-              Try Ridm
-            </Button>
+            <a href="#form">
+              <Button
+                variant="secondary"
+                className={styles.button}
+                icon={<Arrow />}
+                horizontal={true}
+              >
+                Try Ridm
+              </Button>
+            </a>
           </div>
         </div>
       </div>

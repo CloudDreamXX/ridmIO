@@ -8,6 +8,7 @@ import classNames from "classnames";
 import { useScrollDirection, useSectionTheme } from "shared/lib/hooks";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import Ridm from "shared/assets/icons/ridm";
+import RidmArrow from "shared/assets/icons/ridm-arrow";
 
 export const Header: React.FC = () => {
   const scrollDirection = useScrollDirection();
@@ -24,7 +25,6 @@ export const Header: React.FC = () => {
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
     lottieRef.current?.stop();
   };
 
@@ -33,6 +33,10 @@ export const Header: React.FC = () => {
       e.preventDefault();
       window.location.reload();
     }
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -52,13 +56,16 @@ export const Header: React.FC = () => {
           className={styles.logoContainer}
         >
           <Lottie
-            lottieRef={lottieRef}
             animationData={logo}
-            className={styles.logo}
-            autoplay={false}
-            loop={true}
-            height={70}
-            width={70}
+            className={classNames(styles.logo, !isHovered && styles.hovered)}
+            lottieRef={lottieRef}
+          />
+          <RidmArrow
+            className={classNames(
+              styles.logo,
+              styles.small,
+              isHovered && styles.hovered
+            )}
           />
           <Ridm className={styles.ridm} />
         </Link>
@@ -87,22 +94,21 @@ export const Header: React.FC = () => {
         <button
           className={classNames(styles.burger, isOpen && styles.open)}
           onClick={() => {
-            console.log("clicked");
             setIsOpen(!isOpen);
           }}
         ></button>
         <div className={classNames(styles.mobile, isOpen && styles.open)}>
           <nav>
-            <Link to="/onramp">
+            <Link to="/onramp" onClick={closeMenu}>
               <Button className={styles.button}>Onramp</Button>
             </Link>
-            <Link to="/checkout">
+            <Link to="/checkout" onClick={closeMenu}>
               <Button className={styles.button}>Checkout</Button>
             </Link>
-            <Link to="/about">
+            <Link to="/about" onClick={closeMenu}>
               <Button className={styles.button}>About</Button>
             </Link>
-            <Link to="/support">
+            <Link to="/support" onClick={closeMenu}>
               <Button className={styles.button}>Support</Button>
             </Link>
           </nav>

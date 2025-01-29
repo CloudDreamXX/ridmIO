@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "ALT Riviera";
+  src:
+    url("/alt-riviera-font/ALTRiviera-Light.woff2") format("woff2"),
+    url("/alt-riviera-font/ALTRiviera-Light.woff2") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ALT Riviera";
+  src:
+    url("/alt-riviera-font/ALTRiviera-Regular.woff2") format("woff2"),
+    url("/alt-riviera-font/ALTRiviera-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ALT Riviera";
+  src:
+    url("/alt-riviera-font/ALTRiviera-Medium.woff2") format("woff2"),
+    url("/alt-riviera-font/ALTRiviera-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* RESET CSS */
 h1,
 h2,
@@ -9,7 +39,6 @@ span,
 p,
 input {
   font-family: "ALT Riviera";
-  font-weight: 300;
 }
 *,
 *:before,
