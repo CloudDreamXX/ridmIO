@@ -37,7 +37,7 @@ export const Web3: React.FC = () => {
         style={{ scale: scaleVideo }}
       />
       <div className={styles.text}>
-        <Title className={styles.title}>Web3 payments for businesses</Title>
+        <Title className={styles.title}>Web3 Payments for Businesses</Title>
         <p>Onramp and checkout tailored for your platform.</p>
       </div>
     </div>
