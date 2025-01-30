@@ -1,9 +1,9 @@
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router";
 import styles from "./styles.module.scss";
 import { Button } from "shared/ui";
 import ArrowSmall from "shared/assets/icons/arrow-small";
 import logo from "shared/assets/lottie/logo.json";
-import { useRef, useState } from "react";
 import classNames from "classnames";
 import { useScrollDirection, useSectionTheme } from "shared/lib/hooks";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
@@ -12,7 +12,7 @@ import RidmArrow from "shared/assets/icons/ridm-arrow";
 
 export const Header: React.FC = () => {
   const scrollDirection = useScrollDirection();
-  const theme = useSectionTheme();
+  const { theme, setTheme } = useSectionTheme();
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const lottieRef = useRef<LottieRefCurrentProps>(null);
@@ -38,6 +38,12 @@ export const Header: React.FC = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    location.pathname.includes("term") || location.pathname.includes("privacy")
+      ? setTheme("dark")
+      : setTheme("light");
+  }, [location.pathname]);
 
   return (
     <header

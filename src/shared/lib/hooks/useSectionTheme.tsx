@@ -29,5 +29,5 @@ export const useSectionTheme = () => {
     };
   }, []);
 
-  return theme;
+  return { theme, setTheme };
 };
