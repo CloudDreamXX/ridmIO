@@ -4,6 +4,8 @@ import styles from "./styles.module.scss";
 
 import { Home } from "pages/home";
 import { About } from "pages/about";
+import { Terms } from "pages/terms";
+import { Policy } from "pages/policy";
 
 import { Header } from "widgets/header";
 import { Footer } from "widgets/footer";
@@ -18,6 +20,8 @@ export const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/terms-of-use" element={<Terms />} />
+        <Route path="/privacy-policy" element={<Policy />} />
       </Routes>
       <Footer />
     </div>

@@ -1,0 +1,42 @@
+.toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 4.375rem;
+  max-width: 22rem;
+  font-family: "ALT Riviera";
+
+  @media (max-width: 900px) {
+    max-width: unset;
+    gap: 1.5rem;
+  }
+
+  h1 {
+    font-size: 4.375rem;
+    line-height: 100%;
+    color: #0d0d0d;
+  }
+
+  .toggleLinks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 1280px) {
+      flex-wrap: wrap;
+    }
+
+    button {
+      font-size: 1.3125rem;
+      padding: 14px 1.125rem;
+      border-radius: 50px;
+      cursor: pointer;
+      color: #0d0d0d;
+      background: transparent;
+      letter-spacing: 0.084px;
+
+      &.active {
+        background-color: #efefef;
+      }
+    }
+  }
+}
