@@ -36,7 +36,7 @@ export const nav: Nav = {
     },
     {
       name: "Privacy Policy",
-      link: "/privacy-policy",
+      link: "/privacy",
     },
     {
       name: "Cookie Policy",
@@ -44,7 +44,7 @@ export const nav: Nav = {
     },
     {
       name: "Terms of Use",
-      link: "/terms-of-use",
+      link: "/terms-use",
     },
   ],
   "Company info": [
