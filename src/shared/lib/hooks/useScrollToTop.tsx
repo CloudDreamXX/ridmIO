@@ -5,8 +5,12 @@ export const useScrollToTop = () => {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    console.log(hash, pathname, hash === "#form" && pathname === "/");
-    if (hash === "#form" && pathname === "/") return;
+    if (hash && pathname === "/") {
+      const anchor = document.getElementById(hash.slice(1));
+      anchor?.scrollIntoView();
+      return;
+    }
+
     window.scrollTo(0, 0);
   }, [pathname, hash]);
 };

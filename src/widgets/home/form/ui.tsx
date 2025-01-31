@@ -16,7 +16,7 @@ export const Form: React.FC = () => {
           <Title variant="h2">Get in touch!</Title>
           <p>
             Reach out to our team and subscribe to our email list to gain access
-            to the lastest updates about our work.
+            to the latest updates about our work.
           </p>
         </div>
       </div>

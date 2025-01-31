@@ -8,11 +8,11 @@ export const nav: Nav = {
   Services: [
     {
       name: "Personal Finance",
-      link: "/",
+      link: "/#individuals",
     },
     {
       name: "Business Platform",
-      link: "/",
+      link: "/#business",
     },
     {
       name: "Support",
@@ -26,7 +26,7 @@ export const nav: Nav = {
     },
     {
       name: "Contact",
-      link: "/",
+      link: "/#form",
     },
   ],
   Legal: [

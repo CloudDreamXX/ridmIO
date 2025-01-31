@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import styles from "./styles.module.scss";
 import { Title } from "shared/ui";
 import paymentsVideo from "shared/assets/video/payments.mp4";
@@ -12,7 +12,7 @@ const getScale = (width: number) => {
   if (width <= 1600) {
     return [1, 2];
   }
-  return [0.8, 1.2];
+  return [0.8, 1.5];
 };
 
 export const Payment: React.FC = () => {
@@ -24,7 +24,12 @@ export const Payment: React.FC = () => {
   });
 
   const responsiveScale = getScale(width);
-  const scaleVideo = useTransform(scrollYProgress, [0, 1], responsiveScale);
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 80,
+    damping: 40,
+    restDelta: 0.001,
+  });
+  const scaleVideo = useTransform(smoothProgress, [0, 1], responsiveScale);
 
   return (
     <div ref={containerRef} className={styles.container}>
@@ -34,7 +39,9 @@ export const Payment: React.FC = () => {
         autoPlay
         muted
         loop
-        style={{ scale: scaleVideo }}
+        style={{
+          scale: width > 768 ? scaleVideo : responsiveScale[0],
+        }}
       />
       <div className={styles.text}>
         <Title className={styles.title}>Payments at your pace</Title>

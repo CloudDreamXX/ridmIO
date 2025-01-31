@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 
 import suppIcon from "shared/assets/img/icon-support.svg";
+import { Link } from "react-router";
 
 export interface NavItem {
   name: string;
@@ -17,7 +18,7 @@ export const FooterItem: React.FC<FooterItemProps> = ({ item }) => {
   if (item.name === "Support") {
     return (
       <div className={styles.item}>
-        <a href={item.link}>{item.name}</a>
+        <Link to={item.link || "/"}>{item.name}</Link>
         <img src={suppIcon} alt="Support" className={styles.icon} />
       </div>
     );
@@ -26,15 +27,15 @@ export const FooterItem: React.FC<FooterItemProps> = ({ item }) => {
   if (item.icon) {
     return (
       <div className={styles.item}>
-        <a href={item.link}>{item.name}</a>
+        <Link to={item.link || "/"}>{item.name}</Link>
         <img src={item.icon} alt={item.name} className={styles.icon} />
       </div>
     );
   }
 
   return (
-    <a className={styles.item} href={item.link}>
+    <Link to={item.link || "/"} className={styles.item}>
       {item.name}
-    </a>
+    </Link>
   );
 };

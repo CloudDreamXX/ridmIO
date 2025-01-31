@@ -3,7 +3,6 @@
   width: 100%;
   height: 102px;
   padding: 10px;
-  max-width: 1392px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -113,6 +112,11 @@
 
     .bordered {
       font-size: 24px;
+
+      span {
+        line-height: 1;
+        margin-bottom: -2px;
+      }
     }
   }
 }

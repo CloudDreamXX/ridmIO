@@ -22,8 +22,6 @@ export const FooterNav: React.FC<FooterNavProps> = ({ section, items }) => {
     (item) => item.name === "Visa" || item.name === "MasterCard"
   );
 
-  console.log("normalItems", section);
-
   return (
     <div
       className={classNames(

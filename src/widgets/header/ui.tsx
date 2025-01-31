@@ -76,10 +76,10 @@ export const Header: React.FC = () => {
           <Ridm className={styles.ridm} />
         </Link>
         <nav>
-          <a href="#individuals">
+          <a href="/#individuals">
             <Button className={styles.button}>Individuals</Button>
           </a>
-          <a href="#business">
+          <a href="/#business">
             <Button className={styles.button}>Business</Button>
           </a>
           <Link to="/about">

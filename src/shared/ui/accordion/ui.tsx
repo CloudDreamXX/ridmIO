@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 import classNames from "classnames";
 
 interface AccordionProps {
-  items: { question: string; answer: string }[];
+  items: { question: string; answer: string[] }[];
 }
 
 export const Accordion: React.FC<AccordionProps> = ({ items }) => {
@@ -68,9 +68,13 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
                 className={styles.answer}
               >
                 <div
-                  className={`${styles.answerContent} ${openIndex === index ? styles.active : ""}`}
+                  className={classNames(styles.answerContent, {
+                    [styles.active]: openIndex === index,
+                  })}
                 >
-                  {item.answer}
+                  {item.answer.map((paragraph, idx) => (
+                    <p key={idx}>{paragraph}</p>
+                  ))}
                 </div>
               </motion.div>
             )}

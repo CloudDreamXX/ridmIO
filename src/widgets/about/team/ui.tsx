@@ -10,6 +10,8 @@ import { Title } from "shared/ui";
 import slide1 from "shared/assets/img/team/1.png";
 import slide2 from "shared/assets/img/team/2.png";
 import slide3 from "shared/assets/img/team/3.png";
+import slide4 from "shared/assets/img/team/4.png";
+import slide5 from "shared/assets/img/team/5.png";
 import classNames from "classnames";
 import ArrowRight from "shared/assets/icons/arrow-right";
 
@@ -24,63 +26,33 @@ type TeamMember = {
 const teamData: TeamMember[] = [
   {
     id: 1,
-    name: "Jeremy Viala",
-    description: "Legal",
+    name: "Connor Clark",
+    description: "Commercial",
     photo: slide1,
   },
   {
     id: 2,
-    name: "Connor G",
-    description: "Legal",
+    name: "Enrique Espinosa",
+    description: "Product",
     photo: slide2,
   },
   {
-    id: 1,
-    name: "Connor Clark",
-    role: "Sales Director",
-    description:
-      "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
+    id: 3,
+    name: "Ozzy Knox",
+    description: "Tech",
     photo: slide3,
   },
   {
-    id: 2,
-    name: "Connor G",
-    role: "Product Manager",
-    description:
-      "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
-    photo: slide2,
-  },
-  {
-    id: 1,
+    id: 4,
     name: "Jeremy Viala",
-    role: "Compliance Officer",
-    description:
-      "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
-    photo: slide1,
+    description: "Legal",
+    photo: slide4,
   },
   {
-    id: 2,
-    name: "Connor G",
-    role: "Product Manager",
-    description:
-      "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
-    photo: slide2,
-  },
-  {
-    id: 1,
-    name: "Jeremy Viala",
-    role: "Compliance Officer",
-    description:
-      "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
-    photo: slide1,
-  },
-  {
-    id: 2,
-    name: "Connor G",
-    role: "Product Manager",
-    description:
-      "Can Blockchain help? What does the future say about this. We talked with the foremost produ...",
-    photo: slide2,
+    id: 5,
+    name: "Sebastian Jimenez",
+    description: "Brand & Design",
+    photo: slide5,
   },
 ];
 
