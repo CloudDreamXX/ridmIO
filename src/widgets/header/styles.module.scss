@@ -63,6 +63,11 @@
     }
   }
 
+  &.dark .logo__small {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(49%) saturate(5029%)
+      hue-rotate(305deg) brightness(99%) contrast(101%);
+  }
+
   &.dark .nav > nav {
     color: #000;
     .button {
@@ -111,6 +116,7 @@
     }
 
     .bordered {
+      height: 2.8125rem;
       font-size: 24px;
 
       span {
@@ -129,7 +135,7 @@
 @media screen and (max-width: 796px) {
   .header {
     height: 80px;
-    padding: 10px 20px;
+    padding: 7px 10px;
   }
 
   .nav {

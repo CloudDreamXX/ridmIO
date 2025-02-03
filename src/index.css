@@ -40,6 +40,18 @@ p,
 input {
   font-family: "ALT Riviera";
 }
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+span::selection {
+  background-color: #fea372;
+  color: #000;
+}
 *,
 *:before,
 *:after {
@@ -91,13 +103,6 @@ ol {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-th {
-  font-weight: inherit;
 }
 h1,
 h2,

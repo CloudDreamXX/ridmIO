@@ -6,5 +6,19 @@
 
   &:hover {
     color: #fea372;
+
+    .icon {
+      filter: brightness(0) saturate(100%) invert(97%) sepia(49%)
+        saturate(5029%) hue-rotate(305deg) brightness(99%) contrast(101%);
+    }
+  }
+
+  &.companyInfo:hover {
+    color: aliceblue;
+  }
+
+  .icon {
+    position: relative;
+    top: -2px;
   }
 }

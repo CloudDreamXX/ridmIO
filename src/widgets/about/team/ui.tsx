@@ -71,6 +71,7 @@ export const Team: React.FC = () => {
         spaceBetween={32}
         slidesPerView="auto"
         navigation
+        speed={800}
         className={classNames(styles.teamSwiper, "team-swiper")}
         breakpoints={{
           320: {
@@ -82,7 +83,7 @@ export const Team: React.FC = () => {
             spaceBetween: 24,
           },
           1024: {
-            slidesPerView: 2.2,
+            slidesPerView: 2.5,
             spaceBetween: 32,
           },
         }}

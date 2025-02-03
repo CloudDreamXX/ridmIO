@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Outlet } from "react-router";
 import styles from "./styles.module.scss";
-import { RouteToggle } from "shared/ui/routeToggle";
+import { RouteToggle } from "shared/ui/route-toggle";
 
 export const Terms: FC = () => {
   return (
@@ -11,8 +11,8 @@ export const Terms: FC = () => {
           <RouteToggle
             title="Terms of use"
             links={[
-              { name: "Crypto Ridm", path: "/terms-use/crypto" },
-              { name: "NFT Checkout", path: "/terms-use/checkout" },
+              { name: "Onramp", path: "/terms-use/onramp" },
+              { name: "Checkout", path: "/terms-use/checkout" },
             ]}
           />
         </div>

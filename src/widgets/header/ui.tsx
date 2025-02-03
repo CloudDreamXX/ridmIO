@@ -5,12 +5,18 @@ import { Button } from "shared/ui";
 import ArrowSmall from "shared/assets/icons/arrow-small";
 import logo from "shared/assets/lottie/logo.json";
 import classNames from "classnames";
-import { useScrollDirection, useSectionTheme } from "shared/lib/hooks";
+import {
+  usePageWidth,
+  useScrollDirection,
+  useSectionTheme,
+} from "shared/lib/hooks";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import Ridm from "shared/assets/icons/ridm";
 import RidmArrow from "shared/assets/icons/ridm-arrow";
+import smallLogo from "shared/assets/img/small-logo.png";
 
 export const Header: React.FC = () => {
+  const width = usePageWidth();
   const scrollDirection = useScrollDirection();
   const { theme, setTheme } = useSectionTheme();
   const [isOpen, setIsOpen] = useState(false);
@@ -54,27 +60,33 @@ export const Header: React.FC = () => {
       )}
     >
       <div className={styles.nav}>
-        <Link
-          to="/"
-          onClick={handleClick}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className={styles.logoContainer}
-        >
-          <Lottie
-            animationData={logo}
-            className={classNames(styles.logo, !isHovered && styles.hovered)}
-            lottieRef={lottieRef}
-          />
-          <RidmArrow
-            className={classNames(
-              styles.logo,
-              styles.small,
-              isHovered && styles.hovered
-            )}
-          />
-          <Ridm className={styles.ridm} />
-        </Link>
+        {width > 768 ? (
+          <Link
+            to="/"
+            onClick={handleClick}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className={styles.logoContainer}
+          >
+            <Lottie
+              animationData={logo}
+              className={classNames(styles.logo, !isHovered && styles.hovered)}
+              lottieRef={lottieRef}
+            />
+            <RidmArrow
+              className={classNames(
+                styles.logo,
+                styles.small,
+                isHovered && styles.hovered
+              )}
+            />
+            <Ridm className={styles.ridm} />
+          </Link>
+        ) : (
+          <Link to="/" onClick={handleClick} className={styles.logo__small}>
+            <img src={smallLogo} alt="" />
+          </Link>
+        )}
         <nav>
           <a href="/#individuals">
             <Button className={styles.button}>Individuals</Button>

@@ -10,6 +10,10 @@
   gap: 5.625rem;
   padding: 7.5rem 0 7.5rem 3.75rem;
 
+  * {
+    transition-timing-function: ease-in !important;
+  }
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
     gap: 3rem;

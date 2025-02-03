@@ -8,7 +8,7 @@
   margin-top: 14.5rem;
 
   @media (max-width: 1024px) {
-    margin-top: 10rem;
+    margin-top: 6.25rem;
   }
 
   .wrapper {
@@ -24,6 +24,7 @@
 
     @media (max-width: 900px) {
       flex-direction: column;
+      gap: 2.875rem;
     }
   }
 }

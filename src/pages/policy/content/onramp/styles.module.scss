@@ -1,0 +1,119 @@
+.content {
+  width: 100%;
+  max-width: 57.5rem;
+  color: #323232;
+  font-family: "ALT Riviera ";
+
+  strong {
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: -0.336px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123%;
+    letter-spacing: -0.24px;
+    margin-top: 0.625rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p,
+  ul li {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.06px;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  ul li {
+    list-style: disc;
+    margin-left: 14px;
+    font-family: "ALT Riviera";
+  }
+
+  .divider {
+    padding: 1.25rem 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-family: "ALT Riviera";
+
+    th,
+    td {
+      padding: 1rem;
+      text-align: left;
+      border: 1px solid #e5e5e5;
+      font-size: 15px;
+      line-height: 130%;
+    }
+
+    td:has(table) {
+      padding: 0;
+
+      table,
+      tr {
+        border-left-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+      }
+
+      th {
+        border-left-color: #fff;
+        border-right-color: #fff;
+      }
+
+      tbody td {
+        border-left-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+      }
+
+      p {
+        padding: 1rem;
+      }
+    }
+
+    th {
+      background: #f8f8f8;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+
+      th,
+      td {
+        padding: 0.75rem;
+        font-size: 14px;
+      }
+
+      td {
+        min-width: 200px;
+      }
+
+      ul {
+        white-space: normal;
+      }
+    }
+  }
+}

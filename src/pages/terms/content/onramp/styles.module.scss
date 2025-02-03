@@ -4,6 +4,10 @@
   color: #323232;
   font-family: "ALT Riviera ";
 
+  strong {
+    font-weight: 500;
+  }
+
   h2 {
     font-size: 28px;
     font-style: normal;
@@ -27,6 +31,10 @@
     font-weight: 400;
     line-height: 130%;
     letter-spacing: -0.06px;
+  }
+
+  ul {
+    padding-left: 1.25rem;
   }
 
   ul li {

@@ -15,8 +15,7 @@ export const faqData: FaqItem[] = [
   {
     question: "How does Ridm keep my data safe?",
     answer: [
-      "We use the latest security features like two-factor authentication (OTP) and secure wallets to keep your funds safe.",
-      "Ridm complies with legal and regulatory standards within the European Economic Area (EEA), ensuring a safe environment for users.",
+      "We use the latest security features like two-factor authentication (OTP) and secure wallets to keep your funds safe. Ridm complies with legal and regulatory standards within the European Economic Area (EEA), ensuring a safe environment for users.",
       "Our account verification and data security procedures are all in line with regulatory standards to maximum safety for our users and their assets.",
     ],
   },

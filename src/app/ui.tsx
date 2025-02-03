@@ -5,15 +5,14 @@ import styles from "./styles.module.scss";
 import { Home } from "pages/home";
 import { About } from "pages/about";
 import { Terms } from "pages/terms";
-import { NftContentTerms } from "pages/terms/content/nft";
-import { CryptoContentTerms } from "pages/terms/content/crypto";
 import { Policy } from "pages/policy";
-import { NftContentPolicy } from "pages/policy/content/nft";
-import { CryptoContentPolicy } from "pages/policy/content/crypto";
+import { OnrampPolicy } from "pages/policy/content/onramp";
 
 import { Header } from "widgets/header";
 import { Footer } from "widgets/footer";
 import { useScrollToTop } from "shared/lib/hooks";
+import { OnrampTerms } from "pages/terms/content/onramp";
+import { CheckoutTerms } from "pages/terms/content/checkout";
 
 export const App: React.FC = () => {
   useScrollToTop();
@@ -25,14 +24,14 @@ export const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/terms-use" element={<Terms />}>
-          <Route index element={<Navigate to="/terms-use/crypto" />} />
-          <Route path="crypto" element={<CryptoContentTerms />} />
-          <Route path="checkout" element={<NftContentTerms />} />
+          <Route index element={<Navigate to="/terms-use/onramp" />} />
+          <Route path="onramp" element={<OnrampTerms />} />
+          <Route path="checkout" element={<OnrampTerms />} />
         </Route>
         <Route path="/privacy" element={<Policy />}>
-          <Route index element={<Navigate to="/privacy/crypto" />} />
-          <Route path="crypto" element={<CryptoContentPolicy />} />
-          <Route path="checkout" element={<NftContentPolicy />} />
+          <Route index element={<Navigate to="/privacy/onramp" />} />
+          <Route path="onramp" element={<OnrampPolicy />} />
+          <Route path="checkout" element={<OnrampPolicy />} />
         </Route>
       </Routes>
       <Footer />

@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 
-export const NftContentPolicy = () => {
+export const CheckoutTerms = () => {
   return (
     <div className={styles.content}>
       <p>

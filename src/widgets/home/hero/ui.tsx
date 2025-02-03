@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
       <div className={styles.hero}>
         <Lottie animationData={heroLottie} className={styles.lottie} />
         <div className={styles.info}>
-          <Title>The pulse of web3 payments</Title>
+          <Title className={styles.title}>The pulse of web3 payments</Title>
           <Title variant="h2" className={styles.subtitle}>
             <span>Ridm for </span>
             <Button

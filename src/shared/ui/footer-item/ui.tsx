@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 
 import suppIcon from "shared/assets/img/icon-support.svg";
 import { Link } from "react-router";
+import classNames from "classnames";
 
 export interface NavItem {
   name: string;
@@ -34,7 +35,13 @@ export const FooterItem: React.FC<FooterItemProps> = ({ item }) => {
   }
 
   return (
-    <Link to={item.link || "/"} className={styles.item}>
+    <Link
+      to={item.link || "/"}
+      className={classNames(
+        styles.item,
+        item.name === "Company info" ? styles.companyInfo : ""
+      )}
+    >
       {item.name}
     </Link>
   );

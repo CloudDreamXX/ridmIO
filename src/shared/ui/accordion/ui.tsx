@@ -33,28 +33,23 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
                 height="40"
                 viewBox="0 0 40 40"
                 fill="none"
-                className={styles.icon}
+                className={classNames(
+                  styles.icon,
+                  openIndex === index ? styles.active : ""
+                )}
               >
-                {openIndex === index ? (
+                <>
+                  <path
+                    d="M20.0005 0V40.0005"
+                    stroke="#EFEFEF"
+                    stroke-width="3"
+                  />
                   <path
                     d="M-0.000244141 20L40.0002 20"
                     stroke="#EFEFEF"
                     stroke-width="3"
                   />
-                ) : (
-                  <>
-                    <path
-                      d="M20.0005 0V40.0005"
-                      stroke="#EFEFEF"
-                      stroke-width="3"
-                    />
-                    <path
-                      d="M-0.000244141 20L40.0002 20"
-                      stroke="#EFEFEF"
-                      stroke-width="3"
-                    />
-                  </>
-                )}
+                </>
               </svg>
             </>
           </div>
