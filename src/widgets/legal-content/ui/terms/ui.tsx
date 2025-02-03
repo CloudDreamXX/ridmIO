@@ -107,9 +107,7 @@ export const OnrampTerms = () => {
             you comply with all applicable laws and regulations applicable to
             you and the use of your User Account.
           </li>
-          <ul>
-            <li>In order to be able to use your User Account, you need to:</li>
-          </ul>
+          <li>In order to be able to use your User Account, you need to:</li>
           <li>Dispose of a valid e-mail address; and</li>
           <li>Set-up a password; and</li>
           <li>Complete the KYC Process during the onboarding process.</li>
@@ -322,17 +320,15 @@ export const OnrampTerms = () => {
           Platform may be affected by factors beyond the RIDM's control,
           including but not limited to:
         </li>
-        <ul>
-          <li>
-            Network disruptions, system outages, or cybersecurity incidents;
-          </li>
-          <li>Software bugs, technical errors, or infrastructure failures;</li>
-          <li>
-            Periodic maintenance, updates, or modifications to improve
-            functionality and security;
-          </li>
-          <li>Blockchain delays and interruptions.</li>
-        </ul>
+        <li>
+          Network disruptions, system outages, or cybersecurity incidents;
+        </li>
+        <li>Software bugs, technical errors, or infrastructure failures;</li>
+        <li>
+          Periodic maintenance, updates, or modifications to improve
+          functionality and security;
+        </li>
+        <li>Blockchain delays and interruptions.</li>
         <li>
           RIDM does not guarantee uninterrupted access to the Platform and shall
           not be liable for any temporary suspension, slowdown, or
@@ -443,21 +439,18 @@ export const OnrampTerms = () => {
           RIDM shall not be liable for any losses, errors, or delays arising
           from blockchain-related issues, including:
         </li>
-        <ul>
-          <li>Temporary or permanent network failures or outages;</li>
-          <li>
-            Double-spending attacks, consensus failures, or chain
-            reorganizations;
-          </li>
-          <li>
-            Exploits, attacks, or vulnerabilities in blockchain protocols or
-            third-party smart contracts;
-          </li>
-          <li>
-            Unavailability of validator nodes or miners affecting transaction
-            finality.
-          </li>
-        </ul>
+        <li>Temporary or permanent network failures or outages;</li>
+        <li>
+          Double-spending attacks, consensus failures, or chain reorganizations;
+        </li>
+        <li>
+          Exploits, attacks, or vulnerabilities in blockchain protocols or
+          third-party smart contracts;
+        </li>
+        <li>
+          Unavailability of validator nodes or miners affecting transaction
+          finality.
+        </li>
         <li>
           RIDM does not guarantee the perpetual availability of any blockchain
           network and reserves the right to discontinue support for specific
@@ -469,16 +462,12 @@ export const OnrampTerms = () => {
           Virtual Assets, nor for addressing technical malfunctions caused by
           third-party blockchain networks.
         </li>
-        <ul>
-          <ul>
-            <li>
-              RIDM shall not be held liable for any losses, damages, or
-              opportunity costs resulting from transaction delays, reversals, or
-              failures caused by network conditions, third-party failures, or
-              user errors (such as incorrect wallet addresses).
-            </li>
-          </ul>
-        </ul>
+        <li>
+          RIDM shall not be held liable for any losses, damages, or opportunity
+          costs resulting from transaction delays, reversals, or failures caused
+          by network conditions, third-party failures, or user errors (such as
+          incorrect wallet addresses).
+        </li>
       </ul>
       <div className={styles.divider} />
       <h2>Amendments</h2>
@@ -490,24 +479,20 @@ export const OnrampTerms = () => {
           sole discretion and without prior notice if required by regulatory,
           technical, or operational reasons.
         </li>
-        <ul>
-          <ul>
-            <li>
-              RIDM reserves the right to update, modify, or discontinue any
-              aspect of the Platform, including technical features, supported
-              virtual assets, or system functionalities, to comply with
-              regulatory requirements or improve service quality. Any
-              significant changes affecting user rights or service availability
-              shall be communicated in accordance with applicable legal
-              obligations.
-            </li>
-            <li>
-              RIDM may update these Terms of Service from time to time. Changes
-              will be communicated via our website or directly to your e-mail if
-              you dispose of a User Account.
-            </li>
-          </ul>
-        </ul>
+
+        <li>
+          RIDM reserves the right to update, modify, or discontinue any aspect
+          of the Platform, including technical features, supported virtual
+          assets, or system functionalities, to comply with regulatory
+          requirements or improve service quality. Any significant changes
+          affecting user rights or service availability shall be communicated in
+          accordance with applicable legal obligations.
+        </li>
+        <li>
+          RIDM may update these Terms of Service from time to time. Changes will
+          be communicated via our website or directly to your e-mail if you
+          dispose of a User Account.
+        </li>
       </ul>
       <div className={styles.divider} />
       <h2>Termination</h2>

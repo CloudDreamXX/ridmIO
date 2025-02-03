@@ -10,7 +10,7 @@ export const OnrampPolicy = () => {
         processes personal data about you as a visitor and user of{" "}
         <a href="https://ridm.io">RIDM.IO</a> as defined under the Terms of
         Service of <a href="https://ridm.io">RIDM.IO</a> (hereinafter the
-        “Platform”).
+        <strong>“Platform”</strong>).
       </p>
       <p>
         The term <strong>"processing"</strong> is used to cover all activities
@@ -202,7 +202,7 @@ export const OnrampPolicy = () => {
           </tr>
           <tr>
             <td colSpan={2}>
-              <strong>Retention period:</strong>Personal data will be retained
+              <strong>Retention period:</strong> Personal data will be retained
               for up to 10 years in order to establish, exercise and defend
               legal claims.
             </td>
