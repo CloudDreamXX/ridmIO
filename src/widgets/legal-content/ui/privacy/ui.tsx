@@ -5,12 +5,12 @@ export const OnrampPolicy = () => {
     <div className={styles.content}>
       <p>
         This Privacy Policy (<strong>"Privacy Policy"</strong>) describes how
-        and why RIDM (<strong>"we" </strong>
-        <strong>"our"</strong>,<strong>"us"</strong>, <strong>“RIDM”</strong>)
-        collects and otherwise processes personal data about you as a visitor
-        and user of <a href="https://ridm.io">RIDM.IO</a> as defined under the
-        Terms of Service of <a href="https://ridm.io">RIDM.IO</a> (hereinafter
-        the “Platform”).
+        and why RIDM (<strong>"we"</strong>, <strong>"our"</strong>,{" "}
+        <strong>"us"</strong>, <strong>“RIDM”</strong>) collects and otherwise
+        processes personal data about you as a visitor and user of{" "}
+        <a href="https://ridm.io">RIDM.IO</a> as defined under the Terms of
+        Service of <a href="https://ridm.io">RIDM.IO</a> (hereinafter the
+        “Platform”).
       </p>
       <p>
         The term <strong>"processing"</strong> is used to cover all activities
@@ -28,7 +28,8 @@ export const OnrampPolicy = () => {
         Parliament and of the Council of 27 April 2016 on the protection of
         natural persons with regard to the processing of personal data and on
         the free movement of such data, and repealing Directive 95/46/EC (the
-        "GDPR") as well as laws and regulations complementing the GDPR.
+        <strong>"GDPR"</strong>) as well as laws and regulations complementing
+        the GDPR.
       </p>
       <p>
         <strong>"Personal data"</strong> is defined as any information relating
@@ -53,8 +54,8 @@ export const OnrampPolicy = () => {
         Service available here:{" "}
         <a href="https://ridm.io/terms-use/onramp">LINK</a>. All of the Terms of
         Service referred to herein shall be together referred to as the
-        “Agreement” between RIDM and the user for the purpose of this Privacy
-        Policy.
+        <strong>“Agreement”</strong> between RIDM and the user for the purpose
+        of this Privacy Policy.
       </p>
       <div className={styles.divider} />
       <h2>PURPOSES OF THE PROCESSING OF YOUR PERSONAL DATA</h2>
@@ -98,10 +99,10 @@ export const OnrampPolicy = () => {
             </td>
             <td>
               <p>
-                Contractual necessity. The processing is necessary for the
-                performance of the Agreement between you and RIDM or in order to
-                take steps at the request of you prior to entering into the
-                Agreement.
+                <i>Contractual necessity.</i> The processing is necessary for
+                the performance of the Agreement between you and RIDM or in
+                order to take steps at the request of you prior to entering into
+                the Agreement.
               </p>
             </td>
           </tr>
@@ -140,9 +141,9 @@ export const OnrampPolicy = () => {
             </td>
             <td>
               <p>
-                Legitimate interest. The processing is necessary to fulfil our
-                legitimate interest in improving your experience on the Platform
-                and to provide you with tailored content.
+                <i>Legitimate interest.</i> The processing is necessary to
+                fulfil our legitimate interest in improving your experience on
+                the Platform and to provide you with tailored content.
               </p>
             </td>
           </tr>
@@ -170,14 +171,16 @@ export const OnrampPolicy = () => {
         <tbody>
           <tr>
             <td>
-              All data collected that are necessary to fulfil the purpose.
+              <i>
+                All data collected that are necessary to fulfil the purpose.
+              </i>
             </td>
             <td>
               <p>
-                Legitimate interest. The processing is necessary in order to
-                fulfil our legitimate interest to establish, exercise or defend
-                the legal claim, e.g. in connection with a dispute or legal
-                process.
+                <i>Legitimate interest.</i> The processing is necessary in order
+                to fulfil our legitimate interest to establish, exercise or
+                defend the legal claim, e.g. in connection with a dispute or
+                legal process.
               </p>
               <table>
                 <thead>
@@ -199,8 +202,9 @@ export const OnrampPolicy = () => {
           </tr>
           <tr>
             <td colSpan={2}>
-              <strong>Retention period:</strong> Personal data will be retained
-              during our contractual relationship.
+              <strong>Retention period:</strong>Personal data will be retained
+              for up to 10 years in order to establish, exercise and defend
+              legal claims.
             </td>
           </tr>
         </tbody>
@@ -221,19 +225,21 @@ export const OnrampPolicy = () => {
         <tbody>
           <tr>
             <td>
-              All data collected that are necessary to fulfil the purpose.
+              <i>
+                All data collected that are necessary to fulfil the purpose.
+              </i>
             </td>
             <td>
               <p>
-                Legal obligation. The processing is necessary to fulfil RIDM's
-                legal obligations.
+                <i>Legal obligation.</i> The processing is necessary to fulfil
+                RIDM's legal obligations.
               </p>
             </td>
           </tr>
           <tr>
             <td colSpan={2}>
               <strong>Retention period:</strong> Personal data will be retained
-              during our contractual relationship.
+              as long as necessary to fulfil each legal obligation.
             </td>
           </tr>
         </tbody>
@@ -255,20 +261,22 @@ export const OnrampPolicy = () => {
         <tbody>
           <tr>
             <td>
-              All data collected that are necessary to fulfil the purpose.
+              <i>
+                All data collected that are necessary to fulfil the purpose.
+              </i>
             </td>
             <td>
               <p>
-                Legitimate interest. The processing is necessary to fulfil our
-                legitimate interest in managing and protecting our website,
-                services and related IT systems.
+                <i>Legitimate interest.</i> The processing is necessary to
+                fulfil our legitimate interest in managing and protecting our
+                website, services and related IT systems.
               </p>
             </td>
           </tr>
           <tr>
             <td colSpan={2}>
               <strong>Retention period:</strong> Personal data will be retained
-              during our contractual relationship.
+              as long as necessary in relation to each purpose stated above.
             </td>
           </tr>
         </tbody>
@@ -297,8 +305,9 @@ export const OnrampPolicy = () => {
             </td>
             <td>In order to exercise, establish or defend legal claims.</td>
             <td>
-              Legitimate interest. To fulfil our legitimate interest in managing
-              and defending legal claims, e.g. in relation to a dispute.
+              <i>Legitimate interest.</i> To fulfil our legitimate interest in
+              managing and defending legal claims, e.g. in relation to a
+              dispute.
             </td>
           </tr>
           <tr>
@@ -311,7 +320,9 @@ export const OnrampPolicy = () => {
               To fulfil legal obligations in the field of taxation and
               accounting.
             </td>
-            <td>Legal obligation. To fulfil our legal obligations.</td>
+            <td>
+              <i>Legal obligation.</i> To fulfil our legal obligations.
+            </td>
           </tr>
           <tr>
             <td>
@@ -324,9 +335,9 @@ export const OnrampPolicy = () => {
               the business or in connection with a merger.
             </td>
             <td>
-              Legitimate interest. To fulfil our legitimate interest in being
-              able to sell all or part of the business or in connection with a
-              merger.
+              <i>Legitimate interest.</i> To fulfil our legitimate interest in
+              being able to sell all or part of the business or in connection
+              with a merger.
             </td>
           </tr>
           <tr>
@@ -357,12 +368,15 @@ export const OnrampPolicy = () => {
             </td>
             <td>
               <p>
-                Regarding no 1, 2, and 3: Contractual necessity. The processing
-                is necessary for the performance of our Agreement with you (i.e.
-                Terms and Conditions) or in order to take steps at the request
-                of you prior to entering into the contract.
+                Regarding no 1, 2, and 3: <i>Contractual necessity</i>. The
+                processing is necessary for the performance of our Agreement
+                with you (i.e.
+                <i>Terms and Conditions</i>) or in order to take steps at the
+                request of you prior to entering into the contract.
               </p>
-              <p>Regarding no 4: Legitimate interest.</p>
+              <p>
+                Regarding no 4: <i>Legitimate interest.</i>
+              </p>
               <p>
                 The processing is necessary to fulfil our legitimate interest in
                 providing you with the affiliated offers connected to your use
@@ -377,7 +391,7 @@ export const OnrampPolicy = () => {
         In order to fulfil the purposes of the processing of your personal data,
         we transfer personal data to external parties such as service providers
         that we have engaged as well as other partners. These parties provide
-        services within the areas of inter alia IT (such as data storage,
+        services within the areas of <i>inter alia</i> IT (such as data storage,
         support and management services), finance (e.g. our book-keeping system)
         and statistics services. These external parties will act as data
         processors of RIDM and may only process your personal data in accordance
@@ -534,8 +548,8 @@ export const OnrampPolicy = () => {
       <p>
         You acknowledge that you always have the right to lodge complaints
         pertaining to the processing of your personal data to the Personal Data
-        Authority in Czech Republic (Office for Personal Data protection -
-        uoou.gov.cz).
+        Authority in Czech Republic{" "}
+        <i>(Office for Personal Data protection - uoou.gov.cz).</i>
       </p>
       <h3>CONTACT INFORMATION</h3>
       <p>

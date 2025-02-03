@@ -9,7 +9,6 @@ export const About: React.FC = () => {
       <div data-section={"dark"} className={styles.light}>
         <AboutUs />
         <Team />
-        <Hq />
       </div>
     </div>
   );

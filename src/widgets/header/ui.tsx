@@ -99,15 +99,11 @@ export const Header: React.FC = () => {
           </Link>
         </nav>
         <nav>
-          <div className={styles.lang}>
-            <Button className={styles.button} icon={<ArrowSmall />}>
-              En
+          <Link to={"/#form"}>
+            <Button variant="bordered" className={styles.bordered}>
+              Contact us
             </Button>
-          </div>
-          <Button className={styles.button}>Log in</Button>
-          <Button variant="bordered" className={styles.bordered}>
-            Sign up
-          </Button>
+          </Link>
         </nav>
         <button
           className={classNames(styles.burger, isOpen && styles.open)}
@@ -132,15 +128,11 @@ export const Header: React.FC = () => {
           </nav>
           <nav>
             <div className={styles.auth}>
-              <Button className={styles.button}>Log in</Button>
-              <Button variant="bordered" className={styles.bordered}>
-                Sign up
-              </Button>
-            </div>
-            <div className={styles.lang}>
-              <Button className={styles.button} icon={<ArrowSmall />}>
-                English
-              </Button>
+              <Link to={"/#form"}>
+                <Button variant="bordered" className={styles.bordered}>
+                  Contact us
+                </Button>
+              </Link>
             </div>
           </nav>
         </div>

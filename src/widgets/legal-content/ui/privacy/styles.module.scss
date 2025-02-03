@@ -2,10 +2,14 @@
   width: 100%;
   max-width: 57.5rem;
   color: #323232;
-  font-family: "ALT Riviera ";
+  font-family: "ALT Riviera";
 
   strong {
     font-weight: 500;
+  }
+
+  i {
+    font-style: italic;
   }
 
   h2 {
@@ -115,5 +119,9 @@
         white-space: normal;
       }
     }
+  }
+
+  a {
+    text-decoration: underline;
   }
 }

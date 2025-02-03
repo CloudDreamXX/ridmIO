@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import footerImg from "shared/assets/img/Ridm.png";
-import { nav } from "./utils";
+import { nav } from "./lib";
 import { FooterNav } from "feature/footer-nav";
 import { useLocation } from "react-router";
 import classNames from "classnames";
@@ -26,10 +26,7 @@ export const Footer: React.FC = () => {
 
       <div className={styles.additional}>
         <p>
-          <span>©Ridm 2025</span>{" "}
-          {width > 768
-            ? "a trademark of Climar Limited"
-            : "Part of Climar Ltd."}
+          <span>©Ridm 2025</span> Part of Xypheris s.r.o.
         </p>
       </div>
     </div>

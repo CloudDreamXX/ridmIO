@@ -8,3 +8,4 @@ export * from "./intro";
 export * from "./payment";
 export * from "./plan";
 export * from "./web3";
+export * from "./part";

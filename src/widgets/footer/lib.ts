@@ -39,17 +39,13 @@ export const nav: Nav = {
       link: "/privacy",
     },
     {
-      name: "Cookie Policy",
-      link: "/",
-    },
-    {
       name: "Terms of Use",
       link: "/terms-use",
     },
   ],
   "Company info": [
     {
-      name: "Ridm is a trademark of Climar Limited Company No. 758159 Ireland",
+      name: "Ridm is a brand owned and operated by Xypheris s.r.o.Czech Republic Company Number:22400737Kurzova 2222/16, 155 00, Prague Czech RepublicVirtual Asset Service Provider registered with the Financial Analytical Office of Czech Republic (FAU)",
       link: "/",
     },
     {

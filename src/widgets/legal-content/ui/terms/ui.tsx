@@ -7,24 +7,26 @@ export const OnrampTerms = () => {
       <div className={styles.divider} />
       <ul>
         <li>
-          <a href="https://ridm.io">RIDM.IO</a> is operated by Xypheris s.r.o.
-          ("we", "our", "us" or “RIDM”) a company incorporated in the Czech
-          Republic under the company registration number: 22400737 and with its
-          registered address at Kurzova 2222/16, 155 00, Praha 13 - Stodůlky and
-          a Virtual Asset Service Provider registered with the Financial
-          Analytical Office of Czech Republic (FAU).{" "}
+          <a href="https://ridm.io">RIDM.IO</a> is operated by Xypheris s.r.o. (
+          <strong>"we" </strong>
+          <strong>"our"</strong>,<strong>"us"</strong>, <strong>“RIDM”</strong>)
+          a company incorporated in the Czech Republic under the company
+          registration number: 22400737 and with its registered address at
+          Kurzova 2222/16, 155 00, Praha 13 - Stodůlky and a Virtual Asset
+          Service Provider registered with the Financial Analytical Office of
+          Czech Republic (FAU).{" "}
         </li>
         <li>
           RIDM is an online platform accessible via the internet for end-users
           to access a range of virtual asset services offered by us (the
-          “Virtual Asset Services”). By accessing or using our services, you
-          agree to comply with and be bound by these Terms of Service (the
-          “Terms of Service”).
+          <strong>“Virtual Asset Services”</strong>). By accessing or using our
+          services, you agree to comply with and be bound by these Terms of
+          Service (the <strong>“Terms of Service”</strong>).
         </li>
         <li>
           Please read carefully these Terms of Service and ensure that you
           understand these terms. If you do not understand these Terms of
-          Service, please contact us before starting to use the Platform at
+          Service, please contact us before starting to use the Platform at{" "}
           <a href="mailto:support@ridm.io">support@ridm.io</a>.
         </li>
       </ul>
@@ -118,9 +120,9 @@ export const OnrampTerms = () => {
           In compliance with Anti-money laundering (AML) and combating the
           financing of terrorism (CFT) regulations, we are required to verify
           your identity before you are provided with any of the Virtual Asset
-          Services (the “KYC Process”). For this purpose, we require you to
-          share accurate and up-to-date personal information and documentation
-          about you.
+          Services (the <strong>“KYC Process”</strong>). For this purpose, we
+          require you to share accurate and up-to-date personal information and
+          documentation about you.
         </li>
         <li>
           In the event where any of the conditions provided under sections 3.1
@@ -145,22 +147,18 @@ export const OnrampTerms = () => {
       <h2>Services Offered</h2>
       <div className={styles.divider} />
       <ul>
-        <ul>
-          <li>
-            RIDM is a Virtual Asset Service Provider registered with the
-            Financial Analytical Office of Czech Republic (FAU), any End-user
-            accessing the Platform and accepting these Terms of Service from
-            outside Czech Republic hereby confirms that they do so on their own
-            initiative without solicitation from RIDM.
-          </li>
-          <li>
-            In order to use the Virtual Asset Services through the Platform,
-            End-users need to create a User Account subject to the terms set-out
-            in section 3 above.
-          </li>
-        </ul>
-      </ul>
-      <ul>
+        <li>
+          RIDM is a Virtual Asset Service Provider registered with the Financial
+          Analytical Office of Czech Republic (FAU), any End-user accessing the
+          Platform and accepting these Terms of Service from outside Czech
+          Republic hereby confirms that they do so on their own initiative
+          without solicitation from RIDM.
+        </li>
+        <li>
+          In order to use the Virtual Asset Services through the Platform,
+          End-users need to create a User Account subject to the terms set-out
+          in section 3 above.
+        </li>
         <li>
           In order to access the Custodial Wallet Service on the Platform, you
           need to log-in your User Account where you can consult the balance of
@@ -220,7 +218,7 @@ export const OnrampTerms = () => {
       <ul>
         <li>
           The Virtual Asset Services provided through the Platform only support
-          the following Virtual Assets
+          the following Virtual Assets:
         </li>
         <ul>
           <li>Bitcoin (BTC)</li>
@@ -236,6 +234,7 @@ export const OnrampTerms = () => {
       </ul>
       <div className={styles.divider} />
       <h2>Supported Payment Methods and Fiat Currencies</h2>
+      <div className={styles.divider} />
       <ul>
         <li>
           The supported payment methods for the Virtual Asset Buy Service are
@@ -249,16 +248,14 @@ export const OnrampTerms = () => {
           The supported Fiat Currencies for Virtual Asset Buy/Sell Services are
           EUROS and CZECH CROWN.
         </li>
-        <ul>
-          <li>
-            Please note that the list of supported Payment Methods and Fiat
-            Currencies may change, please refer to our website or these Terms of
-            Service for up-to-date information.
-          </li>
-        </ul>
+        <li>
+          Please note that the list of supported Payment Methods and Fiat
+          Currencies may change, please refer to our website or these Terms of
+          Service for up-to-date information.
+        </li>
       </ul>
       <div className={styles.divider} />
-      <h3>Fees and Exchange Rates</h3>
+      <h2>Fees and Exchange Rates</h2>
       <div className={styles.divider} />
       <ul>
         <li>
@@ -286,7 +283,7 @@ export const OnrampTerms = () => {
         </li>
       </ul>
       <div className={styles.divider} />
-      <h3>Refunds</h3>
+      <h2>Refunds</h2>
       <div className={styles.divider} />
       <ul>
         <li>
@@ -370,58 +367,49 @@ export const OnrampTerms = () => {
           SITUATION, INVESTMENT OBJECTIVES, AND RISK TOLERANCE BEFORE ENGAGING
           IN ANY VIRTUAL ASSET-RELATED ACTIVITIES.
         </li>
-        <ul>
-          <ul>
-            <li>
-              RIDM facilitates access to Virtual Asset Services but does not
-              own, control, or operate the underlying blockchain networks on
-              which such virtual assets are recorded and transacted. Users
-              acknowledge that:
-            </li>
-          </ul>
-          <li>
-            Transactions executed through the Platform are dependent on
-            decentralized blockchain networks, which are not operated or
-            maintained by RIDM;
-          </li>
-          <li>
-            RIDM has no authority to modify, reverse, or cancel transactions
-            once they have been submitted to a blockchain and that Blockchain
-            transactions are or irreversible nature;
-          </li>
-          <li>
-            The functionality, security, and performance of blockchain networks
-            are outside RIDM’s control.
-          </li>
-          <ul>
-            <li>
-              End-users accept all risks associated with the operation of
-              blockchain networks, including but not limited to:
-            </li>
-          </ul>
-          <li>Network congestion or delays in transaction confirmation;</li>
-          <li>Blockchain protocol changes, hard forks, or network upgrades;</li>
-          <li>
-            Irreversible loss of assets due to sending funds to incorrect or
-            incompatible addresses;
-          </li>
-          <li>Blockchain Interruptions and Failures.</li>
-        </ul>
+        <li>
+          RIDM facilitates access to Virtual Asset Services but does not own,
+          control, or operate the underlying blockchain networks on which such
+          virtual assets are recorded and transacted. Users acknowledge that:
+        </li>
+        <li>
+          Transactions executed through the Platform are dependent on
+          decentralized blockchain networks, which are not operated or
+          maintained by RIDM;
+        </li>
+        <li>
+          RIDM has no authority to modify, reverse, or cancel transactions once
+          they have been submitted to a blockchain and that Blockchain
+          transactions are or irreversible nature;
+        </li>
+        <li>
+          The functionality, security, and performance of blockchain networks
+          are outside RIDM’s control.
+        </li>
+        <li>
+          End-users accept all risks associated with the operation of blockchain
+          networks, including but not limited to:
+        </li>
+        <li>Network congestion or delays in transaction confirmation;</li>
+        <li>Blockchain protocol changes, hard forks, or network upgrades;</li>
+        <li>
+          Irreversible loss of assets due to sending funds to incorrect or
+          incompatible addresses;
+        </li>
+        <li>Blockchain Interruptions and Failures.</li>
         <li>End-users are solely responsible for:</li>
-        <ul>
-          <li>
-            Verifying all transaction details before submission, including
-            recipient addresses and network fees;
-          </li>
-          <li>
-            Using compatible wallets and adhering to best practices for
-            blockchain transactions;
-          </li>
-          <li>
-            Understanding the risks of irreversible transactions and blockchain
-            immutability.
-          </li>
-        </ul>
+        <li>
+          Verifying all transaction details before submission, including
+          recipient addresses and network fees;
+        </li>
+        <li>
+          Using compatible wallets and adhering to best practices for blockchain
+          transactions;
+        </li>
+        <li>
+          Understanding the risks of irreversible transactions and blockchain
+          immutability.
+        </li>
         <li>
           RIDM does not provide financial, investment, or trading advice. All
           Virtual Asset transactions conducted through the Platform are solely
@@ -532,11 +520,11 @@ export const OnrampTerms = () => {
         <li>
           The End-user may request to terminate their User Account and cease
           using the Platform at any time by submitting a written request via
-          email to support@ridm.io and by confirming their identity. The User
-          Account termination shall be considered final and irreversible. The
-          End-user acknowledges that they may lose access to any remaining
-          balances, transaction history, or other data associated with their
-          account once closure is completed.
+          email to <a href="mailto:support@ridm.io">support@ridm.io</a> and by
+          confirming their identity. The User Account termination shall be
+          considered final and irreversible. The End-user acknowledges that they
+          may lose access to any remaining balances, transaction history, or
+          other data associated with their account once closure is completed.
         </li>
         <li>RIDM will process the User Account closure request upon:</li>
         <ul>

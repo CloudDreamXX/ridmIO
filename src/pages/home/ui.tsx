@@ -10,6 +10,7 @@ import {
   Payment,
   Plan,
   Web3,
+  Part,
 } from "widgets/home";
 
 export const Home: React.FC = () => {
@@ -35,6 +36,7 @@ export const Home: React.FC = () => {
         <Web3 />
         <ImageSectionsWhite />
       </div>
+      <Part />
       <Plan />
       <Faq />
       <Form />

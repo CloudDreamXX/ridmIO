@@ -1,22 +1,16 @@
 import { FC } from "react";
-import { Outlet } from "react-router";
 import styles from "./styles.module.scss";
-import { RouteToggle } from "shared/ui/route-toggle";
+import { Title } from "shared/ui";
+import { OnrampTerms } from "widgets/legal-content";
 
 export const Terms: FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.sidebar}>
-          <RouteToggle
-            title="Terms of use"
-            links={[
-              { name: "Onramp", path: "/terms-use/onramp" },
-              { name: "Checkout", path: "/terms-use/checkout" },
-            ]}
-          />
+          <Title className={styles.title}>Terms of use</Title>
         </div>
-        <Outlet />
+        <OnrampTerms />
       </div>
     </div>
   );
