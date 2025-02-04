@@ -35,8 +35,8 @@ export const Part: React.FC = () => {
             Reduce costs for consumers
           </Title>
           <p>
-            Crypto transfers save an average of 8-10% annually with reduced
-            emittance costs compared to <span>traditional</span> systems.
+            Crypto transfers save an average of <span>8-10% annually</span> with
+            reduced emittance costs compared to traditional systems.
           </p>
         </div>
         <div className={styles.card}>
@@ -48,8 +48,8 @@ export const Part: React.FC = () => {
             Financial power for underbanked adults{" "}
           </Title>
           <p>
-            2.5 billion adults lack access to banking services, but 30% of them
-            now use crypto wallets.
+            2.5 billion adults lack access to banking services, but{" "}
+            <span>30%</span> of them now use <span>crypto wallets.</span>
           </p>
         </div>
         <div className={styles.card}>

@@ -25,8 +25,10 @@ export const Header: React.FC = () => {
   const isHome = location.pathname === "/";
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
-    lottieRef.current?.play();
+    if (lottieRef.current?.play) {
+      lottieRef.current?.play();
+      setIsHovered(true);
+    }
   };
 
   const handleMouseLeave = () => {

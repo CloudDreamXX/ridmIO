@@ -14,10 +14,6 @@ export const nav: Nav = {
       name: "Business Platform",
       link: "/#business",
     },
-    {
-      name: "Support",
-      link: "/",
-    },
   ],
   About: [
     {
