@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router";
 import styles from "./styles.module.scss";
 import { Button } from "shared/ui";
-import ArrowSmall from "shared/assets/icons/arrow-small";
 import logo from "shared/assets/lottie/logo.json";
 import classNames from "classnames";
 import {
@@ -18,7 +17,7 @@ import smallLogo from "shared/assets/img/small-logo.png";
 export const Header: React.FC = () => {
   const width = usePageWidth();
   const scrollDirection = useScrollDirection();
-  const { theme, setTheme } = useSectionTheme();
+  const { theme } = useSectionTheme();
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const lottieRef = useRef<LottieRefCurrentProps>(null);
@@ -37,7 +36,7 @@ export const Header: React.FC = () => {
   const handleClick = (e: React.MouseEvent) => {
     if (isHome) {
       e.preventDefault();
-      window.location.reload();
+      window.location.href = "/";
     }
   };
 
@@ -46,10 +45,8 @@ export const Header: React.FC = () => {
   };
 
   useEffect(() => {
-    location.pathname.includes("term") || location.pathname.includes("privacy")
-      ? setTheme("dark")
-      : setTheme("light");
-  }, [location.pathname]);
+    setIsOpen(false);
+  }, [location]);
 
   return (
     <header
@@ -113,17 +110,14 @@ export const Header: React.FC = () => {
         ></button>
         <div className={classNames(styles.mobile, isOpen && styles.open)}>
           <nav>
-            <Link to="/onramp" onClick={closeMenu}>
-              <Button className={styles.button}>Onramp</Button>
-            </Link>
-            <Link to="/checkout" onClick={closeMenu}>
-              <Button className={styles.button}>Checkout</Button>
-            </Link>
+            <a href="/#individuals" onClick={closeMenu}>
+              <Button className={styles.button}>Individuals</Button>
+            </a>
+            <a href="/#business" onClick={closeMenu}>
+              <Button className={styles.button}>Business</Button>
+            </a>
             <Link to="/about" onClick={closeMenu}>
               <Button className={styles.button}>About</Button>
-            </Link>
-            <Link to="/support" onClick={closeMenu}>
-              <Button className={styles.button}>Support</Button>
             </Link>
           </nav>
           <nav>

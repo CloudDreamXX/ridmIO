@@ -48,7 +48,11 @@ h3::selection,
 h4::selection,
 h5::selection,
 h6::selection,
-span::selection {
+span::selection,
+li::selection,
+a::selection,
+strong::selection,
+img::selection {
   background-color: #fea372;
   color: #000;
 }

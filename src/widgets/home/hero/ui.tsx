@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
             >
               <a href="#individuals">individuals</a>
             </Button>
-            <span>and</span>
+            <span>or</span>
             <Button
               className={styles.button}
               variant="secondary"
