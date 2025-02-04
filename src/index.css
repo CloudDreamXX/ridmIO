@@ -53,7 +53,9 @@ li::selection,
 a::selection,
 strong::selection,
 img::selection,
-div::selection {
+div::selection,
+td::selection,
+th::selection {
   background-color: #fea372;
   color: #000;
 }
