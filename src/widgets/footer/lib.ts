@@ -45,7 +45,7 @@ export const nav: Nav = {
   ],
   "Company info": [
     {
-      name: "Ridm is a brand owned and operated by Xypheris s.r.o.Czech Republic Company Number:22400737Kurzova 2222/16, 155 00, Prague Czech RepublicVirtual Asset Service Provider registered with the Financial Analytical Office of Czech Republic (FAU)",
+      name: "Ridm is a brand owned and operated by Xypheris s.r.o.Czech Republic Company Number:22400737 Kurzova 2222/16, 155 00, Prague Czech RepublicVirtual Asset Service Provider registered with the Financial Analytical Office of Czech Republic (FAU)",
       link: "/",
     },
     {
