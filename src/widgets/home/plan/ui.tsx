@@ -13,7 +13,9 @@ export const Plan: React.FC = () => {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={styles.text}>
-        <Title>Plan the present. Build the future.</Title>
+        <Title className={styles.title}>
+          Plan the present. Build the future.
+        </Title>
         <p>
           Ridm is an innovative fintech, focusing on web3 finance for businesses
           and individuals. With a host of products and solutions, we aim to make

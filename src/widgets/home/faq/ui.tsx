@@ -13,7 +13,7 @@ export const Faq: React.FC = () => {
         </Title>
         <p>
           Frequently asked questions, can’t find your answer here?{" "}
-          <a href="#">See all</a>
+          <a href="#form">Get in touch</a>
         </p>
       </div>
       <Accordion items={faqData} />

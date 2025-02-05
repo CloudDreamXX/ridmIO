@@ -3,7 +3,6 @@ import styles from "./styles.module.scss";
 import footerImg from "shared/assets/img/Ridm.png";
 import { nav } from "./lib";
 import { FooterNav } from "feature/footer-nav";
-import { useLocation } from "react-router";
 import classNames from "classnames";
 import { useDarkBg, usePageWidth } from "shared/lib/hooks";
 

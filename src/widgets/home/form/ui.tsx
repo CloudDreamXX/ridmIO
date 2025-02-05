@@ -102,41 +102,43 @@ export const Form: React.FC = () => {
       <div className={styles.form__container}>
         <form onSubmit={handleSubmit}>
           {error && <div className={styles.error}>{error}</div>}
-          <input
-            type="text"
-            name="first_name"
-            placeholder="First name"
-            value={formData.first_name}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="surname"
-            placeholder="Surname"
-            value={formData.surname}
-            onChange={handleChange}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="company"
-            placeholder="Company"
-            value={formData.company}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="message"
-            placeholder="Message"
-            value={formData.message}
-            onChange={handleChange}
-          />
+          <div className={styles.inputs}>
+            <input
+              type="text"
+              name="first_name"
+              placeholder="First name"
+              value={formData.first_name}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="surname"
+              placeholder="Surname"
+              value={formData.surname}
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="company"
+              placeholder="Company"
+              value={formData.company}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="message"
+              placeholder="Message"
+              value={formData.message}
+              onChange={handleChange}
+            />
+          </div>
           <Button
             type="submit"
             variant="secondary"

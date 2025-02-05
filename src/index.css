@@ -60,7 +60,10 @@ strong::selection,
 img::selection,
 div::selection,
 td::selection,
-th::selection {
+th::selection,
+i::selection,
+br::selection,
+input::selection {
   background-color: #fea372;
   color: #000;
 }

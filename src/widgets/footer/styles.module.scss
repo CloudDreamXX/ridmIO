@@ -15,7 +15,7 @@
   position: relative;
 
   @media screen and (max-width: 768px) {
-    padding: 3.25rem 1.875rem;
+    padding: 4.125rem 1.875rem 0.875rem 1.875rem;
   }
 
   &.dark {
@@ -25,6 +25,7 @@
         rgba(0, 0, 0, 0.4) 100%
       ),
       #1b1b1b;
+
     .additional {
       p {
         color: #7a7a7a;
@@ -33,10 +34,6 @@
           color: white;
         }
       }
-    }
-
-    @media screen and (max-width: 768px) {
-      background: #000;
     }
   }
 
@@ -59,8 +56,8 @@
   .additional {
     position: absolute;
     transform: rotate(-90deg);
-    right: -140px;
-    top: 25%;
+    right: -78px;
+    top: 268px;
 
     p {
       color: #7a7a7a;

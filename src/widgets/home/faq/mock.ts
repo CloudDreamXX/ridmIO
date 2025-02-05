@@ -22,8 +22,7 @@ export const faqData: FaqItem[] = [
   {
     question: "In what countries is Ridm available?",
     answer: [
-      "Ridm is currently available in the European Economic Area (EEA) and additional regions will be added over time.",
-      "Follow our Linkedin page [linkedin.com/company] for updates regarding all aspects of our product.",
+      "Ridm is currently available in the European Economic Area (EEA) and additional regions will be added over time. Follow our Linkedin page [linkedin.com/company] for updates regarding all aspects of our product.",
     ],
   },
 ];

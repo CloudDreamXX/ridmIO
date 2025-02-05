@@ -7,14 +7,10 @@
   justify-content: flex-start;
   background-repeat: no-repeat;
   background-size: cover;
-  background: #1b1b1b;
-  gap: 5rem;
-  font-family: "ALT Riviera";
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     gap: 0;
-    background-color: #000;
   }
 
   .left__container {
@@ -72,21 +68,32 @@
   .form__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 50%;
-    padding: 6.25rem 58px 2.625rem;
+    padding: 6.25rem 58px 2.625rem 6.0625rem;
 
     @media screen and (max-width: 768px) {
       width: 100%;
-      padding: 1.625rem 1.375rem 0 1.375rem;
+      padding: 1.625rem 1.375rem;
       min-height: 30rem;
     }
 
     form {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
       gap: 15px;
       position: relative;
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media screen and (max-width: 768px) {
+          gap: 1.75rem;
+        }
+      }
 
       .error {
         position: absolute;
@@ -95,7 +102,7 @@
       }
 
       @media screen and (max-width: 768px) {
-        gap: 1.25rem;
+        gap: 6.25rem;
       }
 
       input {

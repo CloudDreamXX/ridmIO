@@ -67,8 +67,7 @@
     .logo__small,
     .logo,
     .ridm {
-      filter: brightness(0) saturate(100%) invert(78%) sepia(92%)
-        saturate(2951%) hue-rotate(310deg) brightness(103%) contrast(103%);
+      filter: brightness(0) saturate(100%);
     }
 
     .nav > nav {
