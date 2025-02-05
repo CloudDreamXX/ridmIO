@@ -75,7 +75,7 @@ export const Team: React.FC = () => {
         className={classNames(styles.teamSwiper, "team-swiper")}
         breakpoints={{
           320: {
-            slidesPerView: 1.1,
+            slidesPerView: 1.2,
             spaceBetween: 16,
           },
           768: {

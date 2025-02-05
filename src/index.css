@@ -41,6 +41,11 @@ input {
   font-family: "ALT Riviera";
 }
 
+p {
+  line-height: 130%;
+  letter-spacing: -0.084px;
+}
+
 p::selection,
 h1::selection,
 h2::selection,

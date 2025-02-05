@@ -63,30 +63,34 @@
     }
   }
 
-  &.dark .logo__small {
-    filter: brightness(0) saturate(100%) invert(97%) sepia(49%) saturate(5029%)
-      hue-rotate(305deg) brightness(99%) contrast(101%);
-  }
+  &.dark {
+    .logo__small,
+    .logo,
+    .ridm {
+      filter: brightness(0) saturate(100%) invert(78%) sepia(92%)
+        saturate(2951%) hue-rotate(310deg) brightness(103%) contrast(103%);
+    }
 
-  &.dark .nav > nav {
-    color: #000;
-    .button {
+    .nav > nav {
       color: #000;
+      .button {
+        color: #000;
 
-      svg,
-      path {
-        stroke: #1b1b1b;
-      }
-
-      &:hover {
         svg,
         path {
           stroke: #1b1b1b;
         }
-      }
 
-      span {
-        color: #1b1b1b;
+        &:hover {
+          svg,
+          path {
+            stroke: #1b1b1b;
+          }
+        }
+
+        span {
+          color: #1b1b1b;
+        }
       }
     }
   }

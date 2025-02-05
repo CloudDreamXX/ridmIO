@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
 
       <div className={styles.additional}>
         <p>
-          <span>©Ridm 2025</span> Part of Xypheris s.r.o.
+          <span>©Ridm 2025</span>Part of Xypheris s.r.o.
         </p>
       </div>
     </div>

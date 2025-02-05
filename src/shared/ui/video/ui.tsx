@@ -1,4 +1,6 @@
+import classNames from "classnames";
 import React, { useEffect, useRef } from "react";
+import styles from "./styles.module.scss";
 
 interface VideoProps {
   src: string;
@@ -31,34 +33,18 @@ export const Video: React.FC<VideoProps> = ({
   }, [src, videoRef]);
 
   return (
-    <>
-      {!isSafari ? (
-        <video
-          src={src}
-          className={className}
-          autoPlay={autoPlay}
-          controls={controls}
-          loop={loop}
-          playsInline={playsinline}
-          muted={muted}
-          preload="metadata"
-          onError={(e) => console.error("Error loading video:", e)}
-        >
-          Your browser does not support the video tag.
-        </video>
-      ) : (
-        <img
-          src={src}
-          className={className}
-          alt="video"
-          // @ts-ignore
-          autoplay={autoPlay}
-          loop={loop}
-          playsinline={playsinline}
-          muted={muted}
-          preload="metadata"
-        />
-      )}
-    </>
+    <video
+      src={src}
+      className={className}
+      autoPlay={autoPlay}
+      controls={controls}
+      loop={loop}
+      playsInline={playsinline}
+      muted={muted}
+      preload="metadata"
+      onError={(e) => console.error("Error loading video:", e)}
+    >
+      Your browser does not support the video tag.
+    </video>
   );
 };

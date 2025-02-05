@@ -100,7 +100,7 @@ export const Header: React.FC = () => {
         <nav>
           <Link to={"/#form"}>
             <Button variant="bordered" className={styles.bordered}>
-              Contact us
+              Contact
             </Button>
           </Link>
         </nav>
@@ -126,7 +126,7 @@ export const Header: React.FC = () => {
             <div className={styles.auth}>
               <Link to={"/#form"}>
                 <Button variant="bordered" className={styles.bordered}>
-                  Contact us
+                  Contact
                 </Button>
               </Link>
             </div>
