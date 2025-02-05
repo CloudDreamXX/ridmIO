@@ -20,6 +20,7 @@ export const Video: React.FC<VideoProps> = ({
   muted,
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
   useEffect(() => {
     if (videoRef.current && autoPlay) {
@@ -30,17 +31,34 @@ export const Video: React.FC<VideoProps> = ({
   }, [src, videoRef]);
 
   return (
-    <video
-      src={src}
-      className={className}
-      autoPlay={autoPlay}
-      controls={controls}
-      loop={loop}
-      playsInline={playsinline}
-      muted={muted}
-      onError={(e) => console.error("Error loading video:", e)}
-    >
-      Your browser does not support the video tag.
-    </video>
+    <>
+      {!isSafari ? (
+        <video
+          src={src}
+          className={className}
+          autoPlay={autoPlay}
+          controls={controls}
+          loop={loop}
+          playsInline={playsinline}
+          muted={muted}
+          preload="metadata"
+          onError={(e) => console.error("Error loading video:", e)}
+        >
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <img
+          src={src}
+          className={className}
+          alt="video"
+          // @ts-ignore
+          autoplay={autoPlay}
+          loop={loop}
+          playsinline={playsinline}
+          muted={muted}
+          preload="metadata"
+        />
+      )}
+    </>
   );
 };
