@@ -38,6 +38,7 @@ export const Web3: React.FC = () => {
         src={web3Video}
         className={styles.bg}
         autoPlay
+        playsInline
         muted
         loop
         style={{ scale: width > 768 ? scaleVideo : responsiveScale[0] }}

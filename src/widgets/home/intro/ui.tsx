@@ -7,12 +7,11 @@ import styles from "./styles.module.scss";
 import { usePageWidth } from "shared/lib/hooks";
 
 const text = [
-  "Designed with simplicity in mind,",
-  "Ridm allows users to manage",
-  "their digital assets with comfort",
-  "and clarity. With a variety of",
-  "products, we're here to help individuals",
-  "and businesses leap into the future.",
+  "Designed with simplicity in mind, Ridm",
+  "allows users to manage their digital assets",
+  "with comfort and clarity. With a variety of",
+  "products, we’re here to help individuals and ",
+  "businesses leap into the future of finance.",
 ];
 
 export const Intro: React.FC = () => {
@@ -42,7 +41,7 @@ export const Intro: React.FC = () => {
           const lineProgress = useTransform(
             scrollYProgress,
             [0, 0.4, 0.8],
-            [0, (6 - lineIndex) / 6, 1]
+            [0, (5 - lineIndex) / 5, 1]
           );
 
           return (
@@ -53,8 +52,8 @@ export const Intro: React.FC = () => {
 
                 const color = useTransform(
                   lineProgress,
-                  [charProgress, charProgress + 0.025, 1],
-                  ["#614130", "#614130", "#FEA372"]
+                  [charProgress, charProgress + 0.02, 1],
+                  ["#614130", "#FEA372", "#FEA372"]
                 );
 
                 return (

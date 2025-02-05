@@ -77,9 +77,12 @@
       .subtitle,
       p {
         font-size: 1.3125rem;
-        margin-bottom: 0.8125rem;
         line-height: 1.3;
         letter-spacing: -0.084px;
+      }
+
+      .subtitle {
+        margin-bottom: 0.8125rem;
       }
 
       p {

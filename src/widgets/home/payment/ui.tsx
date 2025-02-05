@@ -39,6 +39,7 @@ export const Payment: React.FC = () => {
         autoPlay
         muted
         loop
+        playsInline
         style={{
           scale: width > 768 ? scaleVideo : responsiveScale[0],
         }}
