@@ -27,10 +27,6 @@ export const nav: Nav = {
   ],
   Legal: [
     {
-      name: "Licences",
-      link: "/",
-    },
-    {
       name: "Privacy Policy",
       link: "/privacy",
     },
