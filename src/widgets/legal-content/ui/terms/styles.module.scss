@@ -3,6 +3,7 @@
   max-width: 57.5rem;
   color: #323232;
   font-family: "ALT Riviera";
+  padding-left: 2rem;
 
   strong {
     font-weight: 500;
@@ -25,7 +26,7 @@
   }
 
   p,
-  ul li {
+  ol li {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -33,11 +34,7 @@
     letter-spacing: -0.06px;
   }
 
-  ul {
-    padding-left: 1.25rem;
-  }
-
-  ul li {
+  ol li {
     list-style: disc;
     margin-left: 14px;
     font-family: "ALT Riviera";
@@ -49,5 +46,35 @@
 
   a {
     text-decoration: underline;
+  }
+
+  > ol {
+    list-style-type: none;
+    counter-reset: subsection;
+
+    > li {
+      counter-increment: subsection;
+      position: relative;
+      padding-left: 0.5rem;
+
+      &::marker {
+        content: counter(section) "." counter(subsection);
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  > h2 {
+    counter-increment: section;
+  }
+
+  ol[type="a"] {
+    list-style-type: lower-alpha;
+    padding-left: 1.5rem;
+
+    li {
+      list-style: lower-alpha;
+    }
   }
 }

@@ -51,9 +51,9 @@ export const OnrampPolicy = () => {
       <p>
         Personal data is collected from you, as provided when you use the
         functionalities of our Platform. The Platform is subject to Terms of
-        Service available here:{" "}
-        <a href="https://ridm.io/terms-use/onramp">LINK</a>. All of the Terms of
-        Service referred to herein shall be together referred to as the
+        Service available here: <a href="https://ridm.io/terms-use">LINK</a>.
+        All of the Terms of Service referred to herein shall be together
+        referred to as the
         <strong>“Agreement”</strong> between RIDM and the user for the purpose
         of this Privacy Policy.
       </p>
@@ -351,7 +351,7 @@ export const OnrampPolicy = () => {
                 RIDM will share your personal data with its business partners
                 for the following purposes:
               </p>
-              <ul>
+              <ol>
                 <li>Supply payment services to the user;</li>
                 <li>
                   Supply of screening services for anti-money laundering, fraud
@@ -364,7 +364,7 @@ export const OnrampPolicy = () => {
                 <li>
                   Connect RIDM users with offers from RIDM’s Business Partners.
                 </li>
-              </ul>
+              </ol>
             </td>
             <td>
               <p>

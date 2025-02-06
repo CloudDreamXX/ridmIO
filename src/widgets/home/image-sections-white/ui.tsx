@@ -33,7 +33,7 @@ export const ImageSectionsWhite: React.FC = () => {
                 className={styles.button}
                 icon={<Arrow />}
               >
-                Get in touch
+                Try ridm
               </Button>
             </a>
           </div>
@@ -68,7 +68,7 @@ export const ImageSectionsWhite: React.FC = () => {
                 className={styles.button}
                 icon={<Arrow />}
               >
-                Get in touch
+                Try ridm
               </Button>
             </a>
           </div>

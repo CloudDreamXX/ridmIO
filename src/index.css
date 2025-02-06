@@ -63,7 +63,8 @@ td::selection,
 th::selection,
 i::selection,
 br::selection,
-input::selection {
+input::selection,
+ol::selection {
   background-color: #fea372;
   color: #000;
 }
