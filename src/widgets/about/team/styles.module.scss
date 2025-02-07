@@ -12,6 +12,7 @@
 
   * {
     transition-timing-function: ease-in-out !important;
+    transition-duration: 0.001s;
   }
 
   @media screen and (max-width: 768px) {

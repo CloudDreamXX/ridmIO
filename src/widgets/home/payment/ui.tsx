@@ -6,6 +6,9 @@ import paymentsVideo from "shared/assets/video/payments.mp4";
 import { usePageWidth } from "shared/lib/hooks";
 
 const getScale = (width: number) => {
+  if (width <= 420) {
+    return [8, 16];
+  }
   if (width <= 768) {
     return [5, 10];
   }

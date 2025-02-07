@@ -113,7 +113,9 @@ export const OnrampTerms = () => {
             you comply with all applicable laws and regulations applicable to
             you and the use of your User Account.
           </li>
-          <li>In order to be able to use your User Account, you need to:</li>
+        </ol>
+        <li>In order to be able to use your User Account, you need to:</li>
+        <ol type="a">
           <li>Dispose of a valid e-mail address; and</li>
           <li>Set-up a password; and</li>
           <li>Complete the KYC Process during the onboarding process.</li>

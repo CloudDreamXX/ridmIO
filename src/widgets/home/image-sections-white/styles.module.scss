@@ -84,7 +84,8 @@
       }
 
       .subtitle {
-        margin-bottom: 0.8125rem;
+        margin-bottom: 0.25rem;
+        line-height: 1;
       }
 
       p {
@@ -103,7 +104,6 @@
       font-size: 1.875rem;
       color: #fea372;
       text-align: left;
-      width: fit-content;
 
       svg {
         transform: rotate(90deg);

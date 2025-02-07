@@ -13,6 +13,7 @@ interface FormData {
 }
 
 export const Form: React.FC = () => {
+  const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>({
     first_name: "",
     surname: "",
@@ -72,6 +73,7 @@ export const Form: React.FC = () => {
         message: "",
       });
       setError("");
+      setIsFormSubmitted(true);
     } catch (err) {
       setError("Failed to send message. Please try again.");
     }
@@ -100,55 +102,62 @@ export const Form: React.FC = () => {
         </div>
       </div>
       <div className={styles.form__container}>
-        <form onSubmit={handleSubmit}>
-          {error && <div className={styles.error}>{error}</div>}
-          <div className={styles.inputs}>
-            <input
-              type="text"
-              name="first_name"
-              placeholder="First name"
-              value={formData.first_name}
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              name="surname"
-              placeholder="Surname"
-              value={formData.surname}
-              onChange={handleChange}
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              name="company"
-              placeholder="Company"
-              value={formData.company}
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              name="message"
-              placeholder="Message"
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </div>
-          <Button
-            type="submit"
-            variant="secondary"
-            className={styles.button}
-            icon={<Arrow />}
-            horizontal={true}
-          >
-            Send message
-          </Button>
-        </form>
+        {isFormSubmitted ? (
+          <>
+            <Title className={styles.text__submit}>
+              Thanks! We’ll get back to you soon.{" "}
+            </Title>
+          </>
+        ) : (
+          <form onSubmit={handleSubmit}>
+            {error && <p className={styles.error}>{error}</p>}
+            <div className={styles.inputs}>
+              <input
+                type="text"
+                name="first_name"
+                placeholder="First name"
+                value={formData.first_name}
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="surname"
+                placeholder="Surname"
+                value={formData.surname}
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="company"
+                placeholder="Company"
+                value={formData.company}
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="message"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
+              />
+            </div>
+            <Button
+              type="submit"
+              variant="secondary"
+              className={styles.button}
+              icon={<Arrow />}
+            >
+              Send message
+            </Button>
+          </form>
+        )}
       </div>
     </div>
   );

@@ -32,7 +32,6 @@ export const ImageSections: React.FC = () => {
                 variant="secondary"
                 className={styles.button}
                 icon={<Arrow />}
-                horizontal={true}
               >
                 Try Ridm
               </Button>
@@ -62,9 +61,8 @@ export const ImageSections: React.FC = () => {
                 variant="secondary"
                 className={styles.button}
                 icon={<Arrow />}
-                horizontal={true}
               >
-                Try Ridm
+                Try ridm
               </Button>
             </a>
           </div>
@@ -91,7 +89,6 @@ export const ImageSections: React.FC = () => {
                 variant="secondary"
                 className={styles.button}
                 icon={<Arrow />}
-                horizontal={true}
               >
                 Try Ridm
               </Button>

@@ -12,7 +12,7 @@ import {
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import Ridm from "shared/assets/icons/ridm";
 import RidmArrow from "shared/assets/icons/ridm-arrow";
-import smallLogo from "shared/assets/img/small-logo.png";
+import { toggleScroll } from "shared/lib/utils";
 
 export const Header: React.FC = () => {
   const width = usePageWidth();
@@ -42,12 +42,26 @@ export const Header: React.FC = () => {
     }
   };
 
+  const toggleMenu = () => {
+    const newIsOpen = !isOpen;
+    setIsOpen(newIsOpen);
+    toggleScroll(newIsOpen);
+  };
+
   const closeMenu = () => {
     setIsOpen(false);
+    toggleScroll(false);
   };
 
   useEffect(() => {
+    return () => {
+      toggleScroll(false);
+    };
+  }, []);
+
+  useEffect(() => {
     setIsOpen(false);
+    toggleScroll(false);
   }, [location]);
 
   return (
@@ -83,16 +97,25 @@ export const Header: React.FC = () => {
           </Link>
         ) : (
           <Link to="/" onClick={handleClick} className={styles.logo__small}>
-            <img src={smallLogo} alt="" />
+            <RidmArrow
+              className={classNames(
+                styles.logo,
+                styles.small,
+                isHovered && styles.hovered
+              )}
+              width={30}
+              height={30}
+            />
+            <Ridm className={styles.ridm} />
           </Link>
         )}
         <nav>
-          <a href="/#individuals">
+          <Link to="/#individuals">
             <Button className={styles.button}>Individuals</Button>
-          </a>
-          <a href="/#business">
+          </Link>
+          <Link to="/#business">
             <Button className={styles.button}>Business</Button>
-          </a>
+          </Link>
           <Link to="/about">
             <Button className={styles.button}>About</Button>
           </Link>
@@ -106,9 +129,7 @@ export const Header: React.FC = () => {
         </nav>
         <button
           className={classNames(styles.burger, isOpen && styles.open)}
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
+          onClick={toggleMenu}
         ></button>
         <div className={classNames(styles.mobile, isOpen && styles.open)}>
           <nav>

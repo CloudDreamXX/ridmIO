@@ -2,9 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { Button, Title } from "shared/ui";
 import Arrow from "shared/assets/icons/arrow";
-import growthLottie from "shared/assets/lottie/growth.json";
 import reduceLottie from "shared/assets/lottie/reduce.json";
-import financialLottie from "shared/assets/lottie/financial.json";
 import Lottie from "lottie-react";
 
 export const Part: React.FC = () => {
@@ -40,10 +38,7 @@ export const Part: React.FC = () => {
           </p>
         </div>
         <div className={styles.card}>
-          <Lottie
-            animationData={financialLottie}
-            className={styles.cardImage}
-          />
+          <Lottie animationData={reduceLottie} className={styles.cardImage} />
           <Title variant="h2" className={styles.cardTitle}>
             Financial power for underbanked adults{" "}
           </Title>
@@ -53,7 +48,7 @@ export const Part: React.FC = () => {
           </p>
         </div>
         <div className={styles.card}>
-          <Lottie animationData={growthLottie} className={styles.cardImage} />
+          <Lottie animationData={reduceLottie} className={styles.cardImage} />
           <Title variant="h2" className={styles.cardTitle}>
             Small business growth
           </Title>

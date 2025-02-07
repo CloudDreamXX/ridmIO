@@ -19,7 +19,9 @@ export const FooterItem: React.FC<FooterItemProps> = ({ item }) => {
   if (item.name === "Support") {
     return (
       <div className={styles.item}>
-        <Link to={item.link || "/"}>{item.name}</Link>
+        <Link className={styles.link} to={item.link || "/"}>
+          {item.name}
+        </Link>
         <img src={suppIcon} alt="Support" className={styles.icon} />
       </div>
     );
@@ -28,19 +30,22 @@ export const FooterItem: React.FC<FooterItemProps> = ({ item }) => {
   if (item.icon) {
     return (
       <div className={styles.item}>
-        <Link to={item.link || "/"}>{item.name}</Link>
+        <Link className={styles.link} to={item.link || "/"}>
+          {item.name}
+        </Link>
         <img src={item.icon} alt={item.name} className={styles.icon} />
       </div>
     );
   }
 
+  if (item.name.length > 20) {
+    return <p>{item.name}</p>;
+  }
+
   return (
     <Link
       to={item.link || "/"}
-      className={classNames(
-        styles.item,
-        item.name === "Company info" ? styles.companyInfo : ""
-      )}
+      className={classNames(styles.item, styles.link)}
     >
       {item.name}
     </Link>

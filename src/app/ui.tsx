@@ -9,10 +9,10 @@ import { Policy } from "pages/policy";
 
 import { Header } from "widgets/header";
 import { Footer } from "widgets/footer";
-import { useScrollToTop } from "shared/lib/hooks";
+import { useScrollToView } from "shared/lib/hooks";
 
 export const App: React.FC = () => {
-  useScrollToTop();
+  useScrollToView();
 
   return (
     <div className={styles.wrapper}>

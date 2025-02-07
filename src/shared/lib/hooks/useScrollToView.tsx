@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 
-export const useScrollToTop = () => {
+export const useScrollToView = () => {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
@@ -10,7 +10,5 @@ export const useScrollToTop = () => {
       anchor?.scrollIntoView();
       return;
     }
-
-    window.scrollTo(0, 0);
   }, [pathname, hash]);
 };

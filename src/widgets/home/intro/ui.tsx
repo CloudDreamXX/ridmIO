@@ -22,7 +22,7 @@ const mobileText =
 export const Intro: React.FC = () => {
   const width = usePageWidth();
   const isMobile = width < 768;
-  const text = isMobile ? mobileText.split("") : desktopText;
+  const text = isMobile ? mobileText.split(" ") : desktopText;
 
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -31,6 +31,72 @@ export const Intro: React.FC = () => {
       ? ["start end", "start start"]
       : ["start start", "end center"],
   });
+  const MobileText = ({
+    word,
+    index,
+    total,
+  }: {
+    word: string;
+    index: number;
+    total: number;
+  }) => {
+    const start = Math.max(0, index / total - 0.05);
+    const end = Math.min((index + 1) / total + 0.05, 1);
+
+    const color = useTransform(
+      scrollYProgress,
+      [start, (start + end) / 2, end],
+      ["#614130", "#FEA372", "#FEA372"]
+    );
+
+    return (
+      <motion.span
+        style={{
+          color,
+          display: "inline-block",
+          willChange: "color",
+          transition: "color 0.2s ease",
+        }}
+      >
+        {word}
+      </motion.span>
+    );
+  };
+
+  const DesktopText = ({
+    line,
+    lineIndex,
+  }: {
+    line: string;
+    lineIndex: number;
+  }) => {
+    const lineProgress = useTransform(
+      scrollYProgress,
+      [0, 0.4, 0.8],
+      [0, (5 - lineIndex) / 5, 1]
+    );
+
+    return (
+      <div className={styles.line}>
+        {line.split("").map((letter, i) => {
+          const N = line.length;
+          const charProgress = Math.min(i / N, 1);
+
+          const color = useTransform(
+            lineProgress,
+            [charProgress, charProgress + 0.02, 1],
+            ["#614130", "#FEA372", "#FEA372"]
+          );
+
+          return (
+            <motion.span key={i} style={{ color }}>
+              {letter}
+            </motion.span>
+          );
+        })}
+      </div>
+    );
+  };
 
   return (
     <div className={styles.container} data-section={"light"}>
@@ -42,69 +108,24 @@ export const Intro: React.FC = () => {
       <div className={styles.info}>
         <Title className={styles.title}>
           {text.map((line, lineIndex) => {
-            const lineProgress = useTransform(
-              scrollYProgress,
-              [0, 0.4, 0.8],
-              [0, (5 - lineIndex) / 5, 1]
-            );
-
             if (isMobile) {
-              const letter = line;
-              const i = lineIndex;
-              const totalChars = mobileText.length;
-
-              const start = Math.max(0, i / totalChars - 0.05);
-              const end = Math.min((i + 1) / totalChars + 0.05, 1);
-
-              const color = useTransform(
-                scrollYProgress,
-                [start, (start + end) / 2, end],
-                ["#614130", "#FEA372", "#FEA372"]
-              );
-
               return (
-                <motion.span
-                  key={i}
-                  style={{
-                    color,
-                    display: "inline-block",
-                    willChange: "color",
-                    transition: "color 0.2s ease",
-                  }}
-                >
-                  {letter === " " ? "\u00A0" : letter}
-                </motion.span>
+                <React.Fragment key={lineIndex}>
+                  <MobileText
+                    word={line}
+                    index={lineIndex}
+                    total={text.length}
+                  />{" "}
+                </React.Fragment>
               );
             }
-
             return (
-              <div key={lineIndex} className={styles.line}>
-                {line.split("").map((letter, i) => {
-                  const N = line.length;
-                  const charProgress = Math.min(i / N, 1);
-
-                  const color = useTransform(
-                    lineProgress,
-                    [charProgress, charProgress + 0.02, 1],
-                    ["#614130", "#FEA372", "#FEA372"]
-                  );
-
-                  return (
-                    <motion.span key={i} style={{ color }}>
-                      {letter}
-                    </motion.span>
-                  );
-                })}
-              </div>
+              <DesktopText key={lineIndex} line={line} lineIndex={lineIndex} />
             );
           })}
         </Title>
         <Link to="/about">
-          <Button
-            className={styles.button}
-            icon={<ArrowRight />}
-            horizontal={true}
-          >
+          <Button className={styles.button} icon={<ArrowRight />}>
             About Ridm
           </Button>
         </Link>

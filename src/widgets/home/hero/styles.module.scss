@@ -83,7 +83,7 @@
     @media screen and (max-width: 768px) {
       width: fit-content;
       height: 57.361px;
-      left: 0;
+      left: -1rem;
     }
   }
 
@@ -126,6 +126,10 @@
       .subtitle {
         font-size: 1.3125rem;
         gap: 0.25rem;
+
+        .button {
+          gap: 0.1rem;
+        }
 
         .button span {
           font-size: 21px;

@@ -26,7 +26,7 @@ type TeamMember = {
 const teamData: TeamMember[] = [
   {
     id: 1,
-    name: "Connor Clark",
+    name: "Connor Clarke",
     description: "Commercial",
     photo: slide1,
   },
@@ -71,7 +71,7 @@ export const Team: React.FC = () => {
         spaceBetween={32}
         slidesPerView="auto"
         navigation
-        speed={800}
+        speed={400}
         className={classNames(styles.teamSwiper, "team-swiper")}
         breakpoints={{
           320: {

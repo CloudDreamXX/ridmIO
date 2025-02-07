@@ -34,6 +34,7 @@
       max-width: 19rem;
       display: flex;
       align-items: center;
+      padding: 10px 10px 10px 0;
     }
 
     .cards {
@@ -49,10 +50,6 @@
 
     @media screen and (max-width: 768px) {
       gap: 0;
-
-      .sectionItem {
-        padding: 10px 10px 10px 0;
-      }
     }
   }
 

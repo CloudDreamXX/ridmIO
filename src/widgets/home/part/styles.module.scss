@@ -9,9 +9,11 @@
   justify-content: space-between;
   padding: 78px 178px 142px 60px;
   gap: 2.5rem;
+  max-width: 1511px;
+  margin: 0 auto;
 
   @media screen and (max-width: 768px) {
-    padding: 2.0625rem 1.875rem;
+    padding: 2.0625rem 1.875rem 5.5rem;
     flex-direction: column;
   }
 
@@ -80,7 +82,7 @@
     .card {
       display: flex;
       flex-direction: column;
-      gap: 2.5rem;
+      gap: 2rem;
 
       .cardImage {
         width: 3.75rem;
