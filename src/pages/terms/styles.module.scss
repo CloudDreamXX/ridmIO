@@ -7,28 +7,6 @@
   align-items: center;
   margin-top: 14.5rem;
 
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-
-  overflow-x: hidden;
-
-  @media screen and (max-width: 48rem) {
-    height: -webkit-fill-available;
-    min-height: -webkit-fill-available;
-  }
-
-  > div {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-
-    @supports (-webkit-touch-callout: none) {
-      min-height: -webkit-fill-available;
-    }
-  }
-
   @media (max-width: 1024px) {
     margin-top: 6.25rem;
   }
