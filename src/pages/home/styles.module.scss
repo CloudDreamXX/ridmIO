@@ -10,19 +10,6 @@
       rgba(0, 0, 0, 0.4) 100%
     ),
     #1b1b1b;
-
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
-
-  overflow-x: hidden;
-
-  > div {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
 }
 
 .individuals {
