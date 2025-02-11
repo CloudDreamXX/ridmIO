@@ -8,7 +8,7 @@ export const Terms: FC = () => {
     <div className={styles.container} data-section={"dark"}>
       <div className={styles.wrapper}>
         <div className={styles.sidebar}>
-          <Title className={styles.title}>Terms of use</Title>
+          <Title className={styles.title}>Terms of Service</Title>
         </div>
         <OnrampTerms />
       </div>

@@ -6,9 +6,14 @@
   min-height: 100dvh;
   align-items: center;
   margin-top: 14.5rem;
+  padding: 0 16px;
 
   @media (max-width: 1024px) {
     margin-top: 6.25rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
   }
 
   .wrapper {

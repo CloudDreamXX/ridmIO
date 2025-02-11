@@ -121,11 +121,14 @@ export const Header: React.FC = () => {
           </Link>
         </nav>
         <nav>
-          <Link to={"/#form"}>
+          <a href="https://portal.ridm.io/log-in" target="_blank">
+            <Button className={styles.button}>Login</Button>
+          </a>
+          <a href="https://portal.ridm.io/log-in" target="_blank">
             <Button variant="bordered" className={styles.bordered}>
-              Contact
+              Sign up
             </Button>
-          </Link>
+          </a>
         </nav>
         <button
           className={classNames(styles.burger, isOpen && styles.open)}
@@ -145,11 +148,14 @@ export const Header: React.FC = () => {
           </nav>
           <nav>
             <div className={styles.auth}>
-              <Link to={"/#form"}>
+              <a href="https://portal.ridm.io/log-in" target="_blank">
+                <Button className={styles.button}>Login</Button>
+              </a>
+              <a href="https://portal.ridm.io/log-in" target="_blank">
                 <Button variant="bordered" className={styles.bordered}>
-                  Contact
+                  Sign up
                 </Button>
-              </Link>
+              </a>
             </div>
           </nav>
         </div>

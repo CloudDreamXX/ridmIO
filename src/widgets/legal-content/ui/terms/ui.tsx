@@ -471,18 +471,21 @@ export const OnrampTerms = () => {
           RIDM shall not be liable for any losses, errors, or delays arising
           from blockchain-related issues, including:
         </li>
-        <li>Temporary or permanent network failures or outages;</li>
-        <li>
-          Double-spending attacks, consensus failures, or chain reorganizations;
-        </li>
-        <li>
-          Exploits, attacks, or vulnerabilities in blockchain protocols or
-          third-party smart contracts;
-        </li>
-        <li>
-          Unavailability of validator nodes or miners affecting transaction
-          finality.
-        </li>
+        <ol type="a">
+          <li>Temporary or permanent network failures or outages;</li>
+          <li>
+            Double-spending attacks, consensus failures, or chain
+            reorganizations;
+          </li>
+          <li>
+            Exploits, attacks, or vulnerabilities in blockchain protocols or
+            third-party smart contracts;
+          </li>
+          <li>
+            Unavailability of validator nodes or miners affecting transaction
+            finality.
+          </li>
+        </ol>
         <li>
           RIDM does not guarantee the perpetual availability of any blockchain
           network and reserves the right to discontinue support for specific

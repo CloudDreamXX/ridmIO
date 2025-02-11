@@ -152,10 +152,15 @@
   display: none;
 }
 
+@media screen and (max-width: 896px) {
+  .header {
+    padding: 7px 10px;
+  }
+}
+
 @media screen and (max-width: 796px) {
   .header {
     height: 80px;
-    padding: 7px 10px;
   }
 
   .nav {
@@ -205,12 +210,13 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 32px;
+        align-items: center;
 
         .button {
           font-size: 24px;
         }
 
-        span {
+        .bordered span {
           color: #1b1b1b;
         }
       }

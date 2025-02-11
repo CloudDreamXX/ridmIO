@@ -22,11 +22,25 @@ export const useSectionTheme = () => {
       }
     }, 100);
 
+    const handleOnLoad = () => {
+      const section = document.querySelectorAll("[data-section]")?.[0];
+      console.log(section);
+      if (section) {
+        const sectionTheme = (section as HTMLElement).dataset.section as
+          | "light"
+          | "dark";
+        setTheme(sectionTheme);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("load", handleOnLoad);
     handleScroll();
+    handleOnLoad();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("load", handleOnLoad);
       handleScroll.cancel();
     };
   }, [pathname]);
