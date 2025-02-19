@@ -9,6 +9,7 @@ export interface NavItem {
   name: string;
   link?: string;
   icon?: string;
+  target?: string;
 }
 
 interface FooterItemProps {
@@ -18,23 +19,27 @@ interface FooterItemProps {
 export const FooterItem: React.FC<FooterItemProps> = ({ item }) => {
   if (item.name === "Support") {
     return (
-      <div className={styles.item}>
-        <Link className={styles.link} to={item.link || "/"}>
-          {item.name}
-        </Link>
+      <Link
+        to={item.link || "/"}
+        className={styles.item}
+        target={item.target || "_self"}
+      >
+        <div className={styles.link}>{item.name}</div>
         <img src={suppIcon} alt="Support" className={styles.icon} />
-      </div>
+      </Link>
     );
   }
 
   if (item.icon) {
     return (
-      <div className={styles.item}>
-        <Link className={styles.link} to={item.link || "/"}>
-          {item.name}
-        </Link>
+      <Link
+        to={item.link || "/"}
+        className={styles.item}
+        target={item.target || "_self"}
+      >
+        <div className={styles.link}>{item.name}</div>
         <img src={item.icon} alt={item.name} className={styles.icon} />
-      </div>
+      </Link>
     );
   }
 
@@ -46,6 +51,7 @@ export const FooterItem: React.FC<FooterItemProps> = ({ item }) => {
     <Link
       to={item.link || "/"}
       className={classNames(styles.item, styles.link)}
+      target={item.target || "_self"}
     >
       {item.name}
     </Link>

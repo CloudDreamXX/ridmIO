@@ -14,6 +14,11 @@ export const nav: Nav = {
       name: "Business Platform",
       link: "/#business",
     },
+    {
+      name: "Support",
+      link: "https://support.ridm.io/",
+      target: "_blank",
+    },
   ],
   About: [
     {
@@ -37,7 +42,7 @@ export const nav: Nav = {
   ],
   "Company info": [
     {
-      name: "Ridm is a brand owned and operated by Xypheris s.r.o. Czech Republic Company Number: 22400737 Kurzova 2222/16, 155 00, Prague Czech Republic. Virtual Asset Service Provider registered with the Financial Analytical Office of Czech Republic (FAU)",
+      name: "Ridm is a licenced virtual asset service provider and is regulated by the relevant authorities in the Netherlands and the Czech Republic. Ridm.io website is operated by Digital Currency Services B.V. and Xypheris s.r.o.",
       link: "/",
     },
     {
