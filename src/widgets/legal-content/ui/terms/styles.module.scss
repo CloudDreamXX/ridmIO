@@ -11,10 +11,12 @@
 
   h2 {
     color: #323232;
-    font-size: 48px;
+    font-size: 28px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 115%;
-    letter-spacing: -0.576px;
+    line-height: 123%;
+    letter-spacing: -0.336px;
+    text-transform: capitalize;
 
     @media screen and (max-width: 768px) {
       font-size: 28px;
@@ -26,11 +28,15 @@
   }
 
   h3 {
-    font-size: 1.25rem;
+    color: #323232;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 123%;
-    letter-spacing: -0.24px;
+    letter-spacing: -0.336px;
+    margin-top: 0.625rem;
+    margin-bottom: 0.75rem;
+    text-transform: capitalize;
   }
 
   p,

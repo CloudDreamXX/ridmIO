@@ -1,6 +1,20 @@
+import { useEffect } from "react";
 import styles from "./styles.module.scss";
 
 export const OnrampTerms = () => {
+  useEffect(() => {
+    const lowercasedTitle = () => {
+      document.querySelectorAll("h2").forEach((el) => {
+        el.innerHTML = el.innerHTML.toLowerCase();
+      });
+      document.querySelectorAll("h3").forEach((el) => {
+        el.innerHTML = el.innerHTML.toLowerCase();
+      });
+    };
+
+    lowercasedTitle();
+  }, []);
+
   return (
     <ol className={styles.content}>
       <h2>
