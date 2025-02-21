@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Route, Routes } from "react-router";
 import styles from "./styles.module.scss";
 
@@ -18,6 +18,9 @@ const Terms = React.lazy(() =>
 const Policy = React.lazy(() =>
   import("pages/policy").then((module) => ({ default: module.Policy }))
 );
+const Licences = React.lazy(() =>
+  import("pages/licenses").then((module) => ({ default: module.Licenses }))
+);
 
 const PageLoader = () => (
   <div className={styles.spinner}>
@@ -35,8 +38,9 @@ export const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/terms-use" element={<Terms />} />
-          <Route path="/privacy" element={<Policy />} />
+          <Route path="/terms-use/*" element={<Terms />} />
+          <Route path="/privacy/*" element={<Policy />} />
+          <Route path="/licenses" element={<Licences />} />
         </Routes>
       </Suspense>
       <Footer />

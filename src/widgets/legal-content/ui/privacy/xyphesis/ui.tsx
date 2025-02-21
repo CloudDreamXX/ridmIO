@@ -1,29 +1,21 @@
-import { useEffect } from "react";
-import styles from "./styles.module.scss";
+import { createRef, useEffect } from "react";
+import styles from "../../styles.module.scss";
+import { Title } from "shared/ui";
 
-export const OnrampPolicy = () => {
-  useEffect(() => {
-    const lowercasedTitle = () => {
-      document.querySelectorAll("h2").forEach((el) => {
-        el.innerHTML = el.innerHTML.toLowerCase();
-      });
-      document.querySelectorAll("h3").forEach((el) => {
-        el.innerHTML = el.innerHTML.toLowerCase();
-      });
-    };
-
-    lowercasedTitle();
-  }, []);
-
+export const XypherisPolicy = () => {
   return (
     <div className={styles.content}>
+      <p className={styles.updates}>
+        Last Updated: January 31, 2025. Czech Republic and EEA
+      </p>
+      <Title variant="h1">Privacy policy</Title>
       <p>
         This Privacy Policy (<strong>"Privacy Policy"</strong>) describes how
-        and why RIDM (<strong>"we"</strong>, <strong>"our"</strong>,{" "}
-        <strong>"us"</strong>, <strong>“RIDM”</strong>) collects and otherwise
+        and why Ridm (<strong>"we"</strong>, <strong>"our"</strong>,{" "}
+        <strong>"us"</strong>, <strong>“Ridm”</strong>) collects and otherwise
         processes personal data about you as a visitor and user of{" "}
-        <a href="https://ridm.io">RIDM.IO</a> as defined under the Terms of
-        Service of <a href="https://ridm.io">RIDM.IO</a> (hereinafter the
+        <a href="https://ridm.io">Ridm.io</a> as defined under the Terms of
+        Service of <a href="https://ridm.io">Ridm.io</a> (hereinafter the
         <strong>“Platform”</strong>).
       </p>
       <p>
@@ -50,7 +42,7 @@ export const OnrampPolicy = () => {
         to an identified or identifiable natural person.
       </p>
       <div className={styles.divider} />
-      <h2>WHO IS THE DATA CONTROLLER FOR THE PROCESSING OF PERSONAL DATA?</h2>
+      <h2>Who is the data controller for the processing of personal data?</h2>
       <div className={styles.divider} />
       <p>
         Xypheris s.r.o., a company incorporated in the Czech Republic under the
@@ -60,7 +52,7 @@ export const OnrampPolicy = () => {
         Privacy Policy.
       </p>
       <div className={styles.divider} />
-      <h2>FROM WHERE DO WE COLLECT YOUR PERSONAL DATA?</h2>
+      <h2>From where do we collect your personal data?</h2>
       <div className={styles.divider} />
       <p>
         Personal data is collected from you, as provided when you use the
@@ -68,11 +60,11 @@ export const OnrampPolicy = () => {
         Service available here: <a href="https://ridm.io/terms-use">LINK</a>.
         All of the Terms of Service referred to herein shall be together
         referred to as the
-        <strong>“Agreement”</strong> between RIDM and the user for the purpose
+        <strong>“Agreement”</strong> between Ridm and the user for the purpose
         of this Privacy Policy.
       </p>
       <div className={styles.divider} />
-      <h2>PURPOSES OF THE PROCESSING OF YOUR PERSONAL DATA</h2>
+      <h2>Purposes of the processing of your personal data</h2>
       <div className={styles.divider} />
       <h3>Creating and using your User Account on the Platform</h3>
       <br />
@@ -114,7 +106,7 @@ export const OnrampPolicy = () => {
             <td>
               <p>
                 <i>Contractual necessity.</i> The processing is necessary for
-                the performance of the Agreement between you and RIDM or in
+                the performance of the Agreement between you and Ridm or in
                 order to take steps at the request of you prior to entering into
                 the Agreement.
               </p>
@@ -225,7 +217,7 @@ export const OnrampPolicy = () => {
       </table>
       <h3>Fulfil legal obligations</h3>
       <p>
-        RIDM will process your personal data for the purposes of fulfilling
+        Ridm will process your personal data for the purposes of fulfilling
         legal obligations within the area of e.g. book-keeping, accounting and
         requirements under Applicable Data Protection Laws.
       </p>
@@ -246,7 +238,7 @@ export const OnrampPolicy = () => {
             <td>
               <p>
                 <i>Legal obligation.</i> The processing is necessary to fulfil
-                RIDM's legal obligations.
+                Ridm's legal obligations.
               </p>
             </td>
           </tr>
@@ -295,7 +287,7 @@ export const OnrampPolicy = () => {
           </tr>
         </tbody>
       </table>
-      <h3>DISCLOSURE AND TRANSFER OF PERSONAL DATA</h3>
+      <h3>Disclosure and transfer of personal data</h3>
       <p>
         Where necessary, we share your personal data with others. The recipient
         is the data controller for the processing of your personal data, unless
@@ -362,7 +354,7 @@ export const OnrampPolicy = () => {
             </td>
             <td>
               <p>
-                RIDM will share your personal data with its business partners
+                Ridm will share your personal data with its business partners
                 for the following purposes:
               </p>
               <ol>
@@ -376,7 +368,7 @@ export const OnrampPolicy = () => {
                   of its functionalities (IT systems and cloud services); and
                 </li>
                 <li>
-                  Connect RIDM users with offers from RIDM’s Business Partners.
+                  Connect Ridm users with offers from Ridm’s Business Partners.
                 </li>
               </ol>
             </td>
@@ -400,7 +392,7 @@ export const OnrampPolicy = () => {
           </tr>
         </tbody>
       </table>
-      <h3>Data processors acting on behalf of RIDM</h3>
+      <h3>Data processors acting on behalf of Ridm</h3>
       <p>
         In order to fulfil the purposes of the processing of your personal data,
         we transfer personal data to external parties such as service providers
@@ -408,8 +400,8 @@ export const OnrampPolicy = () => {
         services within the areas of <i>inter alia</i> IT (such as data storage,
         support and management services), finance (e.g. our book-keeping system)
         and statistics services. These external parties will act as data
-        processors of RIDM and may only process your personal data in accordance
-        with our instructions and not for their own purposes. RIDM is the data
+        processors of Ridm and may only process your personal data in accordance
+        with our instructions and not for their own purposes. Ridm is the data
         controller for the processing of personal data that these external
         parties carry out on our behalf.
       </p>
@@ -418,8 +410,8 @@ export const OnrampPolicy = () => {
         EU/EEA
       </h3>
       <p>
-        Should RIDM transfer or disclose your personal data to a recipient in a
-        country outside of the EU/EEA (third country), RIDM will ensure that
+        Should Ridm transfer or disclose your personal data to a recipient in a
+        country outside of the EU/EEA (third country), Ridm will ensure that
         appropriate safeguards have been taken (such as the EU Commission's
         standard contract clauses, including other safeguards as necessary in
         each case) to protect the personal data.
@@ -437,7 +429,7 @@ export const OnrampPolicy = () => {
       </p>
       <div className={styles.divider} />
 
-      <h2>COOKIES</h2>
+      <h2>Cookies</h2>
       <div className={styles.divider} />
       <h3>Purpose of cookies</h3>
       <p>
@@ -479,7 +471,7 @@ export const OnrampPolicy = () => {
         time. The means of managing cookies depend on each browser.
       </p>
       <div className={styles.divider} />
-      <h2>YOUR RIGHTS</h2>
+      <h2>Your rights</h2>
       <div className={styles.divider} />
       <p>
         Under Applicable Data Protection Laws, you have certain rights in
@@ -554,7 +546,7 @@ export const OnrampPolicy = () => {
         You may ask to receive a machine-readable copy of the personal data
         processed on the basis of your consent or on the basis that the
         processing is necessary in order to perform an agreement with you, and
-        which personal data have been provided to RIDM by you (data portability)
+        which personal data have been provided to Ridm by you (data portability)
         and ask for the information to be transferred to another data controller
         (where possible).
       </p>
@@ -565,10 +557,10 @@ export const OnrampPolicy = () => {
         Authority in Czech Republic{" "}
         <i>(Office for Personal Data protection - uoou.gov.cz).</i>
       </p>
-      <h3>CONTACT INFORMATION</h3>
+      <h3>CONTACT INFORMATioN</h3>
       <p>
         If you have any questions or concerns regarding the processing of your
-        personal data, please contact RIDM on the contact details set forth
+        personal data, please contact Ridm on the contact details set forth
         below.
       </p>
       <h3>Data controller:</h3>

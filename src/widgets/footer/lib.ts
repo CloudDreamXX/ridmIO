@@ -32,11 +32,15 @@ export const nav: Nav = {
   ],
   Legal: [
     {
+      name: "Licenses",
+      link: "/licenses",
+    },
+    {
       name: "Privacy Policy",
       link: "/privacy",
     },
     {
-      name: "Terms of Service",
+      name: "Terms and Use",
       link: "/terms-use",
     },
   ],

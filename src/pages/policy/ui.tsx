@@ -1,16 +1,29 @@
 import { FC } from "react";
 import styles from "./styles.module.scss";
-import { Title } from "shared/ui";
-import { OnrampPolicy } from "widgets/legal-content";
+import { RouteToggle } from "shared/ui";
+import { DigitalPolicy, XypherisPolicy } from "widgets/legal-content";
+import { Navigate, Route, Routes } from "react-router";
 
 export const Policy: FC = () => {
   return (
     <div className={styles.container} data-section={"dark"}>
       <div className={styles.wrapper}>
         <div className={styles.sidebar}>
-          <Title className={styles.title}>Privacy policy</Title>
+          <RouteToggle
+            links={[
+              { name: "Xypheris S.r.o (CZ)", path: "/privacy/xypheris" },
+              {
+                name: "Digital Currency Services B.V. (NL)",
+                path: "/privacy/digital",
+              },
+            ]}
+          />
         </div>
-        <OnrampPolicy />
+        <Routes>
+          <Route path="xypheris" element={<XypherisPolicy />} />
+          <Route path="digital" element={<DigitalPolicy />} />
+          <Route path="/" element={<Navigate to="xypheris" />} />
+        </Routes>
       </div>
     </div>
   );
