@@ -46,7 +46,7 @@ export const nav: Nav = {
   ],
   "Company info": [
     {
-      name: "Ridm is a licenced virtual asset service provider and is regulated by the relevant authorities in the Netherlands and the Czech Republic. Ridm.io website is operated by Digital Currency Services B.V. and Xypheris s.r.o.",
+      name: "Ridm is a platform providing virtual asset services operated by Digital Currency Services B.V. and Xypheris S.r.o. Digital Currency Services B.V. Company number 5855697 registered with the Dutch National Bank (DNB) Xypheris s.r.o. Company number 22400737 registered with the Financial Analytical Office of Czech Republic (FAÚ)",
       link: "/",
     },
     {
