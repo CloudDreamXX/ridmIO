@@ -56,10 +56,9 @@ export const XypherisPolicy = () => {
       <div className={styles.divider} />
       <p>
         Personal data is collected from you, as provided when you use the
-        functionalities of our Platform. The Platform is subject to Terms of
-        Service available here: <a href="https://ridm.io/terms-use">LINK</a>.
-        All of the Terms of Service referred to herein shall be together
-        referred to as the
+        functionalities of our Platform. The Platform is subject to Terms of Use
+        available here: <a href="https://ridm.io/terms-use">LINK</a>. All of the
+        Terms of Use referred to herein shall be together referred to as the
         <strong>“Agreement”</strong> between Ridm and the user for the purpose
         of this Privacy Policy.
       </p>
@@ -71,7 +70,7 @@ export const XypherisPolicy = () => {
       <p>
         We will process your personal data when you create and use your User
         Account for the Virtual Asset Services on the Platform as described in
-        our Terms of Service.
+        our Terms of Use.
       </p>
       <table>
         <thead>

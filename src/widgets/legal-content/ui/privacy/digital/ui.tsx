@@ -228,7 +228,6 @@ export const DigitalPolicy = () => {
       <div className={styles.divider}></div>
       <h2>Correction / Updating / Deletion of personal information</h2>
       <div className={styles.divider}></div>
-      <p>Correction / Updating / Deletion of personal information</p>
       <br />
       <p>
         happyCOINS will action your request only where this is not inconsistent

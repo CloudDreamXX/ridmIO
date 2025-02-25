@@ -1,16 +1,18 @@
 import { createRef, useEffect } from "react";
 import styles from "../../styles.module.scss";
 import { Title } from "shared/ui";
+import classNames from "classnames";
 
 export const XypherisTerms = () => {
   return (
-    <ol className={styles.content}>
+    <ol className={classNames(styles.content, styles.terms)}>
       <p className={styles.updates}>
         Last Updated: January 31, 2025. Czech Republic and EEA
       </p>
       <Title variant="h1">Term of Use</Title>
       <h2>
         <li> Introduction</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -25,6 +27,8 @@ export const XypherisTerms = () => {
           Service Provider registered with the Financial Analytical Office of
           Czech Republic (FAU).{" "}
         </li>
+        <br />
+        <br />
         <li>
           {" "}
           - Ridm is an online platform accessible via the internet for end-users
@@ -33,6 +37,7 @@ export const XypherisTerms = () => {
           services, you agree to comply with and be bound by these Terms of
           Service (the <strong>“Terms of Service”</strong>).
         </li>
+        <br />
         <li>
           {" "}
           - Please read carefully these Terms of Service and ensure that you
@@ -40,10 +45,12 @@ export const XypherisTerms = () => {
           Service, please contact us before starting to use the Platform at{" "}
           <a href="mailto:support@ridm.io">support@ridm.io</a>.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Definitions</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -52,18 +59,21 @@ export const XypherisTerms = () => {
           - <strong>“End-user”</strong> shall mean any private individual
           accessing and using the Platform provided by Ridm.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“Platform”</strong> shall mean the online platform which
           allows End-users to access and use the Virtual Asset Services provided
           by Ridm by creating an account.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“User Account”</strong> shall mean the account created by
           the End-user in order to use the online platform and the Virtual Asset
           Services provided by Ridm.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“Virtual Asset”</strong> shall mean a digital representation
@@ -72,6 +82,7 @@ export const XypherisTerms = () => {
           or other forms of digital assets, which are typically based on
           blockchain technology.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“Fiat Currency”</strong> refers to a legal tender issued and
@@ -79,6 +90,7 @@ export const XypherisTerms = () => {
           its value from governmental decree rather than intrinsic value or
           backing by a physical commodity.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“Virtual Asset Buy Service”</strong> shall mean the
@@ -86,6 +98,7 @@ export const XypherisTerms = () => {
           End-user sends Fiat Currency and receives Virtual Assets at an agreed
           purchase price.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“Virtual Asset Sell Service”</strong> shall mean the
@@ -93,32 +106,38 @@ export const XypherisTerms = () => {
           End-user sends Virtual Assets and receives Fiat Currency at an agreed
           purchase price.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“Virtual Asset Send Service”</strong> shall mean a service
           enabling the transmission of Virtual Assets from one End-user or
           wallet to another.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“Custodial Wallet Service”</strong> service in which a third
           party holds and manages virtual assets on behalf of users, maintaining
           control over private keys and facilitating transactions.
         </li>
+        <br />
         <li>
           {" "}
           - <strong>“Virtual Asset Services”</strong> shall mean Virtual Asset
           Buy Service, Virtual Asset Sell Service, Virtual Asset Send Service
           and Custodial Wallet Service under these Terms of Service.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Account Registration and Verification</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
         <li> - To create a User Account, you confirm that:</li>
+        <br />
         <ol type="a">
           <li> - you are a resident of the European Economic Area; and</li>
           <li> - you are at least 18 years old; and</li>
@@ -137,12 +156,15 @@ export const XypherisTerms = () => {
             - you comply with all applicable laws and regulations applicable to
             you and the use of your User Account.
           </li>
+          <br />
         </ol>
         <li> - In order to be able to use your User Account, you need to:</li>
+        <br />
         <ol type="a">
           <li> - Dispose of a valid e-mail address; and</li>
           <li> - Set-up a password; and</li>
           <li> - Complete the KYC Process during the onboarding process.</li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -153,6 +175,7 @@ export const XypherisTerms = () => {
           require you to share accurate and up-to-date personal information and
           documentation about you.
         </li>
+        <br />
         <li>
           {" "}
           - In the event where any of the conditions provided under sections 3.1
@@ -161,12 +184,14 @@ export const XypherisTerms = () => {
           right to refuse your access to the Platform or the creation of your
           User Account.
         </li>
+        <br />
         <li>
           {" "}
           - Further, Ridm reserves the right to cancel, suspend or terminate
           your use of the Platform or your User Account at any time without
           notice if you do not comply with these Terms of Service.
         </li>
+        <br />
         <li>
           {" "}
           - Any personal information you provide to Ridm for the purpose of
@@ -174,10 +199,12 @@ export const XypherisTerms = () => {
           will be collected and processed in accordance with the Privacy Policy
           of Ridm available on our website.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Services Offered</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -189,12 +216,14 @@ export const XypherisTerms = () => {
           outside Czech Republic hereby confirms that they do so on their own
           initiative without solicitation from Ridm.
         </li>
+        <br />
         <li>
           {" "}
           - In order to use the Virtual Asset Services through the Platform,
           End-users need to create a User Account subject to the terms set-out
           in section 3 above.
         </li>
+        <br />
         <li>
           {" "}
           - In order to access the Custodial Wallet Service on the Platform, you
@@ -203,6 +232,7 @@ export const XypherisTerms = () => {
           Platform, you can buy, sell or send Virtual Assets from your Custodial
           Wallet.
         </li>
+        <br />
         <li>
           {" "}
           - In order to access the Virtual Asset Buy Service on the Platform,
@@ -215,6 +245,7 @@ export const XypherisTerms = () => {
           is completed, you will receive the purchased Virtual Asset on your
           Custodial Wallet available in your User Account.
         </li>
+        <br />
         <li>
           {" "}
           - In order to access the Virtual Asset Sell Service on the Platform,
@@ -226,6 +257,7 @@ export const XypherisTerms = () => {
           the Platform will disclose the exchange rate of your purchase before
           executing the transaction.
         </li>
+        <br />
         <li>
           {" "}
           - In order to access the Virtual Asset Send Service on the Platform,
@@ -235,11 +267,13 @@ export const XypherisTerms = () => {
           Asset available in your Custodial Wallet that you wish to send and a
           valid destination wallet where the Virtual Assets shall be sent.
         </li>
+        <br />
         <li>
           {" "}
           - The Platform may impose transaction limits to your use of the
           Virtual Asset Services, including but not limited to:
         </li>
+        <br />
         <ol type="a">
           <li> - Maximum transaction values;</li>
           <li> - Daily, weekly, or monthly volume restrictions;</li>
@@ -248,16 +282,19 @@ export const XypherisTerms = () => {
             - Limits on withdrawals or deposits, subject to compliance and
             anti-money laundering (AML) controls.
           </li>
+          <br />
         </ol>
         <li>
           {" "}
           - End-users acknowledge that transactions may be delayed or rejected
           due to compliance verifications by Ridm.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Supported Virtual Assets</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -271,6 +308,7 @@ export const XypherisTerms = () => {
           <li> - Ethereum (ETH)</li>
           <li> - Litecoin (LTC)</li>
           <li> - Algorand (ALGO)</li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -278,10 +316,12 @@ export const XypherisTerms = () => {
           refer to our website or these Terms of Service for up-to-date
           information.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Supported Payment Methods and Fiat Currencies</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -290,26 +330,31 @@ export const XypherisTerms = () => {
           - The supported payment methods for the Virtual Asset Buy Service are
           Bank transfers and Credit or debit cards.
         </li>
+        <br />
         <li>
           {" "}
           - The supported payment methods for the Virtual Asset Sell Service are
           Bank transfers only.
         </li>
+        <br />
         <li>
           {" "}
           - The supported Fiat Currencies for Virtual Asset Buy/Sell Services
           are EUROS and CZECH CROWN.
         </li>
+        <br />
         <li>
           {" "}
           - Please note that the list of supported Payment Methods and Fiat
           Currencies may change, please refer to our website or these Terms of
           Service for up-to-date information.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Fees and Exchange Rates</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -320,6 +365,7 @@ export const XypherisTerms = () => {
           with a transaction, you agree to the applicable fees and the exchange
           rate.
         </li>
+        <br />
         <li>
           {" "}
           - By accessing Virtual Asset Buy/Sell/Send Services, you acknowledge
@@ -334,15 +380,18 @@ export const XypherisTerms = () => {
           such as gas fees, network activity, and consensus mechanisms, which
           the Provider does not control.
         </li>
+        <br />
         <li>
           {" "}
           - The maintenance of a Custodial Wallet and a User Account is free of
           charge.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Refunds</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -355,16 +404,19 @@ export const XypherisTerms = () => {
           the blockchain, it cannot be reversed, canceled, or modified under any
           circumstances.
         </li>
+        <br />
         <li>
           {" "}
           - End-users acknowledge and accept that Ridm does not issue refunds
           for any Virtual Asset transactions, including but not limited to:
         </li>
+        <br />
         <ol type="a">
           <li> - Purchases of Virtual Assets;</li>
           <li> - Sales or exchanges of Virtual Assets;</li>
           <li> - Transfers of Virtual Assets;</li>
           <li> - Any fees associated with the use of the Platform.</li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -373,10 +425,12 @@ export const XypherisTerms = () => {
           for verifying and confirming the accuracy of all transaction details
           before execution.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Platform Limitations</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -388,6 +442,7 @@ export const XypherisTerms = () => {
           Platform may be affected by factors beyond the Ridm's control,
           including but not limited to:
         </li>
+        <br />
         <ol type="a">
           <li>
             {" "}
@@ -403,6 +458,7 @@ export const XypherisTerms = () => {
             functionality and security;
           </li>
           <li> - Blockchain delays and interruptions.</li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -411,6 +467,7 @@ export const XypherisTerms = () => {
           inaccessibility of services due to unforeseen circumstances or
           required maintenance.
         </li>
+        <br />
         <li>
           {" "}
           - The availability of Virtual Asset Services offered through the
@@ -420,11 +477,13 @@ export const XypherisTerms = () => {
           <li> - Regulatory requirements in certain jurisdictions;</li>
           <li> - Security concerns or risk assessments conducted by Ridm;</li>
           <li> - Third-party service provider limitations.</li>
+          <br />
         </ol>
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>RISK DISCLOSURE AND DISCLAIMERS</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -443,12 +502,14 @@ export const XypherisTerms = () => {
           SITUATioN, INVESTMENT OBJECTIVES, AND RISK TOLERANCE BEFORE ENGAGING
           IN ANY VIRTUAL ASSET-RELATED ACTIVITIES.
         </li>
+        <br />
         <li>
           {" "}
           - Ridm facilitates access to Virtual Asset Services but does not own,
           control, or operate the underlying blockchain networks on which such
           virtual assets are recorded and transacted. Users acknowledge that:
         </li>
+        <br />
         <ol type="a">
           <li>
             {" "}
@@ -467,6 +528,7 @@ export const XypherisTerms = () => {
             - The functionality, security, and performance of blockchain
             networks are outside Ridm’s control.
           </li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -485,6 +547,7 @@ export const XypherisTerms = () => {
             incompatible addresses;
           </li>
           <li> - Blockchain Interruptions and Failures.</li>
+          <br />
         </ol>
         <li> - End-users are solely responsible for:</li>
         <ol type="a">
@@ -503,6 +566,7 @@ export const XypherisTerms = () => {
             - Understanding the risks of irreversible transactions and
             blockchain immutability.
           </li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -512,6 +576,7 @@ export const XypherisTerms = () => {
           representations or warranties regarding potential profits, returns, or
           investment success.
         </li>
+        <br />
         <li>
           {" "}
           - By using the Platform, End-users confirm that they have read,
@@ -520,10 +585,12 @@ export const XypherisTerms = () => {
           losses arising from the use of Virtual Assets or Virtual Asset
           Services offered on the Platform.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Taxation</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <p>
@@ -536,6 +603,7 @@ export const XypherisTerms = () => {
       <div className={styles.divider} />
       <h2>
         <li>Limitation of Liability</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -561,6 +629,7 @@ export const XypherisTerms = () => {
             - Unavailability of validator nodes or miners affecting transaction
             finality.
           </li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -569,12 +638,14 @@ export const XypherisTerms = () => {
           networks or virtual assets if required by regulatory, technical, or
           security considerations.
         </li>
+        <br />
         <li>
           {" "}
           - Ridm shall not be responsible for recovering lost or mistakenly sent
           Virtual Assets, nor for addressing technical malfunctions caused by
           third-party blockchain networks.
         </li>
+        <br />
         <li>
           {" "}
           - Ridm shall not be held liable for any losses, damages, or
@@ -582,10 +653,12 @@ export const XypherisTerms = () => {
           failures caused by network conditions, third-party failures, or user
           errors (such as incorrect wallet addresses).
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Amendments</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -596,6 +669,7 @@ export const XypherisTerms = () => {
           sole discretion and without prior notice if required by regulatory,
           technical, or operational reasons.
         </li>
+        <br />
 
         <li>
           {" "}
@@ -606,16 +680,19 @@ export const XypherisTerms = () => {
           affecting user rights or service availability shall be communicated in
           accordance with applicable legal obligations.
         </li>
+        <br />
         <li>
           {" "}
           - Ridm may update these Terms of Service from time to time. Changes
           will be communicated via our website or directly to your e-mail if you
           dispose of a User Account.
         </li>
+        <br />
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Termination</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <ol>
@@ -624,6 +701,7 @@ export const XypherisTerms = () => {
           - These Terms of Service shall remain in force and effect as long as
           the End-user maintains an active User Account on the Platform.
         </li>
+        <br />
         <li>
           {" "}
           - The End-user may request to terminate their User Account and cease
@@ -634,6 +712,7 @@ export const XypherisTerms = () => {
           may lose access to any remaining balances, transaction history, or
           other data associated with their account once closure is completed.
         </li>
+        <br />
         <li> - Ridm will process the User Account closure request upon:</li>
         <ol type="a">
           <li>
@@ -651,6 +730,7 @@ export const XypherisTerms = () => {
             End-user in accordance with the Virtual Asset Sell Services terms
             hereunder.
           </li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -658,6 +738,7 @@ export const XypherisTerms = () => {
           close the User’s account at its sole discretion, with or without prior
           notice, in the following circumstances:
         </li>
+        <br />
         <ol type="a">
           <li>
             {" "}
@@ -689,6 +770,7 @@ export const XypherisTerms = () => {
             - Regulatory action, law enforcement requests, or legal obligations
             requiring User Account suspension or closure.
           </li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -697,6 +779,7 @@ export const XypherisTerms = () => {
           remaining balances unless prohibited by law or regulatory
           restrictions.
         </li>
+        <br />
         <li>
           {" "}
           - Upon termination, the User’s access to the Platform, User Account,
@@ -707,12 +790,14 @@ export const XypherisTerms = () => {
           by applicable laws, regulatory requirements, or ongoing
           investigations.
         </li>
+        <br />
         <li>
           {" "}
           - Termination of these Terms of Service does not relieve either party
           of any outstanding obligations incurred before the termination date,
           including:
         </li>
+        <br />
         <ol type="a">
           <li> - Settlement of pending transactions;</li>
           <li> - Payment of outstanding fees or liabilities;</li>
@@ -721,6 +806,7 @@ export const XypherisTerms = () => {
             - Compliance with post-termination obligations under applicable
             laws, including data retention rules.
           </li>
+          <br />
         </ol>
         <li>
           {" "}
@@ -728,6 +814,7 @@ export const XypherisTerms = () => {
           and continue to apply as required by law or their nature, including
           but not limited to:
         </li>
+        <br />
         <ol type="a">
           <li>
             {" "}
@@ -739,11 +826,13 @@ export const XypherisTerms = () => {
             - AML/CTF compliance and record-keeping requirements under European
             financial regulations.
           </li>
+          <br />
         </ol>
       </ol>
       <div className={styles.divider} />
       <h2>
         <li>Governing Law</li>
+        <br />
       </h2>
       <div className={styles.divider} />
       <p>

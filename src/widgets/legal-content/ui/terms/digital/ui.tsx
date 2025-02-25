@@ -104,7 +104,7 @@ export const DigitalTerms = () => {
         Details".
       </p>
       <div className={styles.divider} />
-      <h2>Conditions</h2>
+      <h3>Conditions</h3>
       <div className={styles.divider} />
       <ul>
         <li>
@@ -230,7 +230,9 @@ export const DigitalTerms = () => {
         currencies such as Bitcoins are a digital non-returnable and
         non-refundable product for which you lose your right of withdrawal.
       </p>
-      <p>Buy digital currencies: via online instant payment service</p>
+      <div className={styles.divider}></div>
+      <h3>Buy digital currencies: via online instant payment service</h3>
+      <div className={styles.divider}></div>
       <p>
         happyCOINS supports various international online instant and card
         payment services.
@@ -265,7 +267,7 @@ export const DigitalTerms = () => {
         </li>
       </ul>
       <div className={styles.divider} />
-      <h2>Buy digital currencies: via online instant payment service</h2>
+      <h3>Buy digital currencies: via online instant payment service</h3>
       <div className={styles.divider} />
       <p>
         happyCOINS supports various international online instant and card
@@ -301,7 +303,7 @@ export const DigitalTerms = () => {
         </li>
       </ul>
       <div className={styles.divider} />
-      <h2>Buy digital currencies: via SEPA Euro bank transfers</h2>
+      <h3>Buy digital currencies: via SEPA Euro bank transfers</h3>
       <div className={styles.divider} />
       <p>
         When buying digital currency by SEPA bank transfer, you acknowledge and
@@ -361,7 +363,7 @@ export const DigitalTerms = () => {
         </li>
       </ul>
       <div className={styles.divider} />
-      <h2>Sell Digital currencies</h2>
+      <h3>Sell Digital currencies</h3>
       <div className={styles.divider} />
       <ul>
         <li>

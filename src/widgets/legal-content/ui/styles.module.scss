@@ -5,7 +5,11 @@
   font-family: "ALT Riviera";
 
   @media screen and (max-width: 900px) {
-    padding: 16px;
+    padding: 30px;
+
+    &.terms {
+      padding: 30px 30px 30px 40px;
+    }
   }
 
   .updates {
@@ -70,7 +74,8 @@
   }
 
   p,
-  ul li {
+  ul li,
+  ol li {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;

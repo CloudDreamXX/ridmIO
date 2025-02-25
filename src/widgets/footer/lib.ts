@@ -20,7 +20,7 @@ export const nav: Nav = {
       target: "_blank",
     },
   ],
-  About: [
+  "About us": [
     {
       name: "About us",
       link: "/about",
