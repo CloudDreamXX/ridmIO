@@ -176,12 +176,12 @@
     > li {
       counter-increment: subsection;
       position: relative;
-      padding-left: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
 
-      &::marker {
+      &::before {
         content: counter(subsection);
-        position: absolute;
-        left: 0;
       }
     }
   }
@@ -192,13 +192,12 @@
 
     > li {
       counter-increment: subsection;
-      position: relative;
-      padding-left: 0.5rem;
 
-      &::marker {
-        content: counter(section) "." counter(subsection) ".";
-        position: absolute;
-        left: 0;
+      &::before {
+        content: counter(section) "." counter(subsection) "." " -";
+        display: block;
+        width: fit-content;
+        min-width: fit-content;
       }
     }
   }
@@ -222,7 +221,13 @@
     }
 
     > li::marker {
-      content: unset;
+      content: "";
+      display: none;
+    }
+
+    > li::before {
+      content: counter(subsection, lower-alpha) ".";
+      margin-right: 8px;
     }
   }
 }
