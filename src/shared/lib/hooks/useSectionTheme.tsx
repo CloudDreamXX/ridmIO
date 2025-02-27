@@ -4,7 +4,7 @@ import { useLocation } from "react-router";
 
 export const useSectionTheme = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
-  const { pathname, hash } = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const handleScroll = throttle(() => {
@@ -24,11 +24,11 @@ export const useSectionTheme = () => {
 
     const handleOnLoad = () => {
       const section = document.querySelectorAll("[data-section]")?.[0];
-      console.log(section);
       if (section) {
         const sectionTheme = (section as HTMLElement).dataset.section as
           | "light"
           | "dark";
+        console.log(sectionTheme, section);
         setTheme(sectionTheme);
       }
     };

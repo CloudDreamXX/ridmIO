@@ -40,7 +40,7 @@ export const nav: Nav = {
       link: "/privacy",
     },
     {
-      name: "Terms and Use",
+      name: "Terms of Use",
       link: "/terms-use",
     },
   ],

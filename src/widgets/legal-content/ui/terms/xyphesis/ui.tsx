@@ -162,7 +162,6 @@ export const XypherisTerms = () => {
         <li>
           <p> To create a User Account, you confirm that:</p>
         </li>
-        <br />
         <ol type="a">
           <li>
             <p> you are a resident of the European Economic Area; and</p>
@@ -196,7 +195,6 @@ export const XypherisTerms = () => {
         <li>
           <p> In order to be able to use your User Account, you need to:</p>
         </li>
-        <br />
         <ol type="a">
           <li>
             <p> Dispose of a valid e-mail address; and</p>
@@ -338,7 +336,6 @@ export const XypherisTerms = () => {
             Virtual Asset Services, including but not limited to:
           </p>
         </li>
-        <br />
         <ol type="a">
           <li>
             <p> Maximum transaction values;</p>
@@ -509,7 +506,6 @@ export const XypherisTerms = () => {
             for any Virtual Asset transactions, including but not limited to:
           </p>
         </li>
-        <br />
         <ol type="a">
           <li>
             <p> Purchases of Virtual Assets;</p>
@@ -839,7 +835,6 @@ export const XypherisTerms = () => {
           </p>
         </li>
         <br />
-
         <li>
           <p>
             {" "}
@@ -925,7 +920,6 @@ export const XypherisTerms = () => {
             prior notice, in the following circumstances:
           </p>
         </li>
-        <br />
         <ol type="a">
           <li>
             <p>
@@ -1001,7 +995,6 @@ export const XypherisTerms = () => {
             including:
           </p>
         </li>
-        <br />
         <ol type="a">
           <li>
             <p> Settlement of pending transactions;</p>
@@ -1026,7 +1019,6 @@ export const XypherisTerms = () => {
             but not limited to:
           </p>
         </li>
-        <br />
         <ol type="a">
           <li>
             <p> Liability, indemnification, and dispute resolution clauses;</p>

@@ -230,6 +230,13 @@ export const DigitalPolicy = () => {
       <div className={styles.divider}></div>
       <br />
       <p>
+        You have the right to access your Personal Information and to require
+        the correction, updating and blocking of inaccurate and/or incorrect
+        data by sending an email to us at:{" "}
+        <a href="mailto:support@Ridm.io.">support@Ridm.io</a>
+      </p>
+      <br />
+      <p>
         happyCOINS will action your request only where this is not inconsistent
         with its Terms of Use, legal and regulatory obligations. Upon your
         written request, we will provide you with the Personal Information

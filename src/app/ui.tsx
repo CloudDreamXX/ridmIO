@@ -5,12 +5,10 @@ import styles from "./styles.module.scss";
 import { Header } from "widgets/header";
 import { Footer } from "widgets/footer";
 import { useScrollToView } from "shared/lib/hooks";
+import { About } from "pages/about";
 
 const Home = React.lazy(() =>
   import("pages/home").then((module) => ({ default: module.Home }))
-);
-const About = React.lazy(() =>
-  import("pages/about").then((module) => ({ default: module.About }))
 );
 const Terms = React.lazy(() =>
   import("pages/terms").then((module) => ({ default: module.Terms }))
