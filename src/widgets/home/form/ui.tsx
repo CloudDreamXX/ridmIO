@@ -97,7 +97,7 @@ export const Form: React.FC = () => {
           <Title variant="h2">Get in touch!</Title>
           <p>
             Reach out to our team and subscribe to our email list to gain access
-            to the latest updates about our work.
+            to the lastest updates about our work.
           </p>
         </div>
       </div>
@@ -113,23 +113,9 @@ export const Form: React.FC = () => {
             {error && <p className={styles.error}>{error}</p>}
             <div className={styles.inputs}>
               <input
-                type="text"
-                name="first_name"
-                placeholder="First name"
-                value={formData.first_name}
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="surname"
-                placeholder="Surname"
-                value={formData.surname}
-                onChange={handleChange}
-              />
-              <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
               />

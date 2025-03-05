@@ -45,6 +45,13 @@
 
 .icon {
   color: transparent;
+
+  @media screen and (max-width: 768px) {
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
 }
 
 .button:hover {

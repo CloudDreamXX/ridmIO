@@ -12,6 +12,7 @@ import {
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import Ridm from "shared/assets/icons/ridm";
 import RidmArrow from "shared/assets/icons/ridm-arrow";
+import SmallLogo from "shared/assets/icons/ridm-small.png";
 import { toggleScroll } from "shared/lib/utils";
 
 export const Header: React.FC = () => {
@@ -97,16 +98,7 @@ export const Header: React.FC = () => {
           </Link>
         ) : (
           <Link to="/" onClick={handleClick} className={styles.logo__small}>
-            <RidmArrow
-              className={classNames(
-                styles.logo,
-                styles.small,
-                isHovered && styles.hovered
-              )}
-              width={30}
-              height={30}
-            />
-            <Ridm className={styles.ridm} />
+            <img src={SmallLogo} alt="Ridm" />
           </Link>
         )}
         <nav>
@@ -122,7 +114,7 @@ export const Header: React.FC = () => {
         </nav>
         <nav>
           <a href="https://portal.ridm.io/log-in" target="_blank">
-            <Button className={styles.button}>Login</Button>
+            <Button className={styles.button}>Log In</Button>
           </a>
           <a href="https://portal.ridm.io/log-in" target="_blank">
             <Button variant="bordered" className={styles.bordered}>
@@ -149,7 +141,7 @@ export const Header: React.FC = () => {
           <nav>
             <div className={styles.auth}>
               <a href="https://portal.ridm.io/log-in" target="_blank">
-                <Button className={styles.button}>Login</Button>
+                <Button className={styles.button}>Log In</Button>
               </a>
               <a href="https://portal.ridm.io/log-in" target="_blank">
                 <Button variant="bordered" className={styles.bordered}>

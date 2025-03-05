@@ -32,19 +32,6 @@
     flex-direction: column;
     gap: 16px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 0;
-      width: var(--active-width, 100%);
-      height: 39.5px;
-      background: #000;
-      border-radius: 24px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      transform: translateY(var(--translate-y, 0));
-    }
-
     @media screen and (max-width: 900px) {
       flex-direction: row;
       width: 100%;
@@ -55,22 +42,23 @@
       }
     }
 
-    button {
+    .button {
       position: relative;
       z-index: 1;
       padding: 10px 1rem;
       border-radius: 50px;
       cursor: pointer;
-      color: #0d0d0d;
       background: transparent;
-      transition: color 0.3s ease;
       text-align: left;
-      color: #1b1b1b;
-      font-variant-numeric: slashed-zero;
-      font-size: 15px;
-      line-height: 130%;
-      letter-spacing: -0.06px;
-      font-family: "ALT Riviera";
+
+      span {
+        color: #0d0d0d;
+        font-size: 15px;
+        line-height: 130%;
+        letter-spacing: -0.06px;
+        font-variant-numeric: slashed-zero;
+        font-family: "ALT Riviera";
+      }
 
       @media screen and (max-width: 900px) {
         width: max-content;
@@ -91,7 +79,11 @@
       }
 
       &.active {
-        color: #fff;
+        background: #0d0d0d;
+
+        span {
+          color: #fff;
+        }
       }
     }
   }

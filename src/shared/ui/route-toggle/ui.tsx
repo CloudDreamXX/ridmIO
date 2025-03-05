@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router";
 import styles from "./styles.module.scss";
 import classNames from "classnames";
+import { Button } from "../button";
 
 interface ButtonProps {
   links: { name: string; path: string }[];
@@ -30,16 +31,16 @@ export const RouteToggle: React.FC<ButtonProps> = ({ links }) => {
     <div className={styles.toggle}>
       <div className={styles.toggleLinks}>
         {links.map((link, index) => (
-          <button
+          <Button
             key={index}
             ref={(el) => (buttonRefs.current[index] = el)}
             onClick={() => navigate(link.path)}
-            className={classNames({
+            className={classNames(styles.button, {
               [styles.active]: location.pathname === link.path,
             })}
           >
             {link.name}
-          </button>
+          </Button>
         ))}
       </div>
     </div>

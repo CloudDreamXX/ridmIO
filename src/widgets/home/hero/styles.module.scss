@@ -76,14 +76,11 @@
   .lottie {
     width: 100%;
     height: 121px;
-    mix-blend-mode: screen;
     position: relative;
-    left: -0.5rem;
 
     @media screen and (max-width: 768px) {
       width: fit-content;
       height: 57.361px;
-      left: -1rem;
     }
   }
 

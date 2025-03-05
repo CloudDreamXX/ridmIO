@@ -27,7 +27,7 @@ export const ImageSections: React.FC = () => {
                 assets. Free from clutter and focused on your needs.
               </p>
             </div>
-            <a href="#form">
+            <a href="https://portal.ridm.io/log-in" target="_blank">
               <Button
                 variant="secondary"
                 className={styles.button}
@@ -56,13 +56,13 @@ export const ImageSections: React.FC = () => {
                 services to merchants within the platform.
               </p>
             </div>
-            <a href="#form">
+            <a href="https://portal.ridm.io/log-in" target="_blank">
               <Button
                 variant="secondary"
                 className={styles.button}
                 icon={<Arrow />}
               >
-                Try ridm
+                Try Ridm
               </Button>
             </a>
           </div>
@@ -84,7 +84,7 @@ export const ImageSections: React.FC = () => {
                 verification through electronic ID, national ID or passport.
               </p>
             </div>
-            <a href="#form">
+            <a href="https://portal.ridm.io/log-in" target="_blank">
               <Button
                 variant="secondary"
                 className={styles.button}

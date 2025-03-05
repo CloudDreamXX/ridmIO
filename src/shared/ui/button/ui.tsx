@@ -11,6 +11,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   horizontal?: boolean;
+  ref?: (el: any) => any;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -22,6 +23,7 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   iconClassName,
   horizontal = false,
+  ref,
   ...props
 }) => {
   return (
@@ -30,6 +32,7 @@ export const Button: React.FC<ButtonProps> = ({
         [styles.horizontal]: horizontal,
       })}
       onClick={onClick}
+      ref={ref}
       {...props}
     >
       <span className={styles.buttonContent}>
