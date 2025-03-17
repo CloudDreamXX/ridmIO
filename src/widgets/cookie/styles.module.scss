@@ -29,6 +29,16 @@
       background: #151515;
       color: #efefef;
     }
+
+    .reject:hover {
+      background: #fea372;
+      color: #151515;
+    }
+
+    .accept:hover {
+      background: #151515;
+      color: #efefef;
+    }
   }
 
   @media screen and (max-width: 1292px) {
@@ -60,7 +70,7 @@
     font-variant-numeric: slashed-zero;
   }
 
-  h2 {
+  .title {
     font-size: 1.5rem;
     line-height: 0.9;
     letter-spacing: -0.018rem;

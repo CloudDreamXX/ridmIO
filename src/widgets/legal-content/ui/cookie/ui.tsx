@@ -1,11 +1,14 @@
 import React, { createRef, useEffect } from "react";
 import styles from "../styles.module.scss";
 import { Title } from "shared/ui";
+import classNames from "classnames";
 
 export const CookiePolicyContent: React.FC = () => {
   return (
     <div className={styles.content}>
-      <p className={styles.updates}>Last updated: March 2025</p>
+      <p className={classNames(styles.updates, styles.cookie)}>
+        Last updated: March 2025
+      </p>
       <Title variant="h1">Cookie Policy</Title>
       <h2>Introduction</h2>
       <div className={styles.divider}></div>

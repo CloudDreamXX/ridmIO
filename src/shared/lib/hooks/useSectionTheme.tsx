@@ -13,14 +13,17 @@ export const useSectionTheme = (
   useEffect(() => {
     const handleScroll = throttle(() => {
       const sections = Array.from(document.querySelectorAll("[data-section]"));
-
+      const width = window.innerWidth;
       if (componentType === "cookie") {
         for (let i = sections.length - 1; i >= 0; i--) {
           const section = sections[i];
           const rect = section.getBoundingClientRect();
           const windowHeight = window.innerHeight;
 
-          if (rect.top < windowHeight && rect.bottom > 0) {
+          if (
+            rect.top < windowHeight &&
+            rect.bottom > (width > 768 ? -100 : -300)
+          ) {
             const sectionTheme = (section as HTMLElement).dataset.section as
               | "light"
               | "dark";

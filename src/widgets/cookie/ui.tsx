@@ -33,14 +33,20 @@ export const Cookie: React.FC = () => {
   return (
     <div className={classNames(styles.container, styles[theme])}>
       <div className={styles.info}>
-        <Title variant="h2">This site uses cookies</Title>
+        <Title variant="h2" className={styles.title}>
+          This site uses cookies
+        </Title>
         <p>
           Our site uses performance cookies to enhance functionality and track
           usage for better service.
         </p>
       </div>
       <div className={styles.buttons}>
-        <Button variant="bordered" onClick={handleAccept}>
+        <Button
+          variant="bordered"
+          className={styles.accept}
+          onClick={handleAccept}
+        >
           Accept
         </Button>
         <Button

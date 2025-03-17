@@ -33,7 +33,7 @@ export const Web3: React.FC = () => {
   const scaleVideo = useTransform(smoothProgress, [0, 1], responsiveScale);
 
   return (
-    <div ref={containerRef} className={styles.container} data-section={"light"}>
+    <div ref={containerRef} className={styles.container} data-section={"dark"}>
       <motion.video
         src={web3Video}
         className={styles.bg}

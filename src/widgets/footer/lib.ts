@@ -43,6 +43,10 @@ export const nav: Nav = {
       name: "Terms of Use",
       link: "/terms-use",
     },
+    {
+      name: "Cookie Policy",
+      link: "/cookie-policy",
+    },
   ],
   "Company info": [
     {
