@@ -14,6 +14,39 @@
   z-index: 1000;
   width: calc(100% - 9rem);
   height: 5.8125rem;
+
+  &.light {
+    background: #efefef;
+    color: #151515;
+
+    h2,
+    p,
+    a {
+      color: #151515;
+    }
+
+    .reject {
+      background: #151515;
+      color: #efefef;
+    }
+  }
+
+  @media screen and (max-width: 1292px) {
+    width: calc(100% - 7rem);
+    left: 1rem;
+    height: fit-content;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    gap: 3rem;
+    border-radius: 8px 8px 0px 0px;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
+    z-index: 9999999;
+  }
 }
 
 .info {
@@ -45,6 +78,17 @@
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  min-width: 25rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+
+    button {
+      width: 100%;
+    }
+  }
 
   button span {
     font-size: 24px;

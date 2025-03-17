@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import { Button, Title } from "shared/ui";
 import { Link } from "react-router";
+import { useSectionTheme } from "shared/lib/hooks";
+import classNames from "classnames";
 
 const COOKIE_CONSENT_KEY = "ridmio_cookie_consent";
 
 export const Cookie: React.FC = () => {
+  const { theme } = useSectionTheme("cookie");
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -28,7 +31,7 @@ export const Cookie: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className={styles.container}>
+    <div className={classNames(styles.container, styles[theme])}>
       <div className={styles.info}>
         <Title variant="h2">This site uses cookies</Title>
         <p>
@@ -40,7 +43,11 @@ export const Cookie: React.FC = () => {
         <Button variant="bordered" onClick={handleAccept}>
           Accept
         </Button>
-        <Button variant="bordered-secondary" onClick={handleReject}>
+        <Button
+          variant="bordered-secondary"
+          onClick={handleReject}
+          className={styles.reject}
+        >
           Reject all
         </Button>
         <Button>

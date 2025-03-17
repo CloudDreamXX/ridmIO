@@ -10,9 +10,10 @@ export const CookiePolicyContent: React.FC = () => {
       <h2>Introduction</h2>
       <div className={styles.divider}></div>
       <p>
-        This website, ridm.io uses cookies to enhance user experience and
-        analyze website traffic. This policy explains what cookies are, how we
-        use them, and how you can manage your preferences.
+        This website, <a href="https://ridm.io">ridm.io</a> uses cookies to
+        enhance user experience and analyze website traffic. This policy
+        explains what cookies are, how we use them, and how you can manage your
+        preferences.
       </p>
       <div className={styles.divider}></div>
       <h2>What are cookies?</h2>
@@ -26,23 +27,37 @@ export const CookiePolicyContent: React.FC = () => {
       <h2>What types of cookies do we use?</h2>
       <div className={styles.divider}></div>
       <p>
-        Ridm is a platform providing virtual asset services operated by Digital
-        Currency Services B.V. and Xypheris S.r.o.
+        We use the following types of cookies:
         <br />
         <br />
         <ul>
           <li>
-            Digital Currency Services B.V. is a company registered in
-            Netherlands under the company number 5855697 and registered as a
-            Virtual Asset Service Provider with the Dutch National Bank (DNB).
+            Necessary cookies – Essential for the website’s functionality and
+            cannot be disabled.
           </li>
+          <br />
           <li>
-            Xypheris s.r.o. is a company registered in Czech Republic under the
-            company number 22400737 and registered as a Virtual Asset Service
-            Provider with the Financial Analytical Office of Czech Republic
-            (FAÚ).
+            Analytics cookies – Help us understand how visitors use our site
+            through anonymous data (e.g., Google Analytics).
+          </li>
+          <br />
+          <li>
+            Marketing cookies – Used to track visitors across websites to
+            display relevant ads.
           </li>
         </ul>
+      </p>
+      <div className={styles.divider}></div>
+      <h2>How to manage cookies?</h2>
+      <div className={styles.divider}></div>
+      <p>
+        You can control and disable cookies in your browser settings. You can
+        also update your cookie preferences through our cookie banner.
+      </p>
+      <br />
+      <p>
+        For more details on how we handle your data, please refer to our{" "}
+        <a href="/privacy/xypheris">Privacy Policy</a>.
       </p>
     </div>
   );

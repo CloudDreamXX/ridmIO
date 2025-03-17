@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 import { throttle } from "lodash";
 import { useLocation } from "react-router";
 
-export const useSectionTheme = () => {
+type ThemeComponentType = "header" | "cookie";
+
+export const useSectionTheme = (
+  componentType: ThemeComponentType = "header"
+) => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const { pathname } = useLocation();
 
@@ -10,26 +14,54 @@ export const useSectionTheme = () => {
     const handleScroll = throttle(() => {
       const sections = Array.from(document.querySelectorAll("[data-section]"));
 
-      for (const section of sections) {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 80 && rect.bottom > 80) {
-          const sectionTheme = (section as HTMLElement).dataset.section as
-            | "light"
-            | "dark";
-          setTheme(sectionTheme);
-          break;
+      if (componentType === "cookie") {
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const section = sections[i];
+          const rect = section.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+
+          if (rect.top < windowHeight && rect.bottom > 0) {
+            const sectionTheme = (section as HTMLElement).dataset.section as
+              | "light"
+              | "dark";
+            setTheme(sectionTheme);
+            break;
+          }
+        }
+      } else {
+        for (const section of sections) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom > 80) {
+            const sectionTheme = (section as HTMLElement).dataset.section as
+              | "light"
+              | "dark";
+            setTheme(sectionTheme);
+            break;
+          }
         }
       }
     }, 100);
 
     const handleOnLoad = () => {
-      const section = document.querySelectorAll("[data-section]")?.[0];
-      if (section) {
-        const sectionTheme = (section as HTMLElement).dataset.section as
-          | "light"
-          | "dark";
-        console.log(sectionTheme, section);
-        setTheme(sectionTheme);
+      if (componentType === "cookie") {
+        const sections = Array.from(
+          document.querySelectorAll("[data-section]")
+        );
+        const lastSection = sections[sections.length - 1];
+        if (lastSection) {
+          const sectionTheme = (lastSection as HTMLElement).dataset.section as
+            | "light"
+            | "dark";
+          setTheme(sectionTheme);
+        }
+      } else {
+        const section = document.querySelectorAll("[data-section]")?.[0];
+        if (section) {
+          const sectionTheme = (section as HTMLElement).dataset.section as
+            | "light"
+            | "dark";
+          setTheme(sectionTheme);
+        }
       }
     };
 
@@ -43,7 +75,7 @@ export const useSectionTheme = () => {
       window.removeEventListener("load", handleOnLoad);
       handleScroll.cancel();
     };
-  }, [pathname]);
+  }, [pathname, componentType]);
 
   return { theme, setTheme };
 };
