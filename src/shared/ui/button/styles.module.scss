@@ -94,3 +94,13 @@
     background: #efefef;
   }
 }
+
+.bordered-secondary {
+  border-radius: 80px;
+  background: #efefef;
+  padding: 9px 18px;
+
+  &:hover {
+    background: #fea372;
+  }
+}

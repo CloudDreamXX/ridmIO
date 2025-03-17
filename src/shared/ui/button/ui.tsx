@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   fullWidth?: boolean;
   className?: string;
   iconClassName?: string;
-  variant?: "primary" | "secondary" | "bordered";
+  variant?: "primary" | "secondary" | "bordered" | "bordered-secondary";
   icon?: React.ReactNode;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   horizontal?: boolean;

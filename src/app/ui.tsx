@@ -5,19 +5,28 @@ import styles from "./styles.module.scss";
 import { Header } from "widgets/header";
 import { Footer } from "widgets/footer";
 import { useScrollToView } from "shared/lib/hooks";
-import { About } from "pages/about";
+import { Cookie } from "widgets/cookie";
 
+// Lazy-loaded components
 const Home = React.lazy(() =>
-  import("pages/home").then((module) => ({ default: module.Home }))
+  import("pages/home").then(({ Home }) => ({ default: Home }))
+);
+const About = React.lazy(() =>
+  import("pages/about").then(({ About }) => ({ default: About }))
 );
 const Terms = React.lazy(() =>
-  import("pages/terms").then((module) => ({ default: module.Terms }))
+  import("pages/terms").then(({ Terms }) => ({ default: Terms }))
 );
 const Policy = React.lazy(() =>
-  import("pages/policy").then((module) => ({ default: module.Policy }))
+  import("pages/policy").then(({ Policy }) => ({ default: Policy }))
 );
-const Licences = React.lazy(() =>
-  import("pages/licenses").then((module) => ({ default: module.Licenses }))
+const Licenses = React.lazy(() =>
+  import("pages/licenses").then(({ Licenses }) => ({ default: Licenses }))
+);
+const CookiePolicy = React.lazy(() =>
+  import("pages/cookie-policy").then(({ CookiePolicy }) => ({
+    default: CookiePolicy,
+  }))
 );
 
 const PageLoader = () => (
@@ -34,13 +43,18 @@ export const App: React.FC = () => {
       <Header />
       <Suspense fallback={<PageLoader />}>
         <Routes>
+          {/* Main pages */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+
+          {/* Legal pages */}
           <Route path="/terms-use/*" element={<Terms />} />
           <Route path="/privacy/*" element={<Policy />} />
-          <Route path="/licenses" element={<Licences />} />
+          <Route path="/licenses" element={<Licenses />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
         </Routes>
       </Suspense>
+      <Cookie />
       <Footer />
     </div>
   );
