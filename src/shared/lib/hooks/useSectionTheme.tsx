@@ -22,7 +22,7 @@ export const useSectionTheme = (
 
           if (
             rect.top < windowHeight &&
-            rect.bottom > (width > 768 ? -100 : -300)
+            rect.bottom > (width > 768 ? -100 : -500)
           ) {
             const sectionTheme = (section as HTMLElement).dataset.section as
               | "light"
