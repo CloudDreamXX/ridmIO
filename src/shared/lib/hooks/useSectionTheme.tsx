@@ -14,21 +14,44 @@ export const useSectionTheme = (
     const handleScroll = throttle(() => {
       const sections = Array.from(document.querySelectorAll("[data-section]"));
       const width = window.innerWidth;
-      if (componentType === "cookie") {
-        for (let i = sections.length - 1; i >= 0; i--) {
-          const section = sections[i];
-          const rect = section.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
 
-          if (
-            rect.top < windowHeight &&
-            rect.bottom > (width > 768 ? -100 : -500)
-          ) {
+      if (componentType === "cookie") {
+        const cookieElement = document.querySelector(
+          `.${CSS.escape("cookie_container")}`
+        );
+        const cookieRect = cookieElement?.getBoundingClientRect();
+        const cookieTop = cookieRect ? cookieRect.top : window.innerHeight;
+
+        for (const section of sections) {
+          const rect = section.getBoundingClientRect();
+
+          if (cookieTop >= rect.top && cookieTop < rect.bottom) {
             const sectionTheme = (section as HTMLElement).dataset.section as
               | "light"
               | "dark";
             setTheme(sectionTheme);
             break;
+          }
+        }
+
+        if (
+          !sections.some((section) => {
+            const rect = section.getBoundingClientRect();
+            return cookieTop >= rect.top && cookieTop < rect.bottom;
+          })
+        ) {
+          for (let i = sections.length - 1; i >= 0; i--) {
+            const section = sections[i];
+            const rect = section.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top < windowHeight && rect.bottom > 0) {
+              const sectionTheme = (section as HTMLElement).dataset.section as
+                | "light"
+                | "dark";
+              setTheme(sectionTheme);
+              break;
+            }
           }
         }
       } else {
@@ -43,7 +66,7 @@ export const useSectionTheme = (
           }
         }
       }
-    }, 100);
+    }, 16);
 
     const handleOnLoad = () => {
       if (componentType === "cookie") {

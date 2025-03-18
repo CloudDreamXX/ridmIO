@@ -31,7 +31,13 @@ export const Cookie: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className={classNames(styles.container, styles[theme])}>
+    <div
+      className={classNames(
+        styles.container,
+        styles[theme],
+        "cookie_container"
+      )}
+    >
       <div className={styles.info}>
         <Title variant="h2" className={styles.title}>
           This site uses cookies
