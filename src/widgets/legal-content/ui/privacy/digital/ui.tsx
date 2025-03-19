@@ -4,24 +4,21 @@ import { Title } from "shared/ui";
 export const DigitalPolicy = () => {
   return (
     <div className={styles.content}>
-      <p className={styles.updates}>Last updated: October 2020 </p>
+      <p className={styles.updates}>Last updated: October 2020</p>
       <Title variant="h1">Privacy policy</Title>
       <p>
-        As used herein, <strong>"happyCOINS"</strong> refers to the company
-        Digital Currency Services B.V., including without limitation thereby,
-        its owners, directors, investors, employees or other related parties.
-        Digital Currency Services B.V. is a company with limited liability,
-        incorporated under the laws of the Netherlands. Depending upon context,{" "}
-        <strong>"happyCOINS"</strong>
-        may also refer to the services, products, Site, content or other
-        materials (collectively, <strong>"Materials"</strong>) provided by
-        happyCOINS.
+        As used herein, "DCS" refers to the company Digital Currency Services
+        B.V., including without limitation thereby, its owners, directors,
+        investors, employees or other related parties. Digital Currency Services
+        B.V. is a company with limited liability, incorporated under the laws of
+        the Netherlands. Depending upon context, "DCS" may also refer to the
+        services, products, Site, content or other materials (collectively,
+        "Materials") provided by DCS.
       </p>
       <br />
       <p>
-        happyCOINS and its affiliates (hereinafter,{" "}
-        <strong>"happyCOINS"</strong>, <strong>"we"</strong>,{" "}
-        <strong>"us"</strong> or
+        DCS and its affiliates (hereinafter, <strong>""DCS"</strong>,{" "}
+        <strong>"we"</strong>, <strong>"us"</strong> or
         <strong>"our"</strong>) are committed to protecting and respecting your
         privacy.
       </p>
@@ -133,9 +130,9 @@ export const DigitalPolicy = () => {
       <h2>Cookies</h2>
       <div className={styles.divider}></div>
       <p>
-        The happyCOINS site uses cookies. Cookies are small text files that are
-        placed on your computer by websites that you visit. They are widely used
-        in order to make websites work, or work more efficiently, as well as to
+        The DCS site uses cookies. Cookies are small text files that are placed
+        on your computer by websites that you visit. They are widely used in
+        order to make websites work, or work more efficiently, as well as to
         provide information to the owners of the site.
       </p>
       <br />
@@ -182,10 +179,10 @@ export const DigitalPolicy = () => {
       <br />
       <p>
         You acknowledge that by using our Services and your acceptance of the
-        happyCOINS Terms of Use that you will be providing us with Personal
+        DCS Terms of Use that you will be providing us with Personal
         Information. You consent to us disclosing that information where we are
         required by law to third parties for electronic identification purposes
-        as outlined above.
+        as outlined above
       </p>
       <br />
       <p>
@@ -197,13 +194,13 @@ export const DigitalPolicy = () => {
         Any third party that receives or has access to Personal Information
         shall be required by us to protect such Personal Information and to use
         it only to carry out the services they are performing for you or for
-        happyCOINS, unless otherwise required or permitted by law. We will
-        ensure that any such third party is aware of our obligations under this
-        Privacy Policy and we will enter into contracts with such third parties
-        by which they are bound by terms no less protective of any Personal
-        Information disclosed to them than the obligations we undertake to you
-        under this Privacy Policy or which are imposed on us under applicable
-        data protection laws.
+        DCS, unless otherwise required or permitted by law. We will ensure that
+        any such third party is aware of our obligations under this Privacy
+        Policy and we will enter into contracts with such third parties by which
+        they are bound by terms no less protective of any Personal Information
+        disclosed to them than the obligations we undertake to you under this
+        Privacy Policy or which are imposed on us under applicable data
+        protection laws.
       </p>
       <div className={styles.divider}></div>
       <h2>Third party links</h2>
@@ -237,12 +234,12 @@ export const DigitalPolicy = () => {
       </p>
       <br />
       <p>
-        happyCOINS will action your request only where this is not inconsistent
-        with its Terms of Use, legal and regulatory obligations. Upon your
-        written request, we will provide you with the Personal Information
-        relating to you that we hold and the use and general disclosure of your
-        Personal Information. Such a request will be accepted once per calendar
-        quarter per Account Holder.
+        DCS will action your request only where this is not inconsistent with
+        its Terms of Use, legal and regulatory obligations. Upon your written
+        request, we will provide you with the Personal Information relating to
+        you that we hold and the use and general disclosure of your Personal
+        Information. Such a request will be accepted once per calendar quarter
+        per Account Holder.
       </p>
       <div className={styles.divider}></div>
       <h2>Security</h2>
@@ -265,7 +262,7 @@ export const DigitalPolicy = () => {
       </p>
       <br />
       <p>
-        Only authorized personnel of happyCOINS have access to your Personal
+        Only authorized personnel of DCS have access to your Personal
         Information, and these personnel are required to treat the information
         as confidential. The security measures in place will, from time to time,
         be reviewed in line with legal and technical developments.
@@ -288,27 +285,27 @@ export const DigitalPolicy = () => {
         Our Site policies, content, information, promotions, disclosures,
         disclaimers and features may be revised, modified, updated, and/or
         supplemented at any time and without prior notice at the sole and
-        absolute discretion of happyCOINS. If we change this Privacy Policy, we
-        will take steps to notify users by a notice on our Site and will post
-        the amended Privacy Policy on the Site.
+        absolute discretion of DCS. If we change this Privacy Policy, we will
+        take steps to notify users by a notice on our Site and will post the
+        amended Privacy Policy on the Site.
       </p>
       <div className={styles.divider}></div>
       <h2>Definitions</h2>
       <div className={styles.divider}></div>
       <p>
         Private Information: information which personally identifies you and is
-        collected and used by happyCOINS as set out in this Privacy Policy
-        and/or as otherwise permitted by law.
+        collected and used by DCS as set out in this Privacy Policy and/or as
+        otherwise permitted by law.
       </p>
       <br />
       <p>
-        Account: access which is granted to Members as set out in our Terms of
-        Use.
+        Account: access which is granted to Members as set out in our{" "}
+        <a href="/terms-use">Terms of Use</a>.
       </p>
       <br />
       <p>
-        Platform: hardware and software technologies which are used by
-        happyCOINS to provide Service as set out in our Terms of Use.
+        Platform: hardware and software technologies which are used by DCS to
+        provide Service as set out in our Terms of Use.
       </p>
       <br />
       <p>
@@ -320,8 +317,8 @@ export const DigitalPolicy = () => {
         Crypto-currency among Members ("Crypto-currency Transfer Transaction"),
         (iv) the transfer of currencies among Members ("Currency Transfer
         Transaction") and (v) the purchase of ancillary products ("Purchase
-        Transactions"). happyCOINS may not offer all of these types of
-        transactions at this time or in all places.
+        Transactions"). DCS may not offer all of these types of transactions at
+        this time or in all places.
       </p>
       <div className={styles.divider}></div>
       <h2>Contact us</h2>
