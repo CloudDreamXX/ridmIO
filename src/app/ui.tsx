@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from "react";
-import { Route, Routes } from "react-router";
+import { Navigate, Route, Routes } from "react-router";
 import styles from "./styles.module.scss";
 
 import { Header } from "widgets/header";
@@ -52,6 +52,7 @@ export const App: React.FC = () => {
           <Route path="/privacy/*" element={<Policy />} />
           <Route path="/licenses" element={<Licenses />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="*" element={<Navigate to={"/"} />} />
         </Routes>
       </Suspense>
       <Cookie />

@@ -67,7 +67,7 @@ export const DigitalTerms = () => {
         register as an Account Holder is advised to read these Terms of Use
         carefully and understand them before final acceptance. These Terms of
         Use apply as long as the respective Account is accessible through the
-        platform www.DCS.com.{" "}
+        platform <a href="www.dcs.com">www.DCS.com</a>.
       </p>
       <br />
       <p>
@@ -201,7 +201,7 @@ export const DigitalTerms = () => {
         detect and prevent the use of our Services for money laundering or to
         facilitate criminal or terrorist activities. Accordingly, the Company
         has implemented an Anti-Money Laundering and Identity Verification
-        Policy: AML Policy.
+        Policy: <a href="">AML Policy</a>.
       </p>
       <br />
       <p>
@@ -280,14 +280,14 @@ export const DigitalTerms = () => {
         </li>
         <li>
           Initiate your SEPA transfer from the bank account connected to your
-          DCS Account
+          DCS Account.
         </li>
         <li>
           Put your DCS Account code in the 'comment' (sometimes called 'label'
           or 'reference') field of the bank transaction.
         </li>
         <li>
-          Only transfer Euro amounts within the limits of your DCS Account
+          Only transfer Euro amounts within the limits of your DCS Account.
         </li>
         <li>
           DCS uses a minimal transaction amount and a maximum amount depending
@@ -487,7 +487,7 @@ export const DigitalTerms = () => {
         If you have any questions relating to these Terms of Use, your rights
         and obligations arising from these Terms of Use and/or your use of your
         Account, the DCS Services, or any other matter, please contact us:{" "}
-        <a href="mailto:support@ridm.io">support@Ridm.io</a>.
+        <a href="mailto:support@ridm.io">support@ridm.io</a>.
       </p>
     </div>
   );

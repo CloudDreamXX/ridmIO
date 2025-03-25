@@ -17,7 +17,7 @@ export const DigitalPolicy = () => {
       </p>
       <br />
       <p>
-        DCS and its affiliates (hereinafter, <strong>""DCS"</strong>,{" "}
+        DCS and its affiliates (hereinafter, <strong>"DCS"</strong>,{" "}
         <strong>"we"</strong>, <strong>"us"</strong> or
         <strong>"our"</strong>) are committed to protecting and respecting your
         privacy.
@@ -182,7 +182,7 @@ export const DigitalPolicy = () => {
         DCS Terms of Use that you will be providing us with Personal
         Information. You consent to us disclosing that information where we are
         required by law to third parties for electronic identification purposes
-        as outlined above
+        as outlined above.
       </p>
       <br />
       <p>
@@ -230,7 +230,7 @@ export const DigitalPolicy = () => {
         You have the right to access your Personal Information and to require
         the correction, updating and blocking of inaccurate and/or incorrect
         data by sending an email to us at:{" "}
-        <a href="mailto:support@Ridm.io.">support@Ridm.io</a>
+        <a href="mailto:support@ridm.io.">support@ridm.io</a>
       </p>
       <br />
       <p>
@@ -326,7 +326,7 @@ export const DigitalPolicy = () => {
       <p>
         If you have any questions, comments, or concerns regarding our Privacy
         Policy and/or practices as it or they relate to the Platform, please
-        contact us: <a href="mailto:support@ridm.io.">support@Ridm.io.</a>
+        contact us: <a href="mailto:support@ridm.io.">support@ridm.io.</a>
       </p>
     </div>
   );
