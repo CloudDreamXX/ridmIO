@@ -50,7 +50,7 @@ export const nav: Nav = {
   ],
   "Company info": [
     {
-      name: "Ridmio Limited Ireland corp. reg: 758159. Ridm is a platform providing virtual asset services licensed in the Netherlands and Czech Republic.",
+      name: "Ridmio Limited Ireland corp. reg: 758159. \n Ridm is a platform providing virtual asset services licensed in the Netherlands and Czech Republic.",
       link: "/",
     },
     {

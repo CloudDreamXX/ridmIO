@@ -44,7 +44,16 @@ export const FooterItem: React.FC<FooterItemProps> = ({ item }) => {
   }
 
   if (item.name.length > 20) {
-    return <p>{item.name}</p>;
+    return (
+      <p>
+        {item.name.split("\n").map((text, index) => (
+          <React.Fragment key={index}>
+            {index > 0 && <br />}
+            {text}
+          </React.Fragment>
+        ))}
+      </p>
+    );
   }
 
   return (
